@@ -75,8 +75,10 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 2px 10px;
+    margin: 3rem;
     text-align: center;
     animation: in 1.5s ease-in;
+    animation-delay: 2s;
 }
 
 @keyframes in {

@@ -87,24 +87,39 @@ section {
 }
 
 .image img {
-    width: 18rem;
+    width: 18rem ;
     margin-top: 80px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .greet {
         width: 5rem;
-        margin-left: 5px;
-        margin-top: 10px;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
     }
 
     .image img {
         width: 9rem;
-        margin-left: -30px;
     }
 
     .back p {
         display: none;
+    }
+}
+
+@media (min-width: 300px) {
+    .image img {
+        margin-left: 2rem;
+        margin-top: 9rem;
+    }
+    .greet{
+        font-size: 1rem;
+        box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: none;
+    border: none;
     }
 }
 </style>

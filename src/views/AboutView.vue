@@ -48,7 +48,7 @@ export default {
   font-size: 3rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .details h2{
     font-size: 1.5rem;
     border-bottom: none;
@@ -59,7 +59,8 @@ export default {
     margin-top: .5rem;
   }
 .about img{
-  width: 10rem;
+  width: 9rem;
+  height: 13rem;
   margin-left: 2rem;
 }
 
@@ -73,5 +74,14 @@ export default {
   width: 10rem;
   text-align: center;
 }
+}
+@media (max-width: 768px) {
+  .about{
+    margin-left: -12rem;
+  }
+  .details{
+    font-size: 1rem;
+    margin-left: 6rem;
+  }
 }
 </style>

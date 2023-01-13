@@ -233,7 +233,9 @@ export default {
 <style scoped>
 .skills {
   padding-top: 40px;
-  margin: 4rem;
+  margin-top: 0.2rem;
+  margin-left: 2rem;
+  height: 30rem;
   padding-bottom: 1px;
   display: flex;
   justify-content: space-between;
@@ -252,12 +254,13 @@ h5 {
 .soft,
 .hard {
   text-align: center;
-  margin-right: 5rem;
 
 }
 
 .soft {
   margin-left: 7rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* hard skills */
@@ -265,6 +268,7 @@ h5 {
   width: 20rem;
   display: flex;
   flex-direction: column;
+  margin-right: 9.2rem;
 }
 
 .rw {
@@ -275,6 +279,8 @@ h5 {
 
 th {
   font-size: 2rem;
+
+  width: 12rem;
 }
 
 .row {
@@ -329,7 +335,7 @@ circle {
 svg {
   position: absolute;
   top: 123.5%;
-  left: 75.3%;
+  left: 75.5%;
 }
 
 .two {
@@ -350,7 +356,7 @@ svg {
 .two-1 {
   position: absolute;
   top: 134.2%;
-  left: 74.3%;
+  left: 74.5%;
 }
 
 .tree {
@@ -419,13 +425,13 @@ svg {
 /* Education */
 
 .education{
-   margin-top: 5rem;
+   margin-top: 4rem;
 }
 .tim {
   position: relative;
   max-width: 400px;
   padding-top: 110px;
-  margin-left: 13rem;
+  margin-left: 12rem;
 }
 
 .tim::after {
@@ -437,7 +443,7 @@ height: 10px;
   top: 11%;
   bottom: 0;
   left: 20%;
-  margin-left: 2.7rem;
+  margin-left: 1.5rem;
 }
 
 .conts{
@@ -458,7 +464,7 @@ height: 10px;
     height: 20px;
     background-color: black;
     border-radius: 4px solid #FF9F55;
-    top: -18%;
+    top: -14%;
     border-radius: 50%;
     z-index: 1;
 }
@@ -509,7 +515,7 @@ p {
     left: 0px;
 } */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .one {
     font-size: 24px;
   }
@@ -574,7 +580,7 @@ p {
     left: 60.3%;
   }
   
-}
+} */
 
 /* @media (min-width: 300px) {
     .tim::after{

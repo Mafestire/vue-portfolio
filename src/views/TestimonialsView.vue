@@ -22,6 +22,5 @@ import Testimonials from '@/components/Testimonials.vue'
 
 h1{
     font-size: 34px;
-    margin-bottom: 40px;
 }
 </style>

@@ -1,14 +1,14 @@
 <template>
     <div class="cont">
         <div class="info">
-            <h3>For more information contact me on</h3>
+            <h3>For more information contact me on:  or just leave me a message on the form</h3>
 
             <div class="social-links">
-              <i class="fa-brands fa-facebook-f">Seaba_ Raven</i>
-              <i class="fa-brands fa-instagram">Seaba_ Raven</i>
-              <i class="fa-brands fa-github">Mafestire</i>
-              <i class="fa-solid fa-envelope">seabaraven@gmail.com</i> 
+              <a href="https://www.instagram.com/seaba_raven/?hl=en"><i class="fa-brands fa-instagram"> </i></a>
+              <a href="https://github.com/Mafestire"><i class="fa-brands fa-github"></i></a>
+              <a href=""></a><i class="fa-solid fa-envelope"><h6> seabaraven@gmail.com</h6></i> 
             </div>
+            
         </div>
         <Contacts />
     </div>
@@ -23,6 +23,7 @@ export default {
 
 <style scoped>
 .cont{
+    display: flex;
     padding: 55px 10px;
 }
 
@@ -35,14 +36,24 @@ export default {
 
 .social-links i{
     display: flex;
+    color: rgb(175, 175, 238);
     flex-direction: column;
     text-align: center;
     justify-content: center;
     margin-top: 2rem;
-    font-size: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
+    .cont{
+        display: flex;
+        flex-direction: column;
+    }
     .info{
         width: 10rem;
         font-size: 16px;

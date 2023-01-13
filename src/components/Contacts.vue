@@ -3,15 +3,15 @@
         <Form class="form" action="https://formspree.io/f/mjvdvzqd" method="post">
             <h2>Send me a Message</h2>
             <label for="Name">Name</label>
-            <input type="text" name="Name" id="name" placeholder="Enter Name">
+            <input type="text" name="Name" id="name" placeholder="Enter Name" required>
             <label for="Surname">Last Name</label>
-            <input type="text" name="Surname" id="Lname" placeholder="Enter Last Name">
+            <input type="text" name="Surname" id="Lname" placeholder="Enter Last Name" required>
             <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Enter Email Address">
+            <input type="email" name="email" id="email" placeholder="Enter Email Address" required>
             <label for="number">Contact Number</label>
-            <input type="number" name="number" id="number" placeholder="Enter Contact Number">
+            <input type="number" name="number" id="number" placeholder="Enter Contact Number" required>
             <label for="message">Message</label>
-            <textarea type="text" name="message" id="message" placeholder="Type in message"></textarea>
+            <textarea type="text" name="message" id="message" placeholder="Type in message" required></textarea>
             <button type="submit">Submit</button>
         </Form>
     </div>
@@ -27,11 +27,12 @@ export default {
 .f {
     display: flex;
     justify-content: center;
+    margin-left: 10rem;
 }
 
 form {
     width: 20rem;
-    height: 25rem;
+    height: 30rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -71,5 +72,14 @@ button {
 button:hover{
     background-color: #8a307f;
     color: rgb(175, 175, 238);
+}
+
+@media (max-width: 768px) {
+    .f{
+        margin-left: 1px;        
+    }
+    button{
+        margin-left: -10px;
+    }
 }
 </style>
