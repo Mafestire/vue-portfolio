@@ -1,4 +1,4 @@
-<template>
+<template> 
     <div class="pros">
 
         <div class="one" v-for="item in projects" :key="items">
