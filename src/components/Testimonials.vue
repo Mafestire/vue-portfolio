@@ -134,9 +134,11 @@ img{
 
 @media (min-width: 300px) {
     .car {
-        margin-left: 25px;
         width: 13rem;
         height: 22rem;
+    }
+    .crd{
+        margin-left: -1rem;
     }
 }
 

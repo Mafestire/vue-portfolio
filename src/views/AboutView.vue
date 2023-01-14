@@ -57,21 +57,24 @@ export default {
     display: flex;
     flex-direction: column;
     margin-top: .5rem;
+    margin-left: 5rem;
   }
 .about img{
   width: 9rem;
   height: 13rem;
-  margin-left: 2rem;
+  margin-left: 15rem;
 }
 
 .details p{
-  font-size: 1rem;
+  font-size: .7rem;
+  margin-left: 17rem;
+  width: 13rem;
+
 }
 
 .details{
   margin-left: 5.5rem;
   margin-top: 1rem;
-  width: 10rem;
   text-align: center;
 }
 }

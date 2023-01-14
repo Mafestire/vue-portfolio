@@ -114,6 +114,7 @@ i {
 
 .navbar h2 {
     margin-left: 15px;
+    margin-top: 2rem !important;
     color: #8a307f;
     font-size: 2.5rem;
     text-decoration: none;
@@ -158,6 +159,15 @@ i {
 @media (max-width: 768px) {
     .navbar{
         height: 4rem;
+        border-bottom: none;
+    }
+    .container-fluid{
+        height: 4rem;
+        margin-top: -3rem;
+    }
+    #navbarSupportedContent{
+        margin-left: -25rem;
+        background-color: blueviolet;
     }
 }
 </style>

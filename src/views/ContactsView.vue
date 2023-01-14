@@ -6,7 +6,7 @@
             <div class="social-links">
               <a href="https://www.instagram.com/seaba_raven/?hl=en"><i class="fa-brands fa-instagram"> </i></a>
               <a href="https://github.com/Mafestire"><i class="fa-brands fa-github"></i></a>
-              <a href=""></a><i class="fa-solid fa-envelope"><h6> seabaraven@gmail.com</h6></i> 
+              <a href=""></a><i class="fa-solid fa-envelope"><h6 style="font-size: .8rem"> seabaraven@gmail.com</h6></i> 
             </div>
             
         </div>
@@ -60,6 +60,9 @@ a{
     }
     .social-links i{
         font-size: .7rem;
+    }
+    h1{
+        font-size: .5rem;
     }
 }
 </style>

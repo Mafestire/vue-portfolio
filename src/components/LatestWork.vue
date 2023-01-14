@@ -186,6 +186,7 @@ h6 {
         display: flex;
         flex-direction: column;
         width: 10rem;
+        margin-left: 1rem;
     }
 
     .image,
