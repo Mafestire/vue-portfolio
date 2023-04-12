@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/assets/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body style="    background: linear-gradient(#6883bc, #8a307f, #79a7d3);">
+
+  <body id="contentBody">
     <noscript>
       <strong
-        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+      >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
         properly without JavaScript enabled. Please enable it to
         continue.</strong
-      >
+        >
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body> 
 
+<style>
+        #contentBody{
+          background-color: burlywood;
+        }
+</style>
   <script
     src="https://kit.fontawesome.com/eaf8e1e4d2.js"
     crossorigin="anonymous"

@@ -10,10 +10,6 @@ import LatestWork from '@/components/LatestWork.vue'
 
 export default {
   name: 'HomeView',
-  components: {Home, LatestWork}
+  components: { Home, LatestWork }
 }
 </script>
-
-<style scoped>
-
-</style>

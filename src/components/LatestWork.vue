@@ -12,8 +12,7 @@
                         <h6 id="brief">Standard to simplify your calculations</h6>
 
                         <div class="links">
-                            <a href="https://github.com/Mafestire/Calculator.git"><i
-                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/Mafestire/Calculator.git"><i class="fa-brands fa-github">GitHub</i></a>
 
                             <a href="https://sibabalwe-calculator.netlify.app">netlify</a>
                         </div>
@@ -33,7 +32,7 @@
 
                         <div class="links">
                             <a href="https://github.com/Mafestire/BIM-Calculator.git"><i
-                                    class="fa-brands fa-github"></i></a>
+                                    class="fa-brands fa-github">GitHub</i></a>
 
                             <a href="https://sibabalwe-bmi-calculator.netlify.app">netlify</a>
                         </div>
@@ -53,8 +52,8 @@
 
                         <div class="links">
                             <a href="https://github.com/Mafestire/Point-of-Sale-system.git"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <br />
+                                    class="fa-brands fa-github">GitHub</i></a>
+                            <!-- <br /> -->
                             <a href="https://seababags.netlify.app">Netlify</a>
                         </div>
                     </div>
@@ -71,14 +70,22 @@ export default {
 </script>
 
 <style scoped>
+.latest {
+    margin-bottom: 10px;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    animation: in 4s ease-in;
+}
 .projects {
     display: flex;
     justify-content: space-between;
     padding: 2px 10px;
-    margin: 3rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    animation: in 1.5s ease-in;
-    animation-delay: 2s;
 }
 
 @keyframes in {
@@ -87,31 +94,33 @@ export default {
     }
 
     100% {
-        transform: translateX(-10vh) scale(1);
+        transform: translateX(0vh) scale(1);
     }
 }
 
 h1 {
-    color: rgb(175, 175, 238);
-    width: 15rem;
-    margin-left: 30rem;
-    padding-top: 10px;
-    border-bottom: 1px solid rgb(175, 175, 238);
+    color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    text-align: center;
+    border-bottom: 2px solid brown;
 }
 
 .car {
     width: 100%;
     height: 100%;
     position: relative;
-    border: 1px solid rgb(175, 175, 238);
+    border: 2px solid brown;
     padding-bottom: 5px;
-    color: rgb(175, 175, 238);
+    margin-left: auto;
+    margin-right: auto;
+    color: brown;
     transition: all 0.6s;
     transform-style: preserve-3d;
 }
 
 .flip-car {
-    border: 2px solid #8a307f;
     width: 15.8rem;
     padding: 5px 6px;
     height: 14rem;
@@ -129,8 +138,6 @@ h1 {
 .image,
 .description {
     position: absolute;
-    padding-right: 2.5rem;
-    width: 11rem;
     text-align: center;
     height: 13rem;
     -webkit-backface-visibility: hidden;
@@ -144,28 +151,19 @@ img {
 
 .description {
     text-align: center;
-    padding-left: 2rem;
     transform: rotateY(180deg);
-}
-
-.description:hover {
-    color: rgb(175, 175, 238);
+    width: 15rem;
 }
 
 h5 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-.latest {
-    margin-bottom: 10px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 15px;
-}
+
 
 .links {
     display: flex;
@@ -173,40 +171,47 @@ h6 {
 }
 
 .links a {
-    color: rgb(175, 175, 238);
     font-size: 1rem;
+text-decoration: none;
 }
 
 .links a:hover {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (width < 576px) {
     .projects {
         display: flex;
         flex-direction: column;
-        width: 10rem;
-        margin-left: 1rem;
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .image,
     .description {
-        width: 12rem;
+        width: 100%;
+    }
+
+    .description{
+        margin-left: 0rem;
     }
 
     .flip-car {
         margin-top: 25px;
-        width: 12rem;
+        width: 18rem;
     }
 
     h1 {
-        font-size: 18px;
-        margin-left: 35px;
-        width: 9rem;
+        font-size: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 14rem;
+        text-align: center;
     }
 
-    img {
+    /* img {
         width: 12rem;
-    }
+    } */
 }
 </style>

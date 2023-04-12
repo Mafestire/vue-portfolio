@@ -27,7 +27,7 @@ export default {
 .f {
     display: flex;
     justify-content: center;
-    margin-left: 10rem;
+    margin-left: -10rem;
 }
 
 form {
@@ -39,19 +39,23 @@ form {
     border: none;
     margin: 20px 10px;
     padding: 10px;
-    color: palevioletred;
+    color: brown;
+    margin-right: 5rem;
 }
 
 label {
     font-size: 1.5rem;
-    color: palevioletred;
+    color: brown;
 }
 
 input,
 textarea {
     font-size: 18px;
-    background-color: rgb(175, 175, 238);
-    color: #8a307f;
+    background-color: burlywood;
+    color: brown;
+    border: none;
+    border-bottom: 2px solid brown;
+    text-align: center;
 }
 
 textarea {
@@ -64,21 +68,26 @@ button {
     padding: 5px 3px;
     margin-top: 5px;
     border: none;
-    color: #8a307f;
-    background-color: rgb(175, 175, 238);
+    color: brown;
+    background-color: burlywood;
     transform: translateX(150%);
 }
 
-button:hover{
-    background-color: #8a307f;
-    color: rgb(175, 175, 238);
+button:hover {
+    background-color: brown;
+    color: burlywood;
 }
 
-@media (max-width: 768px) {
-    .f{
-        margin-left: 1px;        
+@media (width < 768px) {
+
+    .f,
+    form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 15rem;
     }
-    button{
+
+    button {
         margin-left: -10px;
     }
 }

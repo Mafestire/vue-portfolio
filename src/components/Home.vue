@@ -1,14 +1,13 @@
 <template>
     <section>
-        <div class="greet">
-            <h1> <span id="first">Hello! </span> <br> I am <br><span id="name">Sibabalwe Mafestire</span> <br>a <br>
-                <span id="name">Web developer</span> Welcome To My Portfolio
-            </h1>
-        </div>
-
         <div class="wel">
             <div class="image">
                 <img src="https://i.postimg.cc/nrFsMdyL/C11-Sibabalwe-Mafestire-1-removebg-preview.png" alt="">
+            </div>
+            <div class="greet">
+                <h1> <span id="first">Hello! </span> <br> I am <br><span id="name">Sibabalwe Mafestire</span> <br>a <br>
+                    <span id="name">Web developer</span> Welcome To My Portfolio
+                </h1>
             </div>
             <!-- <div class="back">
                 <p class="one">HTML:5 | height: 184px</p>
@@ -30,96 +29,121 @@ export default {
 
 <style scoped>
 .greet {
-    width: 15rem;
-    color: #79a7d3;
+    width: 20rem;
+    color: brown;
     text-align: center;
     padding: 1px 4px;
-    margin-left: 90px;
+    margin-left: auto;
+    margin-right: 19rem;
     margin-top: 80px;
-    box-shadow: 0 8px 32px 0 #8a307f;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: in 2s ease-in;
+}
+
+@keyframes in {
+    0% {
+        transform: translateX(50vh) scale(0);
+    }
+
+    100% {
+        transform: translateX(0vh) scale(1);
+    }
 }
 
 #first {
-    font-size: 34px;
+    font-size: 3rem;
 }
 
 #name {
-    font-size: 38px;
+    font-size: 3rem;
 }
 
 h1 {
-    font-size: 20px;
-}
-
-/* .back {
-    width: 18rem;
-    height: 13rem;
-    text-align: center;
-    transform: translateY(50%);
-
-} */
-
-/* .back p {
-    color: rgb(90, 88, 88);
-    margin-right: 50px;
-} */
-
-section {
-    border-bottom: 2px solid rgb(175, 175, 238);
-    padding-top: 40px;
+    font-size: 1.5rem;
 }
 
 .wel {
     display: flex;
-    justify-content: center;
-    transform: translateY(-50%);
-    margin-bottom: -7rem;
+    transform: translateY(10%);
+    justify-content: space-around;
+    margin-top: 4rem;
 }
 
 .image {
     z-index: 4;
     transform: translateX(50%);
-    margin-right: 12rem;
+    margin-right: 15rem;
+    animation: come 2s ease-in;
 }
 
-.image img {
-    width: 18rem ;
-    margin-top: 80px;
+@keyframes come {
+    0% {
+        transform: translateX(-100vh) scale(0);
+    }
+
+    100% {
+        transform: translateX(0vh) scale(1);
+    }
 }
 
-@media (max-width: 700px) {
+img {
+    width: 22rem;
+    margin-top: 50px;
+    margin-left: 5rem;
+}
+
+@media (width < 700px) {
     .greet {
-        width: 5rem;
-        margin-left: 2rem;
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 3rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #first {
+        font-size: 2rem;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+    h1 {
         font-size: 1.5rem;
     }
 
     .image img {
-        width: 9rem;
+        width: 15rem;
     }
 
     .back p {
         display: none;
     }
+
+    .wel {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
-@media (min-width: 300px) {
-    .image img {
+@media (width < 400px) {
+    img {
         margin-left: 2rem;
         margin-top: 9rem;
     }
-    .greet{
+
+    .greet {
         font-size: 1rem;
         box-shadow: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    border-radius: none;
-    border: none;
+        text-align: center;
+        border: none;
+        width: 20rem;
+
     }
-}
-</style>
+
+    .wel {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}</style>

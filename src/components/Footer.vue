@@ -25,7 +25,7 @@ export default {
 
 .footer p {
     font-size: 20px;
-    color: #8a307f;
+    color: brown;
     padding-left: 10px;
 }
 
@@ -46,35 +46,44 @@ li a {
     text-decoration: none;
     margin-right: 15px;
     font-size: 20px;
-    color: #8a307f;
+    color: brown;
 }
 
 li a:hover {
-    background-color: #8a307f;
-    color: rgb(175, 175, 238);
-    padding: 5px ;
+    font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (width < 400px) {
     .foot {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        width: 450px;
-        height: 3rem;
-        padding-bottom: 5px;
-    }
-
-    .fool li {
-        margin-right: 15px;
-    }
-
-    li a {
-        font-size: 12px;
+        display: none;
     }
 
     .footer p {
-        font-size: 16px;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (width > 400px) {
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (width > 600px) {
+    .foot {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer p {
+        font-size: 1.5rem;
     }
 
 }

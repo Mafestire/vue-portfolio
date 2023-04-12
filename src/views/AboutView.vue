@@ -5,7 +5,9 @@
       <div class="details">
         <h2>About Me</h2>
         <p id="info">
-I am a web developer, passionate about beutiful interfaces and intuitively implemented UI. I have always been someone who has both a creative and logical sides, when I discovered coding at Life Choices, I found a field that challenges me to do better and put my skills into practical use.</p>
+          I am a full stack developer, passionate about unique web applications. I have always been
+          someone who has both a creative and logical sides, when I discovered coding at Life Choices, I found a field
+          that challenges me to do better and put my skills into practical use.</p>
       </div>
     </div>
   </div>
@@ -20,71 +22,113 @@ export default {
 <style scoped>
 /* body */
 .about {
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
 }
 
-.about img{
-  width: 17rem;
-  height: 25rem;
-  margin-top: 9rem;
-  margin-left: 12rem;
+.about img {
+  width: 20rem;
+  height: 30rem;
+  margin-top: 5rem;
+  margin-left: 15rem;
   transform: translateX(10%);
 }
+
 .details {
-  width: 25rem;
+  width: 20rem;
   text-align: center;
   margin: 5rem 15rem;
-  transform: translateX(-40%);
-  color: rgb(175, 175, 238);
+  margin-left: auto;
+  margin-right: auto;
+  color: brown;
 }
 
-.details p {
+.details p,
+.details h2 {
   font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.abt {
+  height: 85vh;
 }
 
 .details h2 {
-  border-bottom: 1px solid rgb(175, 175, 238);
+  border-bottom: 1px solid brown;
   font-size: 3rem;
 }
 
-@media (max-width: 700px) {
-  .details h2{
+@media (width < 567px) {
+  .details h2 {
     font-size: 1.5rem;
     border-bottom: none;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .about{
+
+  .about {
     display: flex;
     flex-direction: column;
     margin-top: .5rem;
-    margin-left: 5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
-.about img{
-  width: 9rem;
-  height: 13rem;
-  margin-left: 15rem;
-}
 
-.details p{
-  font-size: .7rem;
-  margin-left: 17rem;
-  width: 13rem;
-
-}
-
-.details{
-  margin-left: 5.5rem;
-  margin-top: 1rem;
-  text-align: center;
-}
-}
-@media (max-width: 768px) {
-  .about{
-    margin-left: -12rem;
+  .abt {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
   }
-  .details{
+
+  .about img {
+    width: 9rem;
+    height: 13rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .details p,
+  h2 {
     font-size: 1rem;
-    margin-left: 6rem;
+    width: 13rem;
+
   }
+
+
 }
-</style>
+
+@media (width < 768px) {
+  .details h2 {
+    font-size: 2rem;
+    border-bottom: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5rem;
+
+  }
+
+  .details,
+  #info {
+    width: 15rem;
+  }
+
+  .about img {
+    width: 13rem;
+    height: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .details p,
+  h2 {
+    font-size: 1rem;
+  }
+
+}</style>
