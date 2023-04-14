@@ -5,9 +5,25 @@
       <div class="details">
         <h2>About Me</h2>
         <p id="info">
-          I am a full stack developer, passionate about unique web applications. I have always been
-          someone who has both a creative and logical sides, when I discovered coding at Life Choices, I found a field
-          that challenges me to do better and put my skills into practical use.</p>
+          Hello, I am Sibabalwe Mafestire born in 30 May 2000 and based in CapeTown, Mfuleni. The official languages i am fluent in is IsiXhosa and English. As a full stack developer i am passionate about unique web applications. Ever since i discovered coding at Life Choices, I found a field
+          that challenges me to do better and put my skills into practical use.
+        </p>
+
+        <div class="contacts" style="margin-top: 2rem; font-size: 1.5rem;">
+          <h3 style="border-bottom: 1px solid brown;">Contact Me</h3>
+          <i class="fa-solid fa-envelope"></i> | seabaraven@gmail.com
+          <br>
+          <i class="fa-solid fa-phone"></i> | 062-4244-310 \ 065-9425-403
+        </div>
+
+        <div class="hobbies" style="margin-top: 2rem; font-size: 1.5rem;">
+          <h3 style="border-bottom: 1px solid brown;">Hobbies</h3>
+          <i class="fa-solid fa-puzzle-piece"></i> | Solving Puzzles - 
+
+          <i class="fa-solid fa-lines-leaning"></i> | Playing Dominos - 
+
+          <i class="fa-solid fa-music"></i> | Listening to Music
+        </div>
       </div>
     </div>
   </div>
@@ -29,30 +45,29 @@ export default {
 
 .about img {
   width: 20rem;
-  height: 30rem;
-  margin-top: 5rem;
-  margin-left: 15rem;
-  transform: translateX(10%);
+  height: 33rem;
+  margin-top: 1rem;
+  margin-left: 10rem;
+  transform: translateX(20%);
 }
 
 .details {
-  width: 20rem;
+  width: 39rem;
   text-align: center;
-  margin: 5rem 15rem;
   margin-left: auto;
   margin-right: auto;
   color: brown;
+  font-family: 'Lobster Two', cursive;
 }
 
-.details p,
-.details h2 {
+.details p {
   font-size: 1.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .abt {
-  height: 85vh;
+  height: 95vh;
 }
 
 .details h2 {

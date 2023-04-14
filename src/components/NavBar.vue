@@ -52,8 +52,9 @@
     justify-content: space-between;
     width: 100%;
     height: 3rem;
-    top: 0;
+    top: 1rem;
     z-index: 10;
+    font-family: 'Lobster Two', cursive;
 }
 
 i {
@@ -61,16 +62,14 @@ i {
     align-items: center;
     margin-right: 20px;
     cursor: pointer;
-    font-size: 60px;
 }
 
 .navbar h2 {
     margin-left: 15px;
     margin-top: 2rem !important;
     color: brown;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 0rem;
 }
 
@@ -79,7 +78,7 @@ i {
 }
 
 .navbar h2:hover {
-    font-size: 45px;
+    font-size: 4rem;
 }
 
 .navbar ul {
@@ -98,11 +97,17 @@ i {
     list-style: none;
     text-decoration: none;
     margin-right: 15px;
-    font-size: 24px;
+    font-size: 2rem;
     color: brown;
 }
 
 .navbar a:hover {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+}
+
+@media (width < 700px) {
+    /* .collapse{
+        margin-left: -25rem;
+    } */
 }
 </style>

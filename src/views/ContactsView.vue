@@ -13,7 +13,7 @@
                         <a href=""><i class="fa-solid fa-envelope"></i></a>
                         
                     </div>
-                    <h6 style="font-size: 1rem; margin-top: 2.3rem;"> seabaraven@gmail.com
+                    <h6 style="font-size: 1.5rem; margin-top: 2.3rem;"> seabaraven@gmail.com
                     </h6>
                 </div>
             </div>
@@ -35,6 +35,8 @@ export default {
     display: flex;
     justify-content: space-around;
     padding: 55px 10px;
+    font-family: 'Lobster Two', cursive;
+
 }
 
 .socials {

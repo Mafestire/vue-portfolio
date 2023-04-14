@@ -303,16 +303,18 @@ export default {
 </script>
   
 <style scoped>
+.info{
+  font-family: 'Lobster Two', cursive;
+}
 .skills {
   padding-top: 40px;
-  margin-top: 6rem;
+  margin-top: 3rem;
   margin-bottom: 15rem;
   margin-right: 2rem;
   margin-left: 2rem;
   height: 30rem;
   padding-bottom: 1px;
   display: flex;
-  justify-content: space-between;
 
 }
 
@@ -328,7 +330,7 @@ export default {
 
 .soft {
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
   justify-content: space-around;
   display: flex;
   text-align: center;
@@ -342,7 +344,7 @@ export default {
 /* hard skills */
 .hard {
   width: 100vh;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   color: brown;
   border-left: 2px solid brown;
@@ -355,6 +357,7 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  font-size: 1.5rem;
 
 }
 
@@ -368,7 +371,7 @@ export default {
 }
 
 .row {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: brown;
   text-align: center;
   display: flex;
@@ -425,8 +428,8 @@ circle {
 
 svg {
   position: absolute;
-  top: 37.2%;
-  left: 62.1%;
+  top: 31%;
+  left: 62.9%;
 }
 
 .two {
@@ -446,8 +449,8 @@ svg {
 
 .two-1 {
   position: absolute;
-  top: 49.7%;
-  left: 61.3%;
+  top: 42.9%;
+  left: 61.5%;
 }
 
 .tree {
@@ -467,8 +470,8 @@ svg {
 
 .two-3 {
   position: absolute;
-  top: 62.1%;
-  left: 63.3%;
+  top: 56.1%;
+  left: 64.9%;
 }
 
 .four {
@@ -488,8 +491,8 @@ svg {
 
 .two-4 {
   position: absolute;
-  top: 74.6%;
-  left: 63.2%;
+  top: 68.5%;
+  left: 64.7%;
 }
 
 .five {
@@ -509,8 +512,8 @@ svg {
 
 .two-5 {
   position: absolute;
-  top: 37.4%;
-  left: 85.9%;
+  top: 30.3%;
+  left: 86.7%;
 }
 
 .six {
@@ -530,8 +533,8 @@ svg {
 
 .two-6 {
   position: absolute;
-  top: 62.1%;
-  left: 86%;
+  top: 56%;
+  left: 86.7%;
 }
 
 .seven {
@@ -551,21 +554,21 @@ svg {
 
 .two-7 {
   position: absolute;
-  top: 50%;
-  left: 86%;
+  top: 43.2%;
+  left: 86.5%;
 }
 
 /* Education */
 
 .education {
   margin-top: 4rem;
-  height: 88vh;
+  height: 97vh;
   width: 95%;
   border-right: 2px solid brown;
   border-left: 2px solid brown;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   border-radius: 10%;
 }
 
@@ -584,7 +587,7 @@ svg {
   width: 80%;
   height: 1vh;
   background-color: brown;
-  top: 50%;
+  top: 51%;
   bottom: 0;
   margin-left: 10rem;
   margin-right: auto;
@@ -599,7 +602,7 @@ svg {
 
 .cont h6,
 .cont h2 {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 
 .cont::after {
@@ -616,7 +619,7 @@ svg {
 .cont {
   padding: 10px 10px;
   background-color: inherit;
-  width: 15rem;
+  width: 20rem;
   text-align: center;
   margin-top: 10px;
   color: brown;
@@ -641,7 +644,7 @@ h2,
 h6,
 p {
   color: brown;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .left {
@@ -651,7 +654,7 @@ p {
 
 .right {
   margin-left: 20rem;
-  transform: translateX(-190%);
+  transform: translateX(-100%);
 }
 
 .right::after {
@@ -664,10 +667,10 @@ p {
   position: absolute;
   width: 0;
   z-index: 1;
-  right: -1rem;
+  right: -2rem;
   border: medium solid white;
   border-width: 0px 10rem 1.3rem 1.5rem;
-  top: 15rem;
+  top: 18rem;
   border-color: transparent transparent transparent brown;
   ;
 }
@@ -861,7 +864,7 @@ p {
   }
 
   .tim::after {
-    transform: translateY(-54%);
+    transform: translateY(-56%);
     width: .5rem;
     height: 58rem;
     margin-left: -12rem;
@@ -886,7 +889,11 @@ p {
   }
 
   .left {
-    margin-left: 0;
+    margin-left: -1rem;
+  }
+
+  .right{
+    margin-left: 11rem;
   }
 
   .firstt,
@@ -902,7 +909,7 @@ p {
   }
 
   .o {
-    margin-left: 0rem;
+    margin-left: -1rem;
   }
 
   .secondd {
@@ -914,8 +921,8 @@ p {
 
   .left::before {
     border-width: 0px 18rem 1.3rem 1.5rem;
-    margin-top: -15rem;
-  }
+    margin-top: -18rem;
+transform: translateX(-26%);  }
 
   .right::before {
     border-width: 0rem 1.3rem 1.5rem 0rem;
@@ -968,38 +975,38 @@ p {
   }
 
   svg {
-    top: 93.6%;
-    left: 26.2%;
+    top: 91%;
+    left: 33%;
   }
 
   .two-1 {
-    top: 107.7%;
-    left: 24%
+    top: 105.7%;
+    left: 28.2%
   }
 
   .two-3 {
-    top: 121.7%;
-    left: 30.3%
+    top: 119.7%;
+    left: 40.3%
   }
 
   .two-4 {
-    top: 136.3%;
-    left: 30.5%
+    top: 134%;
+    left: 40.5%
   }
 
   .two-5 {
-    top: 107.7%;
-    left: 73.5%
+    top: 105.7%;
+    left: 78.5%
   }
 
   .two-6 {
-    top: 93.7%;
-    left: 72.8%
+    top: 91.7%;
+    left: 78.8%
   }
 
   .two-7 {
-    top: 121.8%;
-    left: 73%
+    top: 119.7%;
+    left: 78.9%
   }
 }
 </style>

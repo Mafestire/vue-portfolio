@@ -13,8 +13,8 @@
                             <h6 class="brief">{{ item.brief }}</h6>
                         </div>
                         <div class="links">
-                            <a :href="item.git">Git</a>
-                            <a :href="item.netlify">Netlify</a>
+                            <button> <a :href="item.git">Git</a></button>
+                            <button> <a :href="item.netlify">Netlify</a></button>
                         </div>
                     </div>
                 </div>
@@ -83,11 +83,13 @@ export default {
     margin-bottom: 2rem;
     text-align: center;
     color: brown;
-    /* width: 100%; */
     height: 100%;
     margin-bottom: 5rem;
+    font-family: 'Lobster Two', cursive;
+
 }
-.car{
+
+.car {
     margin-top: 1rem;
 }
 
@@ -106,7 +108,7 @@ export default {
     padding: 5px 10px;
     height: 15rem;
     animation: in 1.5s ease-in;
-    
+
 }
 
 @keyframes in {
@@ -132,29 +134,36 @@ img {
 
 .links a {
     color: brown;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-decoration: none;
 }
 
 .links a:hover {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    margin-top: -2rem;
+
 }
 
 .description h5 {
-    font-size: 20px;
+    font-size: 1.5rem;
     color: brown;
 }
 
 .description h6 {
-    font-size: 16px;
+    font-size: 1.2rem;
     color: brown;
 }
 
 button {
-    font-size: 18px;
-    padding: 5px 10px;
-    /* background-color: rgb(175, 175, 238); */
-    border: none;
+    margin-top: -1rem;
+    width: 6rem;
+    font-size: 1.3rem;
+    border: 1px solid brown;
+    background-color: burlywood;
+}
+
+button:hover{
+    margin-top: -2rem;
 }
 
 

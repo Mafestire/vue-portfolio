@@ -2,7 +2,7 @@
     <div class="latest">
         <h1>Latest Projects</h1>
         <div class="projects">
-            <div class="flip-car">
+            <div class="flip-car one">
                 <div class="car">
                     <div class="image">
                         <img src="https://i.postimg.cc/rshyZMxr/calculator.png" alt="">
@@ -12,15 +12,15 @@
                         <h6 id="brief">Standard to simplify your calculations</h6>
 
                         <div class="links">
-                            <a href="https://github.com/Mafestire/Calculator.git"><i class="fa-brands fa-github">GitHub</i></a>
+                            <a href="https://github.com/Mafestire/Calculator.git"><i class="fa-brands fa-github"> | GitHub</i></a>
 
-                            <a href="https://sibabalwe-calculator.netlify.app">netlify</a>
+                            <a href="https://sibabalwe-calculator.netlify.app"><i class="fa-solid fa-link"> | Netlify</i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="flip-car">
+            <div class="flip-car two">
                 <div class="car">
 
                     <div class="image">
@@ -32,16 +32,16 @@
 
                         <div class="links">
                             <a href="https://github.com/Mafestire/BIM-Calculator.git"><i
-                                    class="fa-brands fa-github">GitHub</i></a>
+                                    class="fa-brands fa-github"> | GitHub</i></a>
 
-                            <a href="https://sibabalwe-bmi-calculator.netlify.app">netlify</a>
+                            <a href="https://sibabalwe-bmi-calculator.netlify.app"><i class="fa-solid fa-link"> | Netlify</i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="flip-car">
+            <div class="flip-car three">
                 <div class="car">
                     <div class="image">
                         <img src="https://i.postimg.cc/8PrbS5Xw/Screenshot-20221205-100323.png" alt="">
@@ -52,14 +52,17 @@
 
                         <div class="links">
                             <a href="https://github.com/Mafestire/Point-of-Sale-system.git"><i
-                                    class="fa-brands fa-github">GitHub</i></a>
+                                    class="fa-brands fa-github"> | GitHub</i></a>
                             <!-- <br /> -->
-                            <a href="https://seababags.netlify.app">Netlify</a>
+                            <a href="https://seababags.netlify.app"><i class="fa-solid fa-link"> | Netlify</i></a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
+        <button> <router-link id="link" to="/projects">View More...</router-link> </button>
+
     </div>
 </template>
 
@@ -72,23 +75,44 @@ export default {
 <style scoped>
 .latest {
     margin-bottom: 10px;
-    margin-top: 10rem;
+    margin-top: 9rem;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
     padding-bottom: 15px;
-    animation: in 4s ease-in;
+    height: 80vh;
+    font-family: 'Lobster Two', cursive;
+
 }
 .projects {
     display: flex;
     justify-content: space-between;
     padding: 2px 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
     text-align: center;
+    margin-top: 5rem;
 }
 
-@keyframes in {
+@keyframes rig {
+    0% {
+        transform: translateX(-100vh) scale(0);
+    }
+
+    100% {
+        transform: translateX(0vh) scale(1);
+    }
+}
+@keyframes down {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(0vh) scale(1);
+    }
+}
+@keyframes lef {
     0% {
         transform: translateX(100vh) scale(0);
     }
@@ -98,11 +122,24 @@ export default {
     }
 }
 
+.one{
+    animation: rig 4s ease-in
+}
+
+.two{
+    animation: down 4s ease-in
+}
+
+.three{
+    animation: lef 4s ease-in
+}
+
 h1 {
     color: brown;
     margin-left: auto;
     margin-right: auto;
     width: 20rem;
+    margin-top: 0rem;
     text-align: center;
     border-bottom: 2px solid brown;
 }
@@ -121,9 +158,9 @@ h1 {
 }
 
 .flip-car {
-    width: 15.8rem;
+    width: 20rem;
     padding: 5px 6px;
-    height: 14rem;
+    height: 18rem;
     position: relative;
     text-align: center;
     transition: all .5s;
@@ -139,20 +176,23 @@ h1 {
 .description {
     position: absolute;
     text-align: center;
-    height: 13rem;
+    height: 18;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
 img {
-    width: 15rem;
-    height: 13rem;
+    width: 19.1rem;
+    height: 17.2rem;
 }
 
 .description {
     text-align: center;
     transform: rotateY(180deg);
-    width: 15rem;
+    width: 19rem;
+    height: 15rem;
+    margin-top: 3rem;
+    margin-bottom: auto;
 }
 
 h5 {
@@ -160,7 +200,7 @@ h5 {
 }
 
 h6 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -173,10 +213,25 @@ h6 {
 .links a {
     font-size: 1rem;
 text-decoration: none;
+margin-top: 1rem;
+color: brown;
 }
 
 .links a:hover {
     font-size: 1.5rem;
+}
+
+button{
+    border: 2px solid brown;
+    transform: translateX(913%);
+    margin-top: 4rem;
+    background-color: burlywood;
+    font-size: 1.3rem;
+}
+
+#link{
+ color: brown;
+ text-decoration: none;
 }
 
 @media (width < 576px) {

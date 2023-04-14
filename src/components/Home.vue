@@ -34,8 +34,8 @@ export default {
     text-align: center;
     padding: 1px 4px;
     margin-left: auto;
-    margin-right: 19rem;
-    margin-top: 80px;
+    margin-right: 25rem;
+    margin-top: -2rem;
     animation: in 2s ease-in;
 }
 
@@ -50,15 +50,15 @@ export default {
 }
 
 #first {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #name {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .wel {
@@ -66,6 +66,7 @@ h1 {
     transform: translateY(10%);
     justify-content: space-around;
     margin-top: 4rem;
+    font-family: 'Lobster Two', cursive;
 }
 
 .image {
@@ -87,7 +88,7 @@ h1 {
 
 img {
     width: 22rem;
-    margin-top: 50px;
+    margin-top: 0;
     margin-left: 5rem;
 }
 

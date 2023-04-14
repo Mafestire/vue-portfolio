@@ -21,6 +21,8 @@ export default {
 .footer {
     display: flex;
     justify-content: space-between;
+    font-family: 'Lobster Two', cursive;
+
 }
 
 .footer p {

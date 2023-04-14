@@ -88,6 +88,7 @@ export default {
     color: brown;
     text-align: center;
     padding-bottom: 40px;
+    font-family: 'Lobster Two', cursive;
 }
 
 h1 {
@@ -122,6 +123,10 @@ h1 {
     flex-direction: column;
 }
 
+.info .relations{
+    font-size: 1.5rem;
+}
+
 .names {
     display: flex;
     justify-content: center;
@@ -129,18 +134,6 @@ h1 {
 
 .Lname {
     margin-left: .5rem;
-}
-
-h2 {
-    font-size: 22px;
-}
-
-.relations {
-    font-size: 18px;
-}
-
-.Quote {
-    font-size: 16px;
 }
 
 img {

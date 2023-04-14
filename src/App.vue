@@ -17,5 +17,8 @@ export default {
 #app{
   background-color: burlywood;
   border: 2px solid red;
+  font-family: 'Lobster Two', cursive;
 }
+
+
 </style>
