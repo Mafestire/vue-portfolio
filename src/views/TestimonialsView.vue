@@ -142,7 +142,7 @@ img {
 
 @media (width < 400px) {
     .car {
-        width: 10rem;
+        width: 13rem;
         height: 22rem;
         margin-left: auto;
         margin-right: auto;
