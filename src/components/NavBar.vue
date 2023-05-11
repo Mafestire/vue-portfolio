@@ -67,7 +67,7 @@ i {
 .navbar h2 {
     margin-left: 15px;
     margin-top: 2rem !important;
-    color: brown;
+    color: #3c2a21;
     font-size: 3.5rem;
     text-decoration: none;
     margin-top: 0rem;
@@ -98,7 +98,7 @@ i {
     text-decoration: none;
     margin-right: 15px;
     font-size: 2rem;
-    color: brown;
+    color: #3c2a21;
 }
 
 .navbar a:hover {

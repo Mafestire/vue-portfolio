@@ -30,7 +30,7 @@ export default {
 <style scoped>
 .greet {
     width: 20rem;
-    color: brown;
+    color: #3c2a21;
     text-align: center;
     padding: 1px 4px;
     margin-left: auto;

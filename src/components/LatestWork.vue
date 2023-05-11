@@ -87,7 +87,6 @@ export default {
 .projects {
     display: flex;
     justify-content: space-around;
-    /* padding: 2px 10px; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -135,24 +134,24 @@ export default {
 }
 
 h1 {
-    color: brown;
+    color: #3c2a21;
     margin-left: auto;
     margin-right: auto;
     width: 20rem;
     margin-top: 0rem;
     text-align: center;
-    border-bottom: 2px solid brown;
+    border-bottom: 2px solid #3c2a21;
 }
 
 .car {
     width: 100%;
     height: 100%;
     position: relative;
-    border: 2px solid brown;
+    border: 2px solid #3c2a21;
     padding-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
-    color: brown;
+    color: #3c2a21;
     transition: all 0.6s;
     transform-style: preserve-3d;
 }
@@ -189,7 +188,7 @@ img {
 .description {
     text-align: center;
     transform: rotateY(180deg);
-    width: 19rem;
+    width: 20rem;
     height: 15rem;
     margin-top: 3rem;
     margin-bottom: auto;
@@ -212,7 +211,7 @@ h6 {
     font-size: 1rem;
 text-decoration: none;
 margin-top: 1rem;
-color: brown;
+color: #3c2a21;
 }
 
 .links a:hover {
@@ -220,15 +219,15 @@ color: brown;
 }
 
 button{
-    border: 2px solid brown;
-    background-color: brown;
+    border: 2px solid #3c2a21;
+    background-color: #3c2a21;
     /* transform: translateX(560%); */
     margin-top: 4rem;
     font-size: 1.5rem;
 }
 
 #link{
- color: burlywood;
+ color: #3c2a21;
  text-decoration: none;
 }
 
@@ -303,7 +302,7 @@ button{
     }
 } */
 
-@media (width > 600px) {
+@media (width < 900px) {
     .latest{
         margin-top: 2rem;
         height: 80vh;

@@ -82,7 +82,7 @@ export default {
     transform: translateY(10%);
     margin-bottom: 2rem;
     text-align: center;
-    color: brown;
+    color: #3c2a21;
     height: 100%;
     margin-bottom: 5rem;
     font-family: 'Lobster Two', cursive;
@@ -104,7 +104,7 @@ export default {
 }
 
 .one {
-    border: 2px solid brown;
+    border: 2px solid #3c2a21;
     text-align: center;
     margin-bottom: 10px;
     padding: 5px 10px;
@@ -136,22 +136,22 @@ img {
 
 .description h5 {
     font-size: 1.5rem;
-    color: brown;
+    color: #3c2a21;
 }
 
 .description h6 {
     font-size: 1.2rem;
-    color: brown;
+    color: #3c2a21;
 }
 
 button{
-    border: 1px solid brown;
-    background-color: brown; 
+    border: 1px solid #3c2a21;
+    background-color: #3c2a21; 
     width: 4rem;
 }
 
  button a {
-    color: burlywood;
+    color: #d5cea3;
     text-decoration: none;
 }
 

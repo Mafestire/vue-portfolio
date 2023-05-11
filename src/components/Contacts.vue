@@ -39,22 +39,22 @@ form {
     border: none;
     margin: 20px 10px;
     padding: 10px;
-    color: brown;
+    color: #3c2a21;
     margin-right: 5rem;
 }
 
 label {
     font-size: 1.5rem;
-    color: brown;
+    color: #3c2a21;
 }
 
 input,
 textarea {
     font-size: 18px;
-    background-color: burlywood;
-    color: brown;
+    background-color: #d5cea3;
+    color: #3c2a21;
     border: none;
-    border-bottom: 2px solid brown;
+    border-bottom: 2px solid #3c2a21;
     text-align: center;
 }
 
@@ -68,14 +68,14 @@ button {
     padding: 5px 3px;
     margin-top: 5px;
     border: none;
-    color: brown;
-    background-color: burlywood;
+    color: #3c2a21;
+    background-color: #d5cea3;
     transform: translateX(150%);
 }
 
 button:hover {
-    background-color: brown;
-    color: burlywood;
+    background-color: #3c2a21;
+    color: #d5cea3;
 }
 
 @media (width < 768px) {

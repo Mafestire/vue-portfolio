@@ -27,7 +27,7 @@ export default {
 
 .footer p {
     font-size: 20px;
-    color: brown;
+    color: #3c2a21;
     padding-left: 10px;
 }
 
@@ -48,7 +48,7 @@ li a {
     text-decoration: none;
     margin-right: 15px;
     font-size: 20px;
-    color: brown;
+    color: #3c2a21;
 }
 
 li a:hover {

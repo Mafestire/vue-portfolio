@@ -50,7 +50,7 @@ export default {
 
 .info {
     width: 20rem;
-    color: brown;
+    color: #3c2a21;
     margin-left: 5rem;
     margin-top: 5rem;
 }
@@ -62,7 +62,7 @@ export default {
 .social-links i {
     display: flex;
     width: 5rem;
-    color: brown;
+    color: #3c2a21;
     flex-direction: column;
     text-align: center;
     justify-content: center;

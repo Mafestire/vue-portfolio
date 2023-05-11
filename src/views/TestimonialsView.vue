@@ -85,7 +85,7 @@ export default {
 <style scoped>
 .testimonials {
     padding-top: 90px;
-    color: brown;
+    color: #231709;
     text-align: center;
     padding-bottom: 40px;
     font-family: 'Lobster Two', cursive;
@@ -106,11 +106,11 @@ h1 {
 }
 
 .car {
-    border: 1px solid brown;
+    border: 1px solid #231709;
     width: 20rem;
     height: 20rem;
     text-align: center;
-    color: brown;
+    color: #3B1E08;
     padding: 15px;
     margin-left: auto;
     margin-right: auto;

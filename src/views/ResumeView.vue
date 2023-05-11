@@ -338,8 +338,8 @@ export default {
   text-align: center;
   width: 100vh;
   flex-direction: column;
-  border-right: 2px solid brown;
-  border-left: 2px solid brown;
+  border-right: 2px solid #3c2a21;
+  border-left: 2px solid #3c2a21;
   border-radius: 10%;
 }
 
@@ -348,9 +348,9 @@ export default {
   width: 100vh;
   margin-left: 0;
   margin-right: auto;
-  color: brown;
-  border-left: 2px solid brown;
-  border-right: 1px solid brown;
+  color: #3c2a21;
+  border-left: 2px solid #3c2a21;
+  border-right: 1px solid #3c2a21;
   border-radius: 10%;
 
 }
@@ -369,12 +369,12 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: brown;
+  color: #3c2a21;
 }
 
 .row {
   font-size: 1.5rem;
-  color: brown;
+  color: #3c2a21;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -398,7 +398,7 @@ export default {
   justify-content: center;
   text-align: center;
   box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-    inset -4px -4px 6px -1px brown,
+    inset -4px -4px 6px -1px #3c2a21,
     -0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
     0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
@@ -426,8 +426,8 @@ circle {
 
 svg {
   position: absolute;
-  top: 31%;
-  left: 62.9%;
+  top: -14%;
+  left: -20.9%;
 }
 
 .two {
@@ -447,8 +447,8 @@ svg {
 
 .two-1 {
   position: absolute;
-  top: 42.9%;
-  left: 61.5%;
+  top: -20%;
+  left: -17.5%;
 }
 
 .tree {
@@ -468,8 +468,8 @@ svg {
 
 .two-3 {
   position: absolute;
-  top: 56.1%;
-  left: 64.9%;
+  top: -20.1%;
+  left: -17%;
 }
 
 .four {
@@ -489,8 +489,8 @@ svg {
 
 .two-4 {
   position: absolute;
-  top: 68.5%;
-  left: 64.7%;
+  top: -20%;
+  left: -18%;
 }
 
 .five {
@@ -510,8 +510,8 @@ svg {
 
 .two-5 {
   position: absolute;
-  top: 30.3%;
-  left: 86.7%;
+  top: -20%;
+  left: -18%;
 }
 
 .six {
@@ -531,8 +531,8 @@ svg {
 
 .two-6 {
   position: absolute;
-  top: 56%;
-  left: 86.7%;
+  top: -20%;
+  left: -18%;
 }
 
 .seven {
@@ -552,8 +552,8 @@ svg {
 
 .two-7 {
   position: absolute;
-  top: 43.2%;
-  left: 86.5%;
+  top: -20%;
+  left: -18%;
 }
 
 /* Education */
@@ -561,8 +561,8 @@ svg {
   margin-top: 4rem;
   height: 97vh;
   width: 95%;
-  border-right: 2px solid brown;
-  border-left: 2px solid brown;
+  border-right: 2px solid #3c2a21;
+  border-left: 2px solid #3c2a21;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0rem;
@@ -583,7 +583,7 @@ svg {
   position: absolute;
   width: 80%;
   height: 1vh;
-  background-color: brown;
+  background-color: #3c2a21;
   top: 51%;
   bottom: 0;
   margin-left: 10rem;
@@ -607,7 +607,7 @@ svg {
   position: absolute;
   width: 10rem;
   height: 10rem;
-  border-radius: 4px solid brown;
+  border-radius: 4px solid #3c2a21;
   top: -14%;
   border-radius: 50%;
   z-index: 1;
@@ -619,18 +619,18 @@ svg {
   width: 20rem;
   text-align: center;
   margin-top: 10px;
-  color: brown;
+  color: #3c2a21;
   font-size: 20px;
-  box-shadow: 0 8px 32px 0 brown;
+  box-shadow: 0 8px 32px 0 #3c2a21;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid brown;
+  border: 1px solid #3c2a21;
 }
 
 .hd {
   font-size: 2.5rem;
-  color: brown;
+  color: #3c2a21;
   text-decoration: solid;
   position: relative;
   text-align: center;
@@ -640,7 +640,7 @@ svg {
 h2,
 h6,
 p {
-  color: brown;
+  color: #3c2a21;
   font-size: 1.3rem;
 }
 
@@ -668,7 +668,7 @@ p {
   border: medium solid white;
   border-width: 0px 10rem 1.3rem 1.5rem;
   top: 18rem;
-  border-color: transparent transparent transparent brown;
+  border-color: transparent transparent transparent #3c2a21;
   ;
 }
 
@@ -682,7 +682,7 @@ p {
   left: -1rem;
   border: medium solid black;
   border-width: 0rem 1.3rem 1.5rem 10rem;
-  border-color: transparent brown transparent transparent;
+  border-color: transparent #3c2a21 transparent transparent;
 }
 
 .firstt {

@@ -10,14 +10,14 @@
         </p>
 
         <div class="contacts" style="margin-top: 2rem; font-size: 1.5rem;">
-          <h3 style="border-bottom: 1px solid brown;">Contact Me</h3>
+          <h3 style="border-bottom: 1px solid #3c2a21;">Contact Me</h3>
           <i class="fa-solid fa-envelope"></i> | seabaraven@gmail.com
           <br>
           <i class="fa-solid fa-phone"></i> | 062-4244-310 \ 065-9425-403
         </div>
 
         <div class="hobbies" style="margin-top: 2rem; font-size: 1.5rem;">
-          <h3 style="border-bottom: 1px solid brown;">Hobbies</h3>
+          <h3 style="border-bottom: 1px solid #3c2a21;">Hobbies</h3>
           <i class="fa-solid fa-puzzle-piece"></i> | Solving Puzzles - 
 
           <i class="fa-solid fa-lines-leaning"></i> | Playing Dominos - 
@@ -56,7 +56,7 @@ export default {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: brown;
+  color: #3c2a21;
   font-family: 'Lobster Two', cursive;
 }
 
@@ -71,7 +71,7 @@ export default {
 }
 
 .details h2 {
-  border-bottom: 1px solid brown;
+  border-bottom: 1px solid #3c2a21;
   font-size: 3rem;
 }
 
