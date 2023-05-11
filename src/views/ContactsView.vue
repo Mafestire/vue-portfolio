@@ -75,6 +75,15 @@ a {
     text-decoration: none;
 }
 
+@media (width < 500px) {
+    .social-links, .mail, .socials{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
 @media (width < 768px) {
     .cont {
         display: flex;
@@ -95,6 +104,25 @@ a {
 
     h1 {
         font-size: .5rem;
+    }
+    .social-links, .mail, .socials{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width < 900px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+     
+    }
+
+    .info{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 </style>

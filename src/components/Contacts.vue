@@ -91,4 +91,11 @@ button:hover {
         margin-left: -10px;
     }
 }
+
+@media (width < 900px) {
+    .f{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 </style>

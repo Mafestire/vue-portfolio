@@ -106,7 +106,7 @@ export default {
 
   .details p,
   h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 13rem;
 
   }
@@ -125,8 +125,8 @@ export default {
   .about {
     display: flex;
     justify-content: space-around;
-    margin-top: .5rem;
-
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
 
   .details,
@@ -136,7 +136,8 @@ export default {
 
   .about img {
     width: 13rem;
-    height: 14rem;
+    height: 20rem;
+    transform: translateX(0);
     margin-left: auto;
     margin-right: auto;
   }

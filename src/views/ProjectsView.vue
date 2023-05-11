@@ -86,6 +86,8 @@ export default {
     height: 100%;
     margin-bottom: 5rem;
     font-family: 'Lobster Two', cursive;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -132,18 +134,6 @@ img {
     margin-top: 2rem;
 }
 
-.links a {
-    color: brown;
-    font-size: 1.3rem;
-    text-decoration: none;
-}
-
-.links a:hover {
-    font-size: 1.5rem;
-    margin-top: -2rem;
-
-}
-
 .description h5 {
     font-size: 1.5rem;
     color: brown;
@@ -154,18 +144,16 @@ img {
     color: brown;
 }
 
-button {
-    margin-top: -1rem;
-    width: 6rem;
-    font-size: 1.3rem;
+button{
     border: 1px solid brown;
-    background-color: burlywood;
+    background-color: brown; 
+    width: 4rem;
 }
 
-button:hover{
-    margin-top: -2rem;
+ button a {
+    color: burlywood;
+    text-decoration: none;
 }
-
 
 @media (max-width: 768px) {
     .pros {
@@ -186,7 +174,9 @@ button:hover{
 @media (width < 576px) {
     .links {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+      margin-left: auto;
+      margin-right: auto;
     }
 
     img {
@@ -197,5 +187,16 @@ button:hover{
     .all {
         height: 100%;
         margin-bottom: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pros{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button{
+        width: 3rem;
     }
 }</style>

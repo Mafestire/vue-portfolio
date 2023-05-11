@@ -55,25 +55,26 @@ li a:hover {
     font-size: 1.5rem;
 }
 
-@media (width < 400px) {
+@media (width < 700px) {
     .foot {
         display: none;
     }
 
     .footer p {
         font-size: 1.5rem;
+        text-align: center;
     }
 
 }
 
-@media (width > 400px) {
+@media (width < 400px) {
     .foot {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .footer p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
 }

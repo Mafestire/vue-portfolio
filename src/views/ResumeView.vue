@@ -177,7 +177,7 @@
         </div>
 
         <!-- ARROW ANIMATION -->
-        <Animation/>
+        <Animation />
 
         <!-- EDUCATION -->
         <div class="education" v-for="item in education" :key="item">
@@ -245,67 +245,68 @@
 import Animation from '@/components/Animation.vue';
 
 export default {
-    data() {
-        return {
-            soft: [
-                {
-                    label: "Soft Skills",
-                    skill1: "Attitute to learn",
-                    skill2: "Analytical Skills",
-                    skill3: "Communication",
-                    skill4: "Creative",
-                    skill5: "Flexibility",
-                    skill6: "Strategic Thinking",
-                    skill7: "Team Player",
-                }
-            ],
-            hard: [
-                {
-                    label: "Hard Skills",
-                    skill1: "HTML5",
-                    skill2: "CSS",
-                    skill3: "BOOTSTRAP",
-                    skill4: "JAVASCRIPT",
-                    skill5: "VUE JS",
-                    skill6: "Node js",
-                    skill7: "MYSQL"
-                },
-            ],
-            education: [
-                {
-                    label: "Education",
-                    year1: "2017",
-                    year2: "2018",
-                    year3: "2019",
-                    year4: "2022",
-                    time1: "Passed Matric",
-                    time2: "Volunteerd 2018-2022",
-                    time3: "Volunteerd 2019-2022",
-                    time4: "Currently",
-                    name1: "Mfuleni Secondary School",
-                    name2: "Mange Day Care",
-                    name3: "African Climate Alliance",
-                    name4: "Life Choices Academy",
-                    activity1: "Volleyball, Student Leadership",
-                    activity2: "Helped at a Early Childhood Development focused of solft skills development and arts",
-                    activity3: "Assisted to spread awearness of the need to look after the enviroment and part-taked in enviromental clean ups",
-                    activity4: "Studying and practising coding",
-                    image1: "",
-                    image2: "",
-                    image3: "",
-                    image4: ""
-                }
-            ]
-        };
-    },
-    components: { Animation }
+  data() {
+    return {
+      soft: [
+        {
+          label: "Soft Skills",
+          skill1: "Attitute to learn",
+          skill2: "Analytical Skills",
+          skill3: "Communication",
+          skill4: "Creative",
+          skill5: "Flexibility",
+          skill6: "Strategic Thinking",
+          skill7: "Team Player",
+        }
+      ],
+      hard: [
+        {
+          label: "Hard Skills",
+          skill1: "HTML5",
+          skill2: "CSS",
+          skill3: "BOOTSTRAP",
+          skill4: "JAVASCRIPT",
+          skill5: "VUE JS",
+          skill6: "Node js",
+          skill7: "MYSQL"
+        },
+      ],
+      education: [
+        {
+          label: "Education",
+          year1: "2017",
+          year2: "2018",
+          year3: "2019",
+          year4: "2022",
+          time1: "Passed Matric",
+          time2: "Volunteerd 2018-2022",
+          time3: "Volunteerd 2019-2022",
+          time4: "Currently",
+          name1: "Mfuleni Secondary School",
+          name2: "Mange Day Care",
+          name3: "African Climate Alliance",
+          name4: "Life Choices Academy",
+          activity1: "Volleyball, Student Leadership",
+          activity2: "Helped at a Early Childhood Development focused of solft skills development and arts",
+          activity3: "Assisted to spread awearness of the need to look after the enviroment and part-taked in enviromental clean ups",
+          activity4: "Studying and practising coding",
+          image1: "",
+          image2: "",
+          image3: "",
+          image4: ""
+        }
+      ]
+    };
+  },
+  components: { Animation }
 }
 </script>
   
 <style scoped>
-.info{
+.info {
   font-family: 'Lobster Two', cursive;
 }
+
 .skills {
   padding-top: 40px;
   margin-top: 3rem;
@@ -383,8 +384,6 @@ export default {
 
 
 .outer {
-  /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-      -6px -6px 10px -1px brown; */
   width: 3.7rem;
   height: 3.8rem;
   margin-left: 2rem;
@@ -559,7 +558,6 @@ svg {
 }
 
 /* Education */
-
 .education {
   margin-top: 4rem;
   height: 97vh;
@@ -855,7 +853,7 @@ p {
 
 }
 
-@media (width < 470px) {
+@media (width < 600px) {
 
   /* EDUCATION */
   .education {
@@ -864,15 +862,15 @@ p {
   }
 
   .tim::after {
-    transform: translateY(-56%);
+    transform: translateY(-59%);
     width: .5rem;
     height: 58rem;
-    margin-left: -12rem;
+    margin-left: -10rem;
   }
 
   .conts {
-    width: 50%;
-    height: 100;
+    /* width: 30%; */
+    /* height: 100%; */
     position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -880,7 +878,7 @@ p {
   }
 
   .cont {
-    margin-top: 2rem;
+    width: 15rem;
   }
 
   .tim {
@@ -889,19 +887,19 @@ p {
   }
 
   .left {
-    margin-left: -1rem;
+    margin-left: 1rem;
   }
 
-  .right{
-    margin-left: 11rem;
+  .right {
+    margin-left: 8rem;
   }
 
-  .firstt,
+  /* .firstt,
   .secondd {
     display: flex;
     flex-direction: column;
     width: 20%;
-  }
+  } */
 
   .firstt {
     margin-left: -7rem;
@@ -909,20 +907,21 @@ p {
   }
 
   .o {
-    margin-left: -1rem;
+    margin-left: rem;
+    margin-bottom: 1.6rem;
   }
 
-  .secondd {
+  /* .secondd {
     display: flex;
     flex-direction: column;
     margin-top: -6rem;
     margin-left: 1rem;
-  }
+  } */
 
   .left::before {
     border-width: 0px 18rem 1.3rem 1.5rem;
     margin-top: -18rem;
-transform: translateX(-26%);  }
+  }
 
   .right::before {
     border-width: 0rem 1.3rem 1.5rem 0rem;
@@ -975,38 +974,37 @@ transform: translateX(-26%);  }
   }
 
   svg {
-    top: 91%;
-    left: 33%;
+    top: 86%;
+    left: 30%;
   }
 
   .two-1 {
-    top: 105.7%;
-    left: 28.2%
+    top: 98.9%;
+    left: 26%
   }
 
   .two-3 {
-    top: 119.7%;
-    left: 40.3%
+    top: 112.7%;
+    left: 36.8%
   }
 
   .two-4 {
-    top: 134%;
-    left: 40.5%
+    top: 126%;
+    left: 36.2%
   }
 
   .two-5 {
-    top: 105.7%;
-    left: 78.5%
+    top: 99.5%;
+    left: 76%
   }
 
   .two-6 {
-    top: 91.7%;
-    left: 78.8%
+    top: 85.7%;
+    left: 76.5%
   }
 
   .two-7 {
-    top: 119.7%;
-    left: 78.9%
+    top: 112.7%;
+    left: 76.5%
   }
-}
-</style>
+}</style>

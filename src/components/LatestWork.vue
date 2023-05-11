@@ -86,10 +86,10 @@ export default {
 }
 .projects {
     display: flex;
-    justify-content: space-between;
-    padding: 2px 10px;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    justify-content: space-around;
+    /* padding: 2px 10px; */
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     margin-top: 5rem;
 }
@@ -203,8 +203,6 @@ h6 {
     font-size: 1.5rem;
 }
 
-
-
 .links {
     display: flex;
     flex-direction: column;
@@ -223,24 +221,29 @@ color: brown;
 
 button{
     border: 2px solid brown;
-    transform: translateX(913%);
+    background-color: brown;
+    /* transform: translateX(560%); */
     margin-top: 4rem;
-    background-color: burlywood;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 #link{
- color: brown;
+ color: burlywood;
  text-decoration: none;
 }
 
-@media (width < 576px) {
+@media (width < 600px) {
+    .latest{
+        margin-top: 3rem;
+        height: 125vh;
+    }
     .projects {
         display: flex;
         flex-direction: column;
-        width: 20rem;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 0;
     }
 
     .image,
@@ -265,8 +268,59 @@ button{
         text-align: center;
     }
 
-    /* img {
-        width: 12rem;
-    } */
+    button{
+        transform: translateX(80%);
+    }
+
+    img{
+        width: 13rem;
+        height: 12rem;
+    }
+
+    .flip-car{
+        width: 14rem;
+        height: 12.8rem;
+    }
+}
+
+/* @media (width < 768px) {
+    .latest{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flip-car{
+        width: 1rem;
+        height: 12rem;
+    }
+
+    img{
+        width: 10rem;
+        height: 11.2rem;
+    }
+
+    button{
+        margin-left: 2rem;
+    }
+} */
+
+@media (width > 600px) {
+    .latest{
+        margin-top: 2rem;
+        height: 80vh;
+    }
+
+    .flip-car{
+        width: 15rem;
+        height: 14rem;
+    }
+
+    img{
+        width: 14rem;
+        height: 13.2rem;
+    }
+
+    button{
+        margin-left: 2rem;
+    }
 }
 </style>

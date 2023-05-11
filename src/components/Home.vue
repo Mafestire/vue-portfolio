@@ -78,11 +78,11 @@ h1 {
 
 @keyframes come {
     0% {
-        transform: translateX(-100vh) scale(0);
+        transform: translateX(-50vh) scale(0);
     }
 
     100% {
-        transform: translateX(0vh) scale(1);
+        transform: translateX(30vh) scale(1);
     }
 }
 
@@ -92,14 +92,18 @@ img {
     margin-left: 5rem;
 }
 
-@media (width < 700px) {
+@media (width < 900px) {
     .greet {
-        width: 20rem;
+        width: 25rem;
         margin-left: auto;
         margin-right: auto;
         margin-top: 3rem;
         font-size: 2rem;
         text-align: center;
+    }
+
+    .image{
+        width: 20rem;
     }
 
     #first {
@@ -116,22 +120,26 @@ img {
 
     .image img {
         width: 15rem;
-    }
-
-    .back p {
-        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
     }
 
     .wel {
         display: flex;
-        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
-@media (width < 400px) {
-    img {
-        margin-left: 2rem;
-        margin-top: 9rem;
+@media (width < 600px) {
+    .image img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0rem;
     }
 
     .greet {
@@ -140,11 +148,16 @@ img {
         text-align: center;
         border: none;
         width: 20rem;
-
+        margin-top: -1.5rem;
     }
 
     .wel {
         display: flex;
         flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-}</style>
+}
+</style>
