@@ -45,7 +45,8 @@
                 </div>
 
                 <!-- table row2 -->
-                <div class="rw">{{ skill.skill2 }}<div class="outer">
+                <div class="rw">{{ skill.skill2 }}
+                  <div class="outer">
                     <div class="inner">
                       <div id="number">
                         75%
@@ -378,16 +379,14 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
-
-
 
 .outer {
   width: 3.7rem;
   height: 3.8rem;
   margin-left: 2rem;
   border-radius: 50%;
+  position: relative;
 }
 
 .inner {
@@ -858,7 +857,8 @@ p {
   /* EDUCATION */
   .education {
     height: 170vh;
-    transform: translateY(15%);
+    margin-top: 40rem;
+    /* transform: translateY(50%); */
   }
 
   .tim::after {
@@ -869,12 +869,9 @@ p {
   }
 
   .conts {
-    /* width: 30%; */
-    /* height: 100%; */
     position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* flex-direction: column; */
   }
 
   .cont {
@@ -894,13 +891,6 @@ p {
     margin-left: 8rem;
   }
 
-  /* .firstt,
-  .secondd {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-  } */
-
   .firstt {
     margin-left: -7rem;
     margin-right: auto;
@@ -910,13 +900,6 @@ p {
     margin-left: rem;
     margin-bottom: 1.6rem;
   }
-
-  /* .secondd {
-    display: flex;
-    flex-direction: column;
-    margin-top: -6rem;
-    margin-left: 1rem;
-  } */
 
   .left::before {
     border-width: 0px 18rem 1.3rem 1.5rem;
@@ -963,6 +946,12 @@ p {
     width: 100%;
   }
 
+  .hard .together{
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+  }
+
   h2,
   h6,
   p {
@@ -974,37 +963,41 @@ p {
   }
 
   svg {
-    top: 86%;
-    left: 30%;
+    top: -20%;
+    left: -18%;
   }
 
   .two-1 {
-    top: 98.9%;
-    left: 26%
+    top: -20.9%;
+    left: -18%
   }
 
   .two-3 {
-    top: 112.7%;
-    left: 36.8%
+    top: -20%;
+    left: -18%
   }
 
   .two-4 {
-    top: 126%;
-    left: 36.2%
+    top: -20%;
+    left: -18.2%
   }
 
   .two-5 {
-    top: 99.5%;
-    left: 76%
+    top: -20%;
+    left: -18%
   }
 
   .two-6 {
-    top: 85.7%;
-    left: 76.5%
+    top: 139.5%;
+    left: -15%
   }
 
   .two-7 {
-    top: 112.7%;
-    left: 76.5%
+    top: -165%;
+    left: -25%
+  }
+
+  .info{
+    height: 360vh;
   }
 }</style>
