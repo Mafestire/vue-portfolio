@@ -898,6 +898,10 @@ p {
     margin-right: auto;
   }
 
+  .secondd{
+    margin-left: 0;
+  }
+
   .o {
     margin-left: rem;
     margin-bottom: 1.6rem;
@@ -906,12 +910,14 @@ p {
   .left::before {
     border-width: 0px 18rem 1.3rem 1.5rem;
     margin-top: -18rem;
+    display: none;
   }
 
   .right::before {
     border-width: 0rem 1.3rem 1.5rem 0rem;
     margin-left: -2rem;
     margin-top: 2.2rem;
+    display: none;
   }
 
   .skills {
