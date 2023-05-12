@@ -120,7 +120,7 @@ transform: rotateX(10deg'angle') rotateY(360deg'angle');
     }
 }
 
-@media (width < 768px) {
+@media (width < 800px) {
     .arrow{
         display: none;
     }

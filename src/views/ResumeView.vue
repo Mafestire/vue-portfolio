@@ -700,7 +700,7 @@ p {
   margin-left: -1rem;
 }
 
-@media (width < 768px) {
+@media (width < 800px) {
 
   /* EDUCATION */
   .education {
@@ -712,7 +712,7 @@ p {
     transform: translateY(-54%);
     width: .5rem;
     height: 58rem;
-    margin-left: -12rem;
+    margin-left: -18rem;
   }
 
   .conts {
@@ -721,7 +721,6 @@ p {
     position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* flex-direction: column; */
   }
 
   .cont {
@@ -757,18 +756,19 @@ p {
     display: flex;
     flex-direction: column;
     margin-top: -6rem;
-    margin-left: 1rem;
+    margin-left: -7rem;
   }
 
   .left::before {
     border-width: 0px 18rem 1.3rem 1.5rem;
     margin-top: -15rem;
+    transform: translateX(-37%);
   }
 
   .right::before {
     border-width: 0rem 1.3rem 1.5rem 0rem;
-    margin-left: -2rem;
-    margin-top: 2.2rem;
+    margin-left: -4rem;
+    margin-top: 5rem;
   }
 
   .skills {
@@ -816,39 +816,41 @@ p {
   }
 
   svg {
-    top: 93.6%;
-    left: 26.4%;
+    top: -15%;
+    left: -18%;
   }
 
   .two-1 {
-    top: 107.7%;
-    left: 24.7%
+    top: -15%;
+    left: -18%
   }
 
   .two-3 {
-    top: 121.7%;
-    left: 29%
+    top: -15%;
+    left: -18%
   }
 
   .two-4 {
-    top: 136.2%;
-    left: 28.7%
+    top: -15%;
+    left: -18%
   }
 
   .two-5 {
-    top: 107.7%;
-    left: 74.4%
+    top: -15%;
+    left: -18%
   }
 
   .two-6 {
-    top: 93.7%;
-    left: 73.8%
+    top: -15%;
+    left: -18%
   }
 
   .two-7 {
-    top: 121.8%;
-    left: 74.1%
+    top: -15%;
+    left: -18%
   }
+
+ 
 
 }
 

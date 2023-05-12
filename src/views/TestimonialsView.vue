@@ -142,7 +142,7 @@ img {
 
 @media (width < 400px) {
     .car {
-        width: 13rem;
+        width: 11rem;
         height: 22rem;
         margin-left: auto;
         margin-right: auto;
@@ -168,6 +168,7 @@ img {
 
     .contact {
         font-size: .5rem;
+        margin-left: -1rem;
     }
 
     .Lname,

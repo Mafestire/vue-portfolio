@@ -12,9 +12,11 @@
                         <h6 id="brief">Standard to simplify your calculations</h6>
 
                         <div class="links">
-                            <a href="https://github.com/Mafestire/Calculator.git"><i class="fa-brands fa-github"> | GitHub</i></a>
+                            <a href="https://github.com/Mafestire/Calculator.git"><i class="fa-brands fa-github"> |
+                                    GitHub</i></a>
 
-                            <a href="https://sibabalwe-calculator.netlify.app"><i class="fa-solid fa-link"> | Netlify</i></a>
+                            <a href="https://sibabalwe-calculator.netlify.app"><i class="fa-solid fa-link"> |
+                                    Netlify</i></a>
                         </div>
                     </div>
                 </div>
@@ -31,10 +33,11 @@
                         <h6 id="brief">Standard to simplify your calculations</h6>
 
                         <div class="links">
-                            <a href="https://github.com/Mafestire/BIM-Calculator.git"><i
-                                    class="fa-brands fa-github"> | GitHub</i></a>
+                            <a href="https://github.com/Mafestire/BIM-Calculator.git"><i class="fa-brands fa-github"> |
+                                    GitHub</i></a>
 
-                            <a href="https://sibabalwe-bmi-calculator.netlify.app"><i class="fa-solid fa-link"> | Netlify</i></a>
+                            <a href="https://sibabalwe-bmi-calculator.netlify.app"><i class="fa-solid fa-link"> |
+                                    Netlify</i></a>
                         </div>
                     </div>
                 </div>
@@ -51,8 +54,8 @@
                         <h6 id="brief">Standard to simplify your calculations</h6>
 
                         <div class="links">
-                            <a href="https://github.com/Mafestire/Point-of-Sale-system.git"><i
-                                    class="fa-brands fa-github"> | GitHub</i></a>
+                            <a href="https://github.com/Mafestire/Point-of-Sale-system.git"><i class="fa-brands fa-github">
+                                    | GitHub</i></a>
                             <!-- <br /> -->
                             <a href="https://seababags.netlify.app"><i class="fa-solid fa-link"> | Netlify</i></a>
                         </div>
@@ -84,6 +87,7 @@ export default {
     font-family: 'Lobster Two', cursive;
 
 }
+
 .projects {
     display: flex;
     justify-content: space-around;
@@ -102,6 +106,7 @@ export default {
         transform: translateX(0vh) scale(1);
     }
 }
+
 @keyframes down {
     0% {
         transform: translateY(100vh) scale(0);
@@ -111,6 +116,7 @@ export default {
         transform: translateY(0vh) scale(1);
     }
 }
+
 @keyframes lef {
     0% {
         transform: translateX(100vh) scale(0);
@@ -121,15 +127,15 @@ export default {
     }
 }
 
-.one{
+.one {
     animation: rig 4s ease-in
 }
 
-.two{
+.two {
     animation: down 4s ease-in
 }
 
-.three{
+.three {
     animation: lef 4s ease-in
 }
 
@@ -209,33 +215,35 @@ h6 {
 
 .links a {
     font-size: 1rem;
-text-decoration: none;
-margin-top: 1rem;
-color: #3c2a21;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: #3c2a21;
 }
 
 .links a:hover {
     font-size: 1.5rem;
 }
 
-button{
+button {
     border: 2px solid #3c2a21;
     background-color: #3c2a21;
-    /* transform: translateX(560%); */
+    margin-left: 6.5rem;
     margin-top: 4rem;
     font-size: 1.5rem;
 }
 
-#link{
- color: #3c2a21;
- text-decoration: none;
+#link {
+    color: #d5cea3;
+    text-decoration: none;
 }
 
 @media (width < 600px) {
-    .latest{
+    .latest {
         margin-top: 3rem;
         height: 125vh;
+        margin-bottom: 25rem;
     }
+
     .projects {
         display: flex;
         flex-direction: column;
@@ -250,7 +258,7 @@ button{
         width: 100%;
     }
 
-    .description{
+    .description {
         margin-left: 0rem;
     }
 
@@ -267,16 +275,16 @@ button{
         text-align: center;
     }
 
-    button{
+    button {
         transform: translateX(80%);
     }
 
-    img{
+    img {
         width: 13rem;
         height: 12rem;
     }
 
-    .flip-car{
+    .flip-car {
         width: 14rem;
         height: 12.8rem;
     }
@@ -303,23 +311,22 @@ button{
 } */
 
 @media (width < 900px) {
-    .latest{
+    .latest {
         margin-top: 2rem;
         height: 80vh;
     }
 
-    .flip-car{
+    .flip-car {
         width: 15rem;
         height: 14rem;
     }
 
-    img{
+    img {
         width: 14rem;
         height: 13.2rem;
     }
 
-    button{
+    button {
         margin-left: 2rem;
     }
-}
-</style>
+}</style>

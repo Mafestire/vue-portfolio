@@ -105,9 +105,16 @@ i {
     font-size: 2.5rem;
 }
 
-@media (width < 700px) {
-    /* .collapse{
-        margin-left: -25rem;
-    } */
+@media (width < 520px) {
+    .collapse{
+        margin-left: -15rem;
+        background-color: #d5cea3;
+    }
+}
+
+@media (width < 950px) {
+    .collapse{
+        background-color: #d5cea3;
+    }
 }
 </style>
