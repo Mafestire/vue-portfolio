@@ -96,8 +96,8 @@ transform: rotateX(10deg'angle') rotateY(360deg'angle');
     display: block;
     width: 2rem;
     height: 2rem;
-    border-bottom: 5px solid #3c2a21;
-    border-right: 5px solid #3c2a21;
+    border-bottom: 5px solid brown;
+    border-right: 5px solid brown;
     transform: rotate(45deg);
     margin: -.2rem;
     animation:  swipe 2s infinite;
@@ -120,7 +120,7 @@ transform: rotateX(10deg'angle') rotateY(360deg'angle');
     }
 }
 
-@media (width < 800px) {
+@media (width < 768px) {
     .arrow{
         display: none;
     }

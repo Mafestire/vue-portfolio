@@ -1,332 +1,133 @@
 <template>
-    <div class="latest">
-        <h1>Latest Projects</h1>
-        <div class="projects">
-            <div class="flip-car one">
-                <div class="car">
-                    <div class="image">
-                        <img src="https://i.postimg.cc/rshyZMxr/calculator.png" alt="">
-                    </div>
-                    <div class="description">
-                        <h5 id="name">Calculator</h5>
-                        <h6 id="brief">Standard to simplify your calculations</h6>
-
-                        <div class="links">
-                            <a href="https://github.com/Mafestire/Calculator.git"><i class="fa-brands fa-github"> |
-                                    GitHub</i></a>
-
-                            <a href="https://sibabalwe-calculator.netlify.app"><i class="fa-solid fa-link"> |
-                                    Netlify</i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-car two">
-                <div class="car">
-
-                    <div class="image">
-                        <img src="https://i.postimg.cc/VvGWkP99/Screenshot-2023-01-10-110752.png" alt="">
-                    </div>
-                    <div class="description">
-                        <h5 id="name">BMI Calculator</h5>
-                        <h6 id="brief">Standard to simplify your calculations</h6>
-
-                        <div class="links">
-                            <a href="https://github.com/Mafestire/BIM-Calculator.git"><i class="fa-brands fa-github"> |
-                                    GitHub</i></a>
-
-                            <a href="https://sibabalwe-bmi-calculator.netlify.app"><i class="fa-solid fa-link"> |
-                                    Netlify</i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <Res />
 
 
-            <div class="flip-car three">
-                <div class="car">
-                    <div class="image">
-                        <img src="https://i.postimg.cc/8PrbS5Xw/Screenshot-20221205-100323.png" alt="">
-                    </div>
-                    <div class="description">
-                        <h5 id="name">Point of Sale system</h5>
-                        <h6 id="brief">Standard to simplify your calculations</h6>
-
-                        <div class="links">
-                            <a href="https://github.com/Mafestire/Point-of-Sale-system.git"><i class="fa-brands fa-github">
-                                    | GitHub</i></a>
-                            <!-- <br /> -->
-                            <a href="https://seababags.netlify.app"><i class="fa-solid fa-link"> | Netlify</i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <div class="do">
+        <div class="top">
+            <h1 class="sl" style="width: 13rem;">What do i do</h1>
+            <!-- <h2>Test</h2> -->
         </div>
-        <button> <router-link id="link" to="/projects">View More...</router-link> </button>
 
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-window-restore"></i></h5>
+                    <!-- <p class="icon" style="color: white;"><i class="fa-solid fa-browser"></i></p> -->
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Web Development</h6>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-table-columns"></i></h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Web Design</h6>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa-sharp fa-solid fa-mobile"></i></h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">UI/UX Design</h6>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
+import Res from '@/components/Res.vue'
 export default {
-
+    data() {
+        return {
+            education: [
+                {
+                    label: "Education",
+                    year1: "2017",
+                    year2: "2018",
+                    year3: "2019",
+                    year4: "2022",
+                    time1: "Passed Matric",
+                    time2: "Volunteerd 2018-2022",
+                    time3: "Volunteerd 2019-2022",
+                    time4: "Currently",
+                    name1: "Mfuleni Secondary School",
+                    name2: "Mange Day Care",
+                    name3: "African Climate Alliance",
+                    name4: "Life Choices Academy",
+                    activity1: "Volleyball, Student Leadership",
+                    activity2: "Helped at a Early Childhood Development focused of solft skills development and arts",
+                    activity3: "Assisted to spread awearness of the need to look after the enviroment and part-taked in enviromental clean ups",
+                    activity4: "Studying and practising coding",
+                    image1: "",
+                    image2: "",
+                    image3: "",
+                    image4: ""
+                }
+            ]
+        };
+    },
+    components: { Res }
 }
 </script>
 
 <style scoped>
-.latest {
-    margin-bottom: 10px;
-    margin-top: 9rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    height: 80vh;
-    font-family: 'Lobster Two', cursive;
+/* What i DO */
 
-}
-
-.projects {
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 5rem;
-}
-
-@keyframes rig {
-    0% {
-        transform: translateX(-100vh) scale(0);
-    }
-
-    100% {
-        transform: translateX(0vh) scale(1);
-    }
-}
-
-@keyframes down {
-    0% {
-        transform: translateY(100vh) scale(0);
-    }
-
-    100% {
-        transform: translateY(0vh) scale(1);
-    }
-}
-
-@keyframes lef {
-    0% {
-        transform: translateX(100vh) scale(0);
-    }
-
-    100% {
-        transform: translateX(0vh) scale(1);
-    }
-}
-
-.one {
-    animation: rig 4s ease-in
-}
-
-.two {
-    animation: down 4s ease-in
-}
-
-.three {
-    animation: lef 4s ease-in
-}
-
-h1 {
-    color: #3c2a21;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20rem;
-    margin-top: 0rem;
-    text-align: center;
-    border-bottom: 2px solid #3c2a21;
-}
-
-.car {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    border: 2px solid #3c2a21;
-    padding-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #3c2a21;
-    transition: all 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-car {
-    width: 20rem;
-    padding: 5px 6px;
-    height: 18rem;
-    position: relative;
-    text-align: center;
-    transition: all .5s;
-    transform-style: preserve-3d;
-}
-
-.flip-car:hover .car {
-    transform: rotateY(180deg);
-    transition: transform 0.6s;
-}
-
-.image,
-.description {
-    position: absolute;
-    text-align: center;
-    height: 18;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-img {
-    width: 19.1rem;
-    height: 17.2rem;
-}
-
-.description {
-    text-align: center;
-    transform: rotateY(180deg);
-    width: 20rem;
-    height: 15rem;
-    margin-top: 3rem;
-    margin-bottom: auto;
-}
-
-h5 {
-    font-size: 2rem;
-}
-
-h6 {
-    font-size: 1.5rem;
-}
-
-.links {
+.top {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    font-family: 'Playfair Display', serif;
 }
 
-.links a {
-    font-size: 1rem;
-    text-decoration: none;
-    margin-top: 1rem;
-    color: #3c2a21;
-}
 
-.links a:hover {
+h1 {
     font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    border: 1px solid aqua;
+    width: 10rem;
+    text-align: center;
+    background-color: aqua;
+    padding: .5rem;
+    font-family: 'Playfair Display', serif;
 }
 
-button {
-    border: 2px solid #3c2a21;
-    background-color: #3c2a21;
-    margin-left: 6.5rem;
-    margin-top: 4rem;
-    font-size: 1.5rem;
+h2{
+    color: #fff;
 }
 
-#link {
-    color: #d5cea3;
-    text-decoration: none;
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 11.1rem;
+    padding-right: 11.1rem;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
 }
 
-@media (width < 600px) {
-    .latest {
-        margin-top: 3rem;
-        height: 125vh;
-        margin-bottom: 25rem;
-    }
-
-    .projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .image,
-    .description {
-        width: 100%;
-    }
-
-    .description {
-        margin-left: 0rem;
-    }
-
-    .flip-car {
-        margin-top: 25px;
-        width: 18rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 14rem;
-        text-align: center;
-    }
-
-    button {
-        transform: translateX(80%);
-    }
-
-    img {
-        width: 13rem;
-        height: 12rem;
-    }
-
-    .flip-car {
-        width: 14rem;
-        height: 12.8rem;
-    }
+.card {
+    background-color: #171717;
+    color: white;
+    border: 1px solid black;
+    padding: 2rem 1rem;
 }
 
-/* @media (width < 768px) {
-    .latest{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .flip-car{
-        width: 1rem;
-        height: 12rem;
-    }
+.card-title {
+    align-items: center;
+    text-align: center;
+    color: aqua;
+    font-size: 4rem;
+}
 
-    img{
-        width: 10rem;
-        height: 11.2rem;
-    }
-
-    button{
-        margin-left: 2rem;
-    }
-} */
-
-@media (width < 900px) {
-    .latest {
-        margin-top: 2rem;
-        height: 80vh;
-    }
-
-    .flip-car {
-        width: 15rem;
-        height: 14rem;
-    }
-
-    img {
-        width: 14rem;
-        height: 13.2rem;
-    }
-
-    button {
-        margin-left: 2rem;
-    }
-}</style>
+.card-subtitle {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+</style>

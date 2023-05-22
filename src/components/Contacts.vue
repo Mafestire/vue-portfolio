@@ -1,11 +1,13 @@
 <template>
     <div class="f">
         <Form class="form" action="https://formspree.io/f/mjvdvzqd" method="post">
-            <h2>Send me a Message</h2>
-            <label for="Name">Name</label>
+            <div class="hd">
+                <h2>Send me a Message</h2>
+                <div class="p"></div>
+            </div>
+
+            <label for="Name">Full Name</label>
             <input type="text" name="Name" id="name" placeholder="Enter Name" required>
-            <label for="Surname">Last Name</label>
-            <input type="text" name="Surname" id="Lname" placeholder="Enter Last Name" required>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Enter Email Address" required>
             <label for="number">Contact Number</label>
@@ -27,34 +29,49 @@ export default {
 .f {
     display: flex;
     justify-content: center;
-    margin-left: -10rem;
 }
 
 form {
-    width: 20rem;
-    height: 30rem;
+    width: 30rem;
+    height: 35rem;
     text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     border: none;
-    margin: 20px 10px;
     padding: 10px;
-    color: #3c2a21;
+    color: #fff;
     margin-right: 5rem;
 }
 
 label {
     font-size: 1.5rem;
-    color: #3c2a21;
+    color: #fff;
+    padding-top: .5rem;
+}
+
+.p {
+    height: .5rem;
+    width: 3rem;
+    background-color: aqua;
+    align-items: start;
+    display: flex;
+    /* margin-left: -14rem; */
+}
+
+.hd{
+    padding-bottom: 2rem;
 }
 
 input,
 textarea {
     font-size: 18px;
-    background-color: #d5cea3;
-    color: #3c2a21;
+    padding-top: .5rem;
+    width: 30rem;
+    background-color: #171717;
+    color: #fff;
     border: none;
-    border-bottom: 2px solid #3c2a21;
+    border-bottom: 2px solid #000;
     text-align: center;
 }
 
@@ -66,16 +83,17 @@ button {
     width: 5rem;
     font-size: 18px;
     padding: 5px 3px;
-    margin-top: 5px;
+    margin-top: 1rem;
     border: none;
-    color: #3c2a21;
-    background-color: #d5cea3;
-    transform: translateX(150%);
+    color: aqua;
+    font-weight: 600;
+    border: 2px solid aqua;
+    background-color: #171717;
 }
 
 button:hover {
-    background-color: #3c2a21;
-    color: #d5cea3;
+    background-color: aqua;
+    color: #171717;
 }
 
 @media (width < 768px) {
@@ -89,13 +107,6 @@ button:hover {
 
     button {
         margin-left: -10px;
-    }
-}
-
-@media (width < 900px) {
-    .f{
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 </style>

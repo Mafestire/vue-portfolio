@@ -1,20 +1,82 @@
 <template>
+    <Nav />
+
+    <div class="head">
+        <h3>Testimonials</h3>
+    </div>
+
     <div class="testimonials">
-        <h1>Testimonials</h1>
-        <div class="crd">
-            <div class="card-frame" v-for="item in testimonials" :key="items">
-                <div class="car">
-                    <!-- <img :src="item.image"> -->
-                    <div class="info">
-                        <img :src="item.image">
-                        <div class="names">
-                            <h2 class="name">{{ item.name }}</h2>
-                            <h2 class="Lname">{{ item.Surname }}</h2>
+        <div class="top">
+            <h1>Testimonials</h1>
+            <h2 class="ref">References and testimonials from people i have worked with</h2>
+        </div>
+
+        <!-- <div class="tests">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" v-for="item in testimonials" :key="items">
+                    <div class="carousel-item active p-5">
+                        <img :src="item.image1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>{{item.name}}</h5>
+                            <h5>{{item.Surname}}</h5>
+                            <h5>{{item.relations}}</h5>
+                            <h5>{{item.contact}}</h5>
+                            <p>{{item.Quote}}</p>
                         </div>
-                        <h5 class="relations">{{ item.relations }}</h5>
-                        <h5 class="Quote">{{ item.Quote }}</h5>
-                        <h5 class="contact"> <i class="fa-solid fa-envelope">{{ item.contact }}</i>
-                        </h5>
+                    </div>
+                    <div class="carousel-item">
+                        <img :src="item.image2">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img :src="item.image3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> -->
+        <div class="on">
+            <div class="topz">
+                <div class="cards" v-for="item in testimonials" :key="items">
+
+                    <div class="card mb-3" style="max-width: 60rem;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img :src="item.image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ item.name }} {{ item.Surname }}</h5>
+                                    <p class="card-re" style="color: aqua;"><small class="text-body-secondary">{{ item.relations }} | {{ item.contact }}</small></p>
+                                    <p class="card-text">{{ item.Quote }}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -23,7 +85,10 @@
 </template>
 
 <script>
+import Nav from "@/components/Nav.vue";
 export default {
+    components: { Nav },
+
     data() {
         return {
             testimonials: [
@@ -31,23 +96,15 @@ export default {
                     name: 'Ryan ',
                     Surname: 'Thomas',
                     relations: 'Lecture',
-                    Quote: "Sibabalwe is an individual who rarely lets an issue stand in her way of getting the job done and getting it done correctly. She is one who strives for perfection in her work and is always willing and ready to assist her peers. She has a great sense of humor and a bubbly personality.",
+                    Quote: '"Sibabalwe is an individual who strives to get the job done and getting it done correctly and is always willing to assist her colleagues. She has a great sense of humor and a bubbly personality.""',
                     contact: ' : ryant@lifechoices.co.za',
                     image: 'https://i.postimg.cc/CKTgkhVw/ryan.png'
-                },
-                {
-                    name: 'Kauthar',
-                    Surname: 'Brandt',
-                    relations: 'Colleague',
-                    Quote: "Sibabalwe is a very hard-working and determined individual when facing challenges. This attitude would prove beneficial in personal or group projects. She's caring and supportive, which would be helpful in a stressed environment.",
-                    contact: ' : brandtkauthar@gmail.com',
-                    image: 'https://i.postimg.cc/52jcZHf4/Whats-App-Image-2022-11-04-at-13-53-53.jpg'
                 },
                 {
                     name: 'Kelebogile',
                     Surname: 'Nobomvu',
                     relations: 'Colleague',
-                    Quote: 'Sibabalwe is a humble and loving person who is always keen on helping others and she is a hard worker.',
+                    Quote: '"Sibabalwe is a humble and loving person who is always keen on helping others and she is a hard worker."',
                     contact: ' : nobomvukelebogile497@gmail.com',
                     image: 'https://i.postimg.cc/hv3sxt6s/Lebo.jpg'
                 },
@@ -55,7 +112,7 @@ export default {
                     name: 'Deno',
                     Surname: 'Rautenbach',
                     relations: 'Colleague',
-                    Quote: "Sibabalwe always engulfs you in her rays of happiness. Not just a magnet of unparalleled jubilation thought, she's also a genius with a burning passion to learn. A light in the struggles of coding",
+                    Quote: '"Sibabalwe always engulfs you in her rays of happiness. Not just a magnet of unparalleled jubilation thought, she is also a genius with a burning passion to learn. A light in the struggles of coding"',
                     contact: ' : denorauten@gmail.com',
                     image: 'https://i.postimg.cc/0rR6Lgwx/deno.jpg'
                 },
@@ -63,18 +120,10 @@ export default {
                     name: 'Buhle',
                     Surname: 'Qampi',
                     relations: 'Colleague',
-                    Quote: 'Sibabalwe is a great team player and always helps other colleagues. Her developer skills are exceptional and necessary for any workplace.',
+                    Quote: '"Sibabalwe is a great team player and always helps other colleagues. Her developer skills are exceptional and necessary for any workplace."',
                     contact: ' : buhle3857@gmail.com',
                     image: 'https://i.postimg.cc/44hQFsDD/Buhle.jpg'
-                },
-                {
-                    name: 'Aliyah',
-                    Surname: 'Du Toit',
-                    relations: 'Colleague',
-                    Quote: 'Sibabalwe is a wonderful, caring, compassionate person. She goes the extra mile for anyone and is committed to her goals.',
-                    contact: ' : aliyah.dutoit@gmail.com',
-                    image: 'https://i.postimg.cc/8khr6cQz/Aliyah.jpg'
-                },
+                }
 
             ]
         }
@@ -83,66 +132,102 @@ export default {
 </script>
 
 <style scoped>
-.testimonials {
-    padding-top: 90px;
-    color: #231709;
-    text-align: center;
-    padding-bottom: 40px;
-    font-family: 'Lobster Two', cursive;
-}
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    margin-top: -2rem;
-    
-}
-
-.crd {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
-}
-
-.car {
-    border: 1px solid #231709;
-    width: 20rem;
+.head {
     height: 20rem;
-    text-align: center;
-    color: #3B1E08;
-    padding: 15px;
+    background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.head h3 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.testimonials {
+    padding: 5rem 3rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.contact {
-    font-size: .8rem;
-    margin-top: 2px;
+.top{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    font-family: 'Playfair Display', serif;
 }
 
-.info .relations{
-    font-size: 1.5rem;
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    border: 1px solid aqua;
+    width: 14rem;
+    text-align: center;
+    background-color: aqua;
+    padding: .5rem;
 }
 
-.names {
-    display: flex;
-    justify-content: center;
+.ref{
+    color: #fff;
+    padding-top: 1rem;
 }
 
-.Lname {
-    margin-left: .5rem;
+.on {
+    padding: .2rem .2rem;
+}
+
+.topz {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
-    width: 8rem;
+    width: 20rem;
+    height: 18.5rem;
 }
 
-@media (width < 400px) {
+.cards {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    width: 45rem;
+}
+
+.card-body {
+    width: 28rem;
+    padding-left: 8rem;
+}
+
+.card-title {
+    font-size: 1.8rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+
+
+/*@media (width < 400px) {
     .car {
-        width: 11rem;
+        width: 8rem;
         height: 22rem;
         margin-left: auto;
         margin-right: auto;
@@ -168,7 +253,6 @@ img {
 
     .contact {
         font-size: .5rem;
-        margin-left: -1rem;
     }
 
     .Lname,
@@ -247,5 +331,5 @@ img {
     .name {
         font-size: 1.2rem;
     }
-}
-</style>
+}*/
+</style> 

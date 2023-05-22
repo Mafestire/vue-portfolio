@@ -1,23 +1,30 @@
 <template>
+    <Nav />
+
+    <div class="head">
+        <h3>Lets Talk</h3>
+    </div>
+
     <div class="cont">
         <div class="info">
-            <h3>For more information contact me on: </h3>
+            <h1>Contact me for more information:</h1>
 
-            <div class="social-links">
-                <div class="socials">
-                    <a href="https://www.instagram.com/seaba_raven/?hl=en"><i class="fa-brands fa-instagram"> </i></a>
-                    <a href="https://github.com/Mafestire"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="mail">
-                    <div class="items">
-                        <a href=""><i class="fa-solid fa-envelope"></i></a>
-                        
-                    </div>
-                    <h6 style="font-size: 1.5rem; margin-top: 2.3rem;"> seabaraven@gmail.com
-                    </h6>
-                </div>
+            <div class="more">
+                <ul class="list-group one list-group-vertical w-25">
+                    <li class="list-group-item"><span>A</span>ddress</li>
+                    <li class="list-group-item"><span>P</span>hone</li>
+                    <li class="list-group-item"><span>L</span>inkedin</li>
+                    <li class="list-group-item"><span>E</span>mail</li>
+                    <li class="list-group-item"><span>G</span>itHub</li>
+                </ul>
+                <ul class="list-group two list-group-vertical-sm">
+                    <li class="list-group-item m">Mfuleni, Cape Town</li>
+                    <li class="list-group-item m">062 4244 310 | 065 9425 403</li>
+                    <li class="list-group-item m">Sibabalwe Mafestire</li>
+                    <li class="list-group-item m">seabaraven@gmail.com</li>
+                    <li class="list-group-item m">Mafestire</li>
+                </ul>
             </div>
-            <h3> or just leave me a message on the form</h3>
         </div>
         <Contacts />
     </div>
@@ -25,69 +32,94 @@
 
 <script>
 import Contacts from '@/components/Contacts.vue'
+import Nav from '@/components/Nav.vue'
 export default {
-    components: { Contacts }
+    components: { Contacts, Nav }
 }
 </script>
 
 <style scoped>
+.head {
+    height: 20rem;
+    background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.head h3 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+span {
+    color: aqua;
+    font-size: 2rem;
+}
+
+.m {
+    margin-top: 1rem;
+    height: 3rem;
+}
+
 .cont {
     display: flex;
-    justify-content: space-around;
-    padding: 55px 10px;
-    font-family: 'Lobster Two', cursive;
-
+    justify-content: space-between;
+    padding: 5rem 11.1rem;
+    font-family: 'Playfair Display', serif;
 }
 
-.socials {
+.more {
     display: flex;
+    padding-top: 1rem;
 }
 
-.mail {
-    display: flex;
-    margin-bottom: 1rem;
+.list-group li {
+    background-color: #171717;
+    border: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
 }
 
 .info {
-    width: 20rem;
-    color: #3c2a21;
-    margin-left: 5rem;
-    margin-top: 5rem;
+    width: 32rem;
+    color: #fff;
 }
 
 .info h3 {
     font-size: 2rem;
 }
 
-.social-links i {
-    display: flex;
-    width: 5rem;
-    color: #3c2a21;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 2rem;
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-a {
-    text-decoration: none;
-}
 
 @media (width < 500px) {
-    .social-links, .mail, .socials{
-        display: flex;
-        flex-direction: column;
+
+    .head{
+        margin-top: 0rem;
+        height: 15rem;
     }
-
-
-}
-
-@media (width < 768px) {
     .cont {
         display: flex;
         flex-direction: column;
+        padding: 1rem 0rem;
+    }
+
+    .more {
+        padding: 0;
+        margin: 0;
+    }
+
+    .one {
+        padding: 0;
+        margin-left: -4rem;
+    }
+
+    .two {
+        margin-left: 4rem;
+        width: 20rem;
     }
 
     .info {
@@ -103,26 +135,14 @@ a {
     }
 
     h1 {
-        font-size: .5rem;
-    }
-    .social-links, .mail, .socials{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (width < 900px) {
-    .cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-     
+        font-size: 1.3rem;
     }
 
-    .info{
-        margin-left: auto;
-        margin-right: auto;
+    .two li, .one li{
+        font-size: 1rem;
+    }
+    .two li{
+        margin-left: -1rem;
     }
 }
 </style>

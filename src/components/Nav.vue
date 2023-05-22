@@ -1,18 +1,18 @@
 <template>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <div>
+        <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#" style="text-decoration: none;"><router-link to="/">
-                    <h2>S</h2>
+            <a class="navbar-brand" href="#" style="text-decoration: none;"><router-link to="/">
+                    <h2 style="width: 5rem;">S</h2>
                 </router-link>
-            </a> -->
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex;
-                                justify-content: flex-end;">
+                            justify-content: flex-end;">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#"><router-link to="/">Home</router-link></a>
                     </li>
@@ -39,50 +39,41 @@
             </div>
         </div>
     </nav>
+    </div>
 </template>
 
 <script>
-
-
+    export default {
+        
+    }
 </script>
 
-<style scoped>
+<style  scoped>
+
 .navbar {
     display: flex;
-    overflow: hidden;
-    z-index: 1;
     justify-content: space-between;
     width: 100%;
-    height: 1rem;
+    height: 3rem;
     top: 1rem;
     z-index: 10;
-    padding: 5rem 10rem;
-    font-family: 'Playfair Display', serif;
-    animation: in 1s ease-in;
-}
+    padding: 2rem 3rem;
+    font-family: 'Playfair Display', serif;}
 
-@keyframes in {
-    0% {
-        transform: translateY(-100%);
-        display: none !important;
+    .navbar-nav{
+        padding-left: 35rem;
     }
-
-    100% {
-        transform: translateY(0%);
-    }
-}
 
 i {
     display: none;
     align-items: center;
-    /* margin-right: 20px; */
     cursor: pointer;
 }
 
 .navbar h2 {
     /* margin-left: 15px; */
     margin-top: 2rem !important;
-    color: brown;
+    color: aqua;
     font-size: 3.5rem;
     text-decoration: none;
     margin-top: 0rem;
@@ -98,8 +89,7 @@ i {
 
 .navbar ul {
     display: flex;
-    /* justify-content: flex-end; */
-    /* margin-left: 28rem; */
+  
 }
 
 .navbar li {
@@ -115,4 +105,24 @@ i {
     font-size: 1.3rem;
     color: #ffff;
 }
+
+.navbar a:hover{
+    color: aqua;
+
+}
+
+@media (width < 800px) {
+    .navbar{
+        margin-top: -4rem;
+        padding: 0;
+    }
+
+    span{
+        color: aqua;
+    }
+}
+
+/* .active{
+    border-bottom: 2px solid aqua;
+} */
 </style>

@@ -20,14 +20,16 @@ export default {
 <style scoped>
 .footer {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
+    align-items: center;
     font-family: 'Lobster Two', cursive;
 
 }
 
 .footer p {
     font-size: 20px;
-    color: #3c2a21;
+    color: aqua;
     padding-left: 10px;
 }
 
@@ -48,33 +50,32 @@ li a {
     text-decoration: none;
     margin-right: 15px;
     font-size: 20px;
-    color: #3c2a21;
+    color: #fff;
 }
 
 li a:hover {
     font-size: 1.5rem;
 }
 
-@media (width < 700px) {
+/* @media (width < 400px) {
     .foot {
         display: none;
     }
 
     .footer p {
         font-size: 1.5rem;
-        text-align: center;
     }
 
 }
 
-@media (width < 400px) {
+@media (width > 400px) {
     .foot {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .footer p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
 }
@@ -89,5 +90,5 @@ li a:hover {
         font-size: 1.5rem;
     }
 
-}
+} */
 </style>

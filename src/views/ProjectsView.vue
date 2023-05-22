@@ -1,8 +1,38 @@
 <template>
-    <div class="all">
-        <h1>Projects</h1>
+    <Nav />
 
-        <div class="land">
+    <div class="head">
+        <h3>Projects</h3>
+    </div>
+
+    <div class="all">
+        <div class="top">
+            <h1>Projects</h1>
+            <h2>My most recent work</h2>
+        </div>
+
+        <div class="cardz">
+
+            <div class="cards" v-for="item in projects" :key="items">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <img :src="item.image">
+
+                        <h5 class="card-title">{{ item.name }}</h5>
+                        <h6 class="card-subtitle">{{ item.brief }}</h6>
+
+                        <div class="links">
+                            <a :href="item.git">Git</a>
+                            <a :href="item.netlify">Netlify</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- <div class="land">
             <div class="pros">
 
                 <div class="one" v-for="item in projects" :key="items">
@@ -19,12 +49,15 @@
                     </div>
                 </div>
             </div>
+        </div> -->
         </div>
     </div>
 </template>
 
 <script>
+import Nav from "@/components/Nav.vue";
 export default {
+    components: { Nav },
     data() {
         return {
             projects: [
@@ -78,38 +111,85 @@ export default {
 </script>
 
 <style scoped>
-.all {
-    transform: translateY(10%);
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #3c2a21;
-    height: 100%;
-    margin-bottom: 5rem;
-    font-family: 'Lobster Two', cursive;
-    margin-left: auto;
-    margin-right: auto;
-
+.head {
+    height: 20rem;
+    background-image: url(https://i.postimg.cc/Z5WsZZHQ/1000-F-422687964-0-W77-Tl-Y5us-MM3g-SOkg-BDf-TIr-Pev-TQZb-H.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
 }
 
-.car {
+.head h3 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    border: 1px solid aqua;
+    width: 10rem;
+    text-align: center;
+    background-color: aqua;
+    padding: .5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    color: #fff;
     margin-top: 1rem;
 }
 
-.pros {
+.cardz {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.one {
-    border: 2px solid #3c2a21;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    height: 15rem;
+.card {
+    background-color: #171717;
+    color: white;
+    border: 1px solid black;
+    padding: 2rem 1rem;
+    height: 20rem;
     animation: in 1.5s ease-in;
+    box-shadow: 0 8px 32px 0 black;
+}
+
+.card-title {
+    align-items: center;
+    text-align: center;
+    color: aqua;
+    font-size: 1.5rem;
+    height: 2rem;
+}
+
+.card-subtitle {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.all {
+    padding: 5rem 11.1rem;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 5rem;
+    font-family: 'Playfair Display', serif;
 
 }
 
@@ -134,28 +214,24 @@ img {
     margin-top: 2rem;
 }
 
-.description h5 {
-    font-size: 1.5rem;
-    color: #3c2a21;
-}
-
-.description h6 {
-    font-size: 1.2rem;
-    color: #3c2a21;
-}
-
-button{
-    border: 1px solid #3c2a21;
-    background-color: #3c2a21; 
-    width: 4rem;
-}
-
- button a {
-    color: #d5cea3;
+.links a {
+    color: aqua;
+    width: 6rem;
+    padding: .3rem;
+    font-size: 1.3rem;
     text-decoration: none;
+    border: 1px solid aqua;
+    background-color: #171717;
 }
 
-@media (max-width: 768px) {
+a:hover {
+    border: 2px solid black;
+    background-color: aqua;
+    color: #171717;
+}
+
+
+/* @media (max-width: 768px) {
     .pros {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -174,9 +250,7 @@ button{
 @media (width < 576px) {
     .links {
         display: flex;
-        /* flex-direction: column; */
-      margin-left: auto;
-      margin-right: auto;
+        flex-direction: column;
     }
 
     img {
@@ -187,16 +261,6 @@ button{
     .all {
         height: 100%;
         margin-bottom: 5rem;
-        margin-left: auto;
-        margin-right: auto;
     }
-
-    .pros{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    button{
-        width: 3rem;
-    }
-}</style>
+} */
+</style>
