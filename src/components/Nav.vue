@@ -58,7 +58,7 @@
     top: 1rem;
     z-index: 10;
     padding: 2rem 3rem;
-    font-family: 'Playfair Display', serif;}
+    font-family: 'Nunito Sans', sans-serif;}
 
     .navbar-nav{
         padding-left: 35rem;

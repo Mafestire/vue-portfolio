@@ -94,7 +94,7 @@
                     <h2>My Work Experience</h2>
                 </div>
 
-                <div class="card" style="width: 25rem;">
+                <div class="card">
                     <div class="card-body">
                         <div class="card-title-ex">
                             <div class="dot"></div>
@@ -175,7 +175,7 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 
-h2{
+h2 {
     color: #fff;
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -195,7 +195,6 @@ h2{
 
 .education {
     height: 100vh;
-    /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -245,19 +244,7 @@ h2{
     font-size: 1rem;
 }
 
-.cont::after {
-    content: '';
-    position: absolute;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 4px solid black;
-    top: -14%;
-    border-radius: 50%;
-    z-index: 1;
-}
-
 .cont {
-    padding: 10px 10px;
     background-color: inherit;
     width: 15rem;
     height: 13rem;
@@ -265,7 +252,7 @@ h2{
     text-align: center;
     margin-top: -4.5rem;
     color: white;
-    font-size: 20px;
+    /* font-size: 20px; */
     box-shadow: 0 8px 32px 0 black;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(4px);
@@ -353,16 +340,15 @@ p {
 /* EXPERIENCE */
 
 .card {
-    margin-top: 7rem;
-    box-shadow: 0 8px 32px 0 black;
-
-}
-
-.card {
     background-color: #171717;
     color: white;
     border: 1px solid black;
     padding: 2rem 1rem;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 32px 0 black;
+    width: 25rem;
 }
 
 .card-title-ex {
@@ -412,5 +398,98 @@ p {
     border-bottom: 1px solid #808080;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*
+    media query
+    */
+
+@media (width < 600px) {
+    .edu {
+        margin: 0;
+        margin-bottom: 5rem;
+        padding: 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .education {
+        height: 100%;
+        margin-bottom: 5rem;
+        padding: 0rem 1rem;
+    }
+
+    .cont {
+        padding: 1.5rem;
+        text-align: center;
+        margin-top: 0rem;
+        color: white;
+    }
+
+    .firstt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date {
+        margin-top: 2rem;
+        width: 12rem;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0rem;
+        margin-left: 5rem;
+    }
+
+    .tim::after {
+        height: 180vh;
+        margin-left: 0rem;
+    }
+
+    .left {
+        margin-left: 5rem;
+    }
+
+    .right {
+        margin-left: 5rem;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .left::before {
+        top: 21rem;
+    }
+
+    .right::before {
+        left: -3rem;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card {
+        width: 20rem;
+    }
+
+    .card-title-ex {
+        margin-bottom: 1rem;
+    }
+
+    .div {
+        width: 15rem;
+        border-bottom: 1px solid #808080;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 </style>

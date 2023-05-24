@@ -69,7 +69,7 @@ span {
     display: flex;
     justify-content: space-between;
     padding: 5rem 11.1rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .more {
@@ -81,7 +81,7 @@ span {
     background-color: #171717;
     border: none;
     color: white;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.2rem;
 }
 

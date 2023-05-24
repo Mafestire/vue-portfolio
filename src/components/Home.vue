@@ -5,7 +5,7 @@
                 <img src="https://i.postimg.cc/nrFsMdyL/C11-Sibabalwe-Mafestire-1-removebg-preview.png" alt="">
             </div>
             <div class="greet">
-                <h1 class="hi">Hello,</h1>
+                <h1 class="hi">Hello</h1>
                 <p style="font-size: 1.5rem;" >I am,</p>
                 <h1 class="who" style="color: aqua;">Sibabalwe Mafestire</h1>
                 <h3>a Full Stack Developer</h3>
@@ -30,8 +30,7 @@ export default {
     padding: 0 5rem;
     margin-top: 5rem;
     animation: in 2s ease-in;
-    font-family: 'Playfair Display', serif;
-}
+font-family: 'Nunito Sans', sans-serif;}
 
 .hi{
     font-size: 4rem;
@@ -71,7 +70,7 @@ h1 {
     /* background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg); */
     overflow: hidden;
     justify-content: space-around;
-    font-family: space-grotesk;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .image {
@@ -105,6 +104,7 @@ img {
         margin-top: 3rem;
         font-size: 2rem;
         text-align: center;
+        padding: 0 1rem;
     }
 
     #first {
@@ -120,7 +120,12 @@ img {
     }
 
     .image img {
+        display: flex;
+        align-items: center;
         width: 15rem;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .back p {

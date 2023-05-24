@@ -1,5 +1,7 @@
 <template>
     <!-- navbar -->
+    <div class="all">
+    
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#" style="text-decoration: none;"><router-link to="/">
@@ -39,6 +41,8 @@
             </div>
         </div>
     </nav>
+        
+</div>
 </template>
 
 <script>
@@ -47,6 +51,10 @@
 </script>
 
 <style scoped>
+.all{
+    /* position: absolute; */
+    overflow: hidden;
+}
 .navbar {
     display: flex;
     overflow: hidden;
@@ -57,14 +65,13 @@
     top: 1rem;
     z-index: 10;
     padding: 5rem 10rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
     animation: in 1s ease-in;
 }
 
 @keyframes in {
     0% {
         transform: translateY(-100%);
-        display: none !important;
     }
 
     100% {
@@ -75,12 +82,10 @@
 i {
     display: none;
     align-items: center;
-    /* margin-right: 20px; */
     cursor: pointer;
 }
 
 .navbar h2 {
-    /* margin-left: 15px; */
     margin-top: 2rem !important;
     color: brown;
     font-size: 3.5rem;
@@ -98,8 +103,6 @@ i {
 
 .navbar ul {
     display: flex;
-    /* justify-content: flex-end; */
-    /* margin-left: 28rem; */
 }
 
 .navbar li {

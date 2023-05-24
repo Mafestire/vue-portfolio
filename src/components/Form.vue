@@ -32,7 +32,8 @@ export default {
 
 <style scoped>
 .all {
-    /* padding: 0 10rem; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .proj {
@@ -91,5 +92,42 @@ button {
     background-color: aqua;
     padding: .5rem 1.5rem;
     font-family: 'Playfair Display', serif;
+}
+
+/**
+    media query
+    */
+
+@media (width < 600px) {
+    .proj {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        height: 85vh;
+        width: 90%;
+    }
+
+    .image img {
+        width: 10rem;
+        height: 17rem;
+        margin-top: 0rem;
+    }
+
+    form,
+    .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    input {
+        width: 20rem;
+    }
 }
 </style>
