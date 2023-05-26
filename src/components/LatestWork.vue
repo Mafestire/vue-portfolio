@@ -129,7 +129,7 @@ h2 {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-@media (width < 700px) {
+@media (width < 800px) {
     .top {
         display: flex;
         flex-direction: column;
@@ -146,6 +146,9 @@ h2 {
         margin-right: auto;
         margin-top: 5rem;
         margin-bottom: 8rem;
+        padding-left: 0rem;
+    padding-right: 0rem;
+    width: 100%;
     }
 
     .card {
@@ -155,6 +158,29 @@ h2 {
         padding: 2rem 1rem;
         width: 16rem;
         margin-bottom: 2rem;
+    }
+}
+
+@media (width > 800px) {
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        padding: 0;
+    }
+
+    .card {
+        background-color: #171717;
+        color: white;
+        border: 1px solid black;
+        padding: 2rem 1rem;
+        width: 10rem;
+        margin-left: 0rem;
+        margin-bottom: 0rem;
     }
 }
 </style>

@@ -6,7 +6,7 @@
             </div>
             <div class="greet">
                 <h1 class="hi">Hello</h1>
-                <p style="font-size: 1.5rem;" >I am,</p>
+                <p style="font-size: 1.5rem;">I am,</p>
                 <h1 class="who" style="color: aqua;">Sibabalwe Mafestire</h1>
                 <h3>a Full Stack Developer</h3>
                 <!-- <h1> <span id="first">Hello, </span> <br> I am <br><span id="name">Sibabalwe Mafestire</span> <br>a <br>
@@ -30,13 +30,14 @@ export default {
     padding: 0 5rem;
     margin-top: 5rem;
     animation: in 2s ease-in;
-font-family: 'Nunito Sans', sans-serif;}
+    font-family: 'Nunito Sans', sans-serif;
+}
 
-.hi{
+.hi {
     font-size: 4rem;
 }
 
-.who{
+.who {
     font-size: 4rem;
     color: aqua;
 }
@@ -67,16 +68,12 @@ h1 {
     display: flex;
     flex-direction: row-reverse;
     background-color: #000;
-    /* background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg); */
     overflow: hidden;
     justify-content: space-around;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .image {
-    /* z-index: 4; */
-    /* transform: translateX(50%); */
-    /* margin-right: 15rem; */
     animation: come 2s ease-in;
 }
 
@@ -92,27 +89,26 @@ h1 {
 
 img {
     width: 22rem;
-    /* margin-top: 0; */
     margin-left: 5rem;
 }
 
-@media (width < 700px) {
+@media (width < 800px) {
     .greet {
-        width: 20rem;
+        width: 18rem;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 3rem;
-        font-size: 2rem;
+        margin-top: 0rem;
+        font-size: 1.7rem;
         text-align: center;
-        padding: 0 1rem;
+        padding: 1rem 0rem;
     }
 
     #first {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     #name {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     h1 {
@@ -138,24 +134,7 @@ img {
     }
 }
 
-@media (width < 400px) {
-    img {
-        margin-left: 2rem;
-        margin-top: 9rem;
-    }
-
-    .greet {
-        font-size: 1rem;
-        box-shadow: none;
-        text-align: center;
-        border: none;
-        width: 20rem;
-
-    }
-
-    .wel {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+@media (width > 800px) {
+    
 }
 </style>

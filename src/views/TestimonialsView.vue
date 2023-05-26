@@ -72,7 +72,8 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ item.name }} {{ item.Surname }}</h5>
-                                    <p class="card-re" style="color: aqua;"><small class="text-body-secondary">{{ item.relations }} | {{ item.contact }}</small></p>
+                                    <p class="card-re" style="color: aqua;"><small class="text-body-secondary">{{
+                                        item.relations }} | {{ item.contact }}</small></p>
                                     <p class="card-text">{{ item.Quote }}</p>
                                 </div>
                             </div>
@@ -132,11 +133,10 @@ export default {
 </script>
 
 <style scoped>
-
 .head {
     height: 20rem;
     background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: #fff;
     display: flex;
     align-items: center;
@@ -148,20 +148,20 @@ export default {
     font-size: 3.5rem;
     font-weight: 600;
 }
+
 .testimonials {
     padding: 5rem 3rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.top{
+.top {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
-    font-family: 'Playfair Display', serif;
-}
+    font-family: 'Nunito Sans', sans-serif;}
 
 h1 {
     font-size: 2rem;
@@ -174,7 +174,7 @@ h1 {
     padding: .5rem;
 }
 
-.ref{
+.ref {
     color: #fff;
     padding-top: 1rem;
 }
@@ -206,8 +206,7 @@ img {
     background-color: #171717;
     color: #fff;
     border: none;
-    font-family: 'Playfair Display', serif;
-    width: 45rem;
+    font-family: 'Nunito Sans', sans-serif;    width: 45rem;
 }
 
 .card-body {

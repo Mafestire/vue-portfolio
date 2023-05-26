@@ -39,7 +39,6 @@ export default {
 .proj {
     border: 2px solid black;
     box-shadow: 0 8px 32px 0 black;
-    /* margin: 0rem 11.1rem; */
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -57,7 +56,7 @@ export default {
 }
 
 .form {
-    width: 35rem;
+    width: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -65,7 +64,7 @@ export default {
 }
 
 form {
-    width: 35rem;
+    width: 30rem;
 }
 
 .detail {
@@ -98,7 +97,7 @@ button {
     media query
     */
 
-@media (width < 600px) {
+@media (width < 800px) {
     .proj {
         margin-left: auto;
         margin-right: auto;
@@ -108,8 +107,8 @@ button {
         justify-content: center;
         align-items: center;
         margin-bottom: 5rem;
-        height: 85vh;
-        width: 90%;
+        height: 80vh;
+        width: 85%;
     }
 
     .image img {
@@ -123,11 +122,41 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 15rem;
+    }
 
+    .form{
+        width: 15rem;
     }
 
     input {
         width: 20rem;
     }
 }
+
+@media (width > 800px) {
+    form,
+    .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20rem;
+    }
+
+    input {
+        width: 20rem;
+    }
+    .proj {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 5rem;
+        height: 50vh;
+        width: 70%;
+    }
+}
+
 </style>

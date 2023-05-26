@@ -42,7 +42,7 @@ export default {
 .head {
     height: 20rem;
     background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: #fff;
     display: flex;
     align-items: center;
@@ -97,10 +97,11 @@ span {
 
 @media (width < 500px) {
 
-    .head{
+    .head {
         margin-top: 0rem;
         height: 15rem;
     }
+
     .cont {
         display: flex;
         flex-direction: column;
@@ -138,11 +139,12 @@ span {
         font-size: 1.3rem;
     }
 
-    .two li, .one li{
+    .two li,
+    .one li {
         font-size: 1rem;
     }
-    .two li{
+
+    .two li {
         margin-left: -1rem;
     }
-}
-</style>
+}</style>

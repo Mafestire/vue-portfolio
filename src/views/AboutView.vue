@@ -23,9 +23,9 @@
           <ul class="list-group list-group-vertical w-25">
             <li class="list-group-item">Age</li>
             <li class="list-group-item">Address</li>
-            <li class="list-group-item">Phone</li>
-            <li class="list-group-item">Linkedin</li>
-            <li class="list-group-item">Email</li>
+            <li class="list-group-item p ">Phone</li>
+            <li class="list-group-item p n">Linkedin</li>
+            <li class="list-group-item p ">Email</li>
           </ul>
           <ul class="list-group list-group-vertical-sm w-50">
             <li class="list-group-item">22</li>
@@ -54,15 +54,15 @@ export default {
 .head {
   height: 20rem;
   background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
-  font-family: 'Playfair Display', serif;
-color: #fff;
-display: flex;
-align-items: center;
-justify-content: space-around;
-margin-top: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
 }
 
-.head h1{
+.head h1 {
   font-size: 3.5rem;
   font-weight: 600;
 }
@@ -77,10 +77,10 @@ margin-top: 2rem;
   border: 2px solid #000;
   box-shadow: 0 8px 32px 0 black;
   margin-bottom: 3rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
-.about img{
+.about img {
   height: 30rem;
   margin: 0rem 4rem;
 }
@@ -97,7 +97,7 @@ margin-top: 2rem;
   font-size: 1.1rem;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .abt {
@@ -107,7 +107,7 @@ margin-top: 2rem;
 
 .details h2 {
   font-size: 2rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .more {
@@ -118,61 +118,90 @@ margin-top: 2rem;
   background-color: #171717;
   border: none;
   color: white;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-@media (width < 567px) {
+@media (width < 800px) {
   .details h2 {
     font-size: 1.5rem;
     border-bottom: none;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
+  }
+
+  .details {
+    width: 20rem;
+    margin-top: -6rem;
+  }
+
+  .details #info {
+    margin: 0;
   }
 
   .about {
     display: flex;
-    flex-direction: column;
-    margin-top: .5rem;
+    align-items: center;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    height: 35rem;
+    border: none;
+    box-shadow: none;
+    padding: 1rem 1rem;
   }
 
   .abt {
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
+    margin-bottom: 0rem;
+    height: 70%;
+    padding: 1rem 0rem;
   }
 
   .about img {
     width: 9rem;
-    height: 13rem;
+    height: 15rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -25rem;
   }
 
   .details p,
   h2 {
     font-size: 1rem;
-    width: 13rem;
-
+    width: 18rem;
   }
 
+  .more {
+    margin-top: 1rem;
+  }
 
+  .p {
+    margin-top: 1.5rem;
+  }
 }
 
-@media (width < 768px) {
+@media (width < 500px) {
   .details h2 {
-    font-size: 2rem;
+    font-size: 1rem;
+    width: 10rem;
     border-bottom: none;
     margin-left: auto;
     margin-right: auto;
+    margin: 0;
+    text-align: start;
+  }
+
+  .details {
+    width: 20rem;
+    margin-top: -6rem;
   }
 
   .about {
     display: flex;
     justify-content: space-around;
-    margin-top: .5rem;
-
+    margin-top: 4rem;
   }
 
   .details,
@@ -182,7 +211,7 @@ margin-top: 2rem;
 
   .about img {
     width: 13rem;
-    height: 14rem;
+    height: 18rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -192,5 +221,16 @@ margin-top: 2rem;
     font-size: 1rem;
   }
 
+  .p {
+    margin-top: 0rem;
+  }
+
+  .n{
+    margin-top: 1.5rem;
+  }
+
+  .more{
+    margin-left: -8rem;
+  }
 }
 </style>

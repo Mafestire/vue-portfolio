@@ -74,6 +74,7 @@ export default {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
+    margin-top: 2rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -131,8 +132,9 @@ h1 {
     text-align: center;
     background-color: aqua;
     padding: .5rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
+
 
 .bar span {
     height: 6rem;
@@ -279,7 +281,7 @@ h1 {
         Media Screen 
         */
 
-@media (width < 600px) {
+@media (width < 800px) {
     .skills {
         padding: 0rem, 0rem;
         margin-top: 0rem;
@@ -294,24 +296,31 @@ h1 {
         width: 100%;
         align-items: center;
         justify-content: center;
-        padding:0rem 2rem;
+        padding: 0rem 2rem;
     }
 
     .progress {
         height: 38rem;
-        /* width: 100%; */
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0;
         margin-left: auto;
         margin-right: auto;
-        /* justify-content: space-between; */
-        /* background-color: #171717; */
-        /* padding: 0rem 11.1rem; */
         margin-top: -3rem;
     }
+}
 
-    
+@media (width > 800px) {
+    .progress {
+        height: 38rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -9rem;
+    }
 }
 </style>

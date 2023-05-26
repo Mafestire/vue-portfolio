@@ -116,7 +116,7 @@ export default {
     background-image: url(https://i.postimg.cc/Z5WsZZHQ/1000-F-422687964-0-W77-Tl-Y5us-MM3g-SOkg-BDf-TIr-Pev-TQZb-H.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: #fff;
     display: flex;
     align-items: center;
@@ -145,7 +145,7 @@ h1 {
     text-align: center;
     background-color: aqua;
     padding: .5rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 h2 {
@@ -189,8 +189,7 @@ h2 {
     text-align: center;
     height: 100%;
     margin-bottom: 5rem;
-    font-family: 'Playfair Display', serif;
-
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 @keyframes in {

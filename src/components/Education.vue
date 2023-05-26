@@ -190,7 +190,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .education {
@@ -335,9 +335,9 @@ p {
     background-color: aqua;
 }
 
-
-
-/* EXPERIENCE */
+/* 
+EXPERIENCE 
+*/
 
 .card {
     background-color: #171717;
@@ -404,7 +404,7 @@ p {
     media query
     */
 
-@media (width < 600px) {
+@media (width < 800px) {
     .edu {
         margin: 0;
         margin-bottom: 5rem;
@@ -478,6 +478,11 @@ p {
 
     .card {
         width: 20rem;
+        margin-top: 0;
+    }
+
+    .top {
+        margin-bottom: 1rem;
     }
 
     .card-title-ex {
@@ -492,4 +497,68 @@ p {
     }
 
 }
-</style>
+
+@media (width > 800px) {
+    .edu {
+        margin: 0;
+        margin-bottom: 36rem;
+        padding: 0rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .date {
+        margin-top: 2rem;
+        width: 7rem;
+        display: flex;
+        padding-right: 0rem;
+        margin-left: 0rem;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .firstt {
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+    }
+
+    .tim::after {
+        height: 140vh;
+        margin-left: 8rem;
+    }
+
+    .conts {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .cont {
+        margin-left: 13rem;
+        width: 13rem;
+    }
+
+    .card {
+        width: 20rem;
+        margin-top: 0;
+    }
+
+    .div {
+        width: 16rem;
+        border-bottom: 1px solid #808080;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .right::before {
+        left: -3rem;
+    }
+    .left::before {
+        left: -3rem;
+        /* top: 21rem; */
+    }
+}</style>

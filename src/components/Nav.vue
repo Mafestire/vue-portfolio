@@ -113,8 +113,9 @@ i {
 
 @media (width < 800px) {
     .navbar{
-        margin-top: -4rem;
-        padding: 0;
+        margin-top: -5rem;
+        padding: 0rem 1rem;
+        transform: translateY(50%);
     }
 
     span{

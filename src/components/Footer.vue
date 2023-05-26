@@ -2,11 +2,11 @@
     <div class="footer">
         <p>&copy;2023 Sibabalwe Mafestire</p>
         <ul class="foot">
-            <li><router-link to="/about">About</router-link></li>
-            <li><router-link to="/resume">Resume</router-link></li>
-            <li><router-link to="/projects">Projects</router-link></li>
-            <li><router-link to="/testimonials">Testimonials</router-link></li>
-            <li><router-link to="/contacts">Contacts</router-link></li>
+                <li><router-link to="/about">About</router-link></li>
+                <li><router-link to="/resume">Resume</router-link></li>
+                <li><router-link to="/projects">Projects</router-link></li>
+                <li><router-link to="/testimonials">Testimonials</router-link></li>
+                <li><router-link to="/contacts">Contacts</router-link></li>
         </ul>
     </div>
 </template>
@@ -23,8 +23,7 @@ export default {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Lobster Two', cursive;
-
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .footer p {
@@ -57,18 +56,30 @@ li a:hover {
     font-size: 1.5rem;
 }
 
-/* @media (width < 400px) {
+@media (width < 600px) {
     .foot {
         display: none;
     }
 
     .footer p {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .foot li a,
+    .foot li {
+        list-style: none;
+        margin-right: 0px;
+        font-size: .8rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foot {
     }
 
 }
 
-@media (width > 400px) {
+/*@media (width > 400px) {
     .foot {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
