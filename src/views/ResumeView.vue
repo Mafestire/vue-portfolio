@@ -1,10 +1,10 @@
 <template>
-  <Nav />
-  <div class="head">
-    <h1>Resume</h1>
-  </div>
-  <Res />
-  <Education />
+    <Nav />
+    <div class="head">
+        <h1>Resume</h1>
+    </div>
+    <Res />
+    <Education />
 </template>
   
 <script>
@@ -72,18 +72,18 @@ export default {
 
 <style scoped>
 .head {
-  height: 20rem;
-  background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
-  font-family: 'Playfair Display', serif;
-color: #fff;
-display: flex;
-align-items: center;
-justify-content: space-around;
-margin-top: 2rem;
+    height: 20rem;
+    background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
 }
 
-.head h1{
-  font-size: 3.5rem;
-  font-weight: 600;
+.head h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
 }
 </style>

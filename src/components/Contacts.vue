@@ -6,15 +6,15 @@
                 <div class="p"></div>
             </div>
 
-            <label for="Name">Full Name</label>
-            <input type="text" name="Name" id="name" placeholder="Enter Name" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Email Address" required>
-            <label for="number">Contact Number</label>
-            <input type="number" name="number" id="number" placeholder="Enter Contact Number" required>
-            <label for="message">Message</label>
-            <textarea type="text" name="message" id="message" placeholder="Type in message" required></textarea>
-            <button type="submit">Submit</button>
+            <label for="Name " class="one">Full Name</label>
+            <input type="text " class="one-o" name="Name" id="name" placeholder="Enter Name" required>
+            <label for="email " class="two">Email</label>
+            <input type="email " class="two-o" name="email" id="email" placeholder="Enter Email Address" required>
+            <label for="number" class="three">Contact Number</label>
+            <input type="number" class="three-o" name="number" id="number" placeholder="Enter Contact Number" required>
+            <label for="message" class="four">Message</label>
+            <textarea type="text" class="four-o" name="message" id="message" placeholder="Type in message" required></textarea>
+            <button type="submit" class="five">Submit</button>
         </Form>
     </div>
 </template>
@@ -32,7 +32,7 @@ export default {
 }
 
 form {
-    width: 30rem;
+    width: 25rem;
     height: 35rem;
     text-align: center;
     align-items: center;
@@ -42,6 +42,7 @@ form {
     padding: 10px;
     color: #fff;
     margin-right: 5rem;
+    overflow: hidden;
 }
 
 label {
@@ -59,8 +60,11 @@ label {
     /* margin-left: -14rem; */
 }
 
-.hd{
+.hd {
     padding-bottom: 2rem;
+    height: 3rem;
+    overflow: hidden;
+
 }
 
 input,
@@ -96,17 +100,105 @@ button:hover {
     color: #171717;
 }
 
-@media (width < 768px) {
 
-    .f,
+    /**
+    animation
+    */
+
+h2 {
+    animation: come 2s ease;
+}
+@keyframes come {
+    0% {
+        transform: translateY(-450%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.one{
+    animation: one 1.5s ease-in;
+}
+@keyframes one {
+    0%{
+        transform: translateX(300%);
+    }
+}
+
+.two{
+    animation: two 1.9s ease-in;
+}
+@keyframes two {
+    0%{
+        transform: translateX(500%);
+    }
+}
+
+.three{
+    animation: three 2.2s ease-in;
+}
+@keyframes three {
+    0%{
+        transform: translateX(300%);
+    }
+}
+
+.four{
+    animation: four 2.5s ease-in;
+}
+@keyframes four {
+    0%{
+        transform: translateX(500%);
+    }
+}
+
+input, textarea{
+    animation: input 3s ease-in;
+}
+@keyframes input {
+    0%{
+        transform: translateX(-200%);
+    }
+}
+
+button{
+    animation: but 2s ease-in;
+}
+@keyframes but {
+    0%{
+        transform: translateY(350%);
+    }
+}
+
+
+
+    /**
+    media query
+    */
+@media (width < 800px) {
+
     form {
         margin-left: auto;
         margin-right: auto;
+        width: 20rem;
+    }
+
+    input,
+    textarea {
+        font-size: 18px;
+        padding-top: .5rem;
         width: 15rem;
+        background-color: #171717;
+        color: #fff;
+        border: none;
+        border-bottom: 2px solid #000;
+        text-align: center;
     }
 
     button {
-        margin-left: -10px;
+        margin-left: 0px;
     }
 }
 </style>

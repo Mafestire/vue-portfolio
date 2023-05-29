@@ -69,6 +69,7 @@ h1 {
     flex-direction: row-reverse;
     background-color: #000;
     overflow: hidden;
+    /* margin-top: .5rem; */
     justify-content: space-around;
     font-family: 'Times New Roman', Times, serif;
 }

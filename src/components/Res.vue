@@ -24,6 +24,10 @@
                         <h3>Node js</h3>
                         <span class="bar"><span class="node"></span></span>
                     </li>
+                    <li>
+                        <h3>PHP</h3>
+                        <span class="bar"><span class="php"></span></span>
+                    </li>
 
                 </div>
 
@@ -68,6 +72,24 @@ export default {
     margin-top: 4rem;
     font-family: 'Nunito Sans', sans-serif;
 }
+@keyframes ups {
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+
+    }
+}
+@keyframes up {
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+
+    }
+}
 
 .top {
     display: flex;
@@ -85,6 +107,7 @@ export default {
     background-color: #171717;
     padding: 0rem 11.1rem;
     margin-top: -3rem;
+
 }
 
 .progress li {
@@ -97,6 +120,15 @@ export default {
     width: 20rem;
 }
 
+.back{
+    animation: up 3s ease;
+}
+
+.front{
+    animation: ups 3.5s ease;
+}
+
+
 .bar {
     background-color: aqua;
     display: block;
@@ -105,7 +137,6 @@ export default {
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(.25, .8, .25, .1);
-
 }
 
 li h3 {
@@ -133,6 +164,20 @@ h1 {
     background-color: aqua;
     padding: .5rem;
     font-family: 'Nunito Sans', sans-serif;
+    animation: fade 5s ease;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+}
+h2{
+    animation: fading 13s ease;
+}
+@keyframes fading {
+    0%{
+        opacity: 0;
+    }
 }
 
 
@@ -144,47 +189,52 @@ h1 {
 
 .html {
     width: 80%;
-    animation: html 3s;
+    animation: html 5s;
 }
 
 .css {
     width: 70%;
-    animation: css 3s;
+    animation: css 5s;
+
 }
 
 .bootstrap {
     width: 40%;
-    animation: bootstrap 3s;
+    animation: bootstrap 5s;
 }
 
 .javascript {
     width: 60%;
-    animation: javascript 3s;
+    animation: javascript 5s;
 }
 
 .vue {
     width: 70%;
-    animation: vue 3s;
+    animation: vue 5s;
 }
 
 .mysql {
     width: 80%;
-    animation: mysql 3s;
+    animation: mysql 5s;
 }
 
 .node {
     width: 70%;
-    animation: node 3s;
+    animation: node 5s;
+}
+.php {
+    width: 60%;
+    animation: php 5s;
 }
 
 .ui-ux {
     width: 70%;
-    animation: ui 3s;
+    animation: ui 5s;
 }
 
 .wordpress {
     width: 65%;
-    animation: wp 3s;
+    animation: wp 5s;
 }
 
 @keyframes html {
@@ -254,6 +304,15 @@ h1 {
 
     100% {
         width: 70%;
+    }
+}
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
     }
 }
 

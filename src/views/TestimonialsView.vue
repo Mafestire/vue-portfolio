@@ -10,61 +10,11 @@
             <h1>Testimonials</h1>
             <h2 class="ref">References and testimonials from people i have worked with</h2>
         </div>
-
-        <!-- <div class="tests">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner" v-for="item in testimonials" :key="items">
-                    <div class="carousel-item active p-5">
-                        <img :src="item.image1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>{{item.name}}</h5>
-                            <h5>{{item.Surname}}</h5>
-                            <h5>{{item.relations}}</h5>
-                            <h5>{{item.contact}}</h5>
-                            <p>{{item.Quote}}</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img :src="item.image2">
-
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img :src="item.image3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div> -->
         <div class="on">
             <div class="topz">
                 <div class="cards" v-for="item in testimonials" :key="items">
 
-                    <div class="card mb-3" style="max-width: 60rem;">
+                    <div class="card mb-3" style="max-width: 42rem; border: 2px solid black; ">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img :src="item.image">
@@ -147,6 +97,12 @@ export default {
 .head h3 {
     font-size: 3.5rem;
     font-weight: 600;
+    animation: cont 2s ease-in;
+}
+@keyframes cont {
+    0%{
+        opacity: 0;
+    }
 }
 
 .testimonials {
@@ -161,7 +117,14 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
-    font-family: 'Nunito Sans', sans-serif;}
+    font-family: 'Nunito Sans', sans-serif;
+    animation: conts 3s ease-in;
+}
+@keyframes conts {
+    0%{
+        opacity: 0;
+    }
+}
 
 h1 {
     font-size: 2rem;
@@ -195,6 +158,7 @@ h1 {
 img {
     width: 20rem;
     height: 18.5rem;
+    border-radius: 1%;
 }
 
 .cards {
@@ -204,14 +168,22 @@ img {
 
 .card {
     background-color: #171717;
+    border: 2px solid black;
     color: #fff;
     border: none;
-    font-family: 'Nunito Sans', sans-serif;    width: 45rem;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 45rem;
+    animation: cards .5s ease-in;
+}
+@keyframes cards {
+    0%{
+        transform: rotateX(180%'angle');
+    }
 }
 
 .card-body {
     width: 28rem;
-    padding-left: 8rem;
+    padding-left: 7rem;
 }
 
 .card-title {
@@ -222,113 +194,42 @@ img {
     font-size: 1.2rem;
 }
 
+    /*
+        media query
+    */
 
-
-/*@media (width < 400px) {
-    .car {
-        width: 8rem;
-        height: 22rem;
+@media (width < 800px) {
+    .topz {
+        display: flex;
+        flex-direction: column;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .crd {
-        margin-left: -1rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .Quote {
-        font-size: 0.7rem;
-
-    }
-
-    .relations {
-        font-size: 0.7rem;
-    }
-
-    .contact {
-        font-size: .5rem;
-    }
-
-    .Lname,
-    .name {
-        font-size: .8rem;
-    }
-}
-
-@media (width > 400px) {
-    .car {
-        width: 12rem;
-        height: 25rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .crd {
-        margin-left: -1rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .Quote {
-        font-size: .8rem;
-
-    }
-
-    .relations {
-        font-size: 1rem;
-    }
-
-    .contact {
-        font-size: .5rem;
-    }
-
-    .Lname,
-    .name {
-        font-size: 1.2rem;
-    }
-}
-
-@media (width > 768px) {
-    .car {
+    .card {
         width: 20rem;
-        height: 22rem;
+    }
+
+    .card-body {
+        width: 20rem;
+        padding: 0rem;
+    }
+
+    .testimonials {
+        padding: 3rem 3rem;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .crd {
-        margin-left: 1rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        margin-left: auto;
-        margin-right: auto;
+    .ref {
+        color: #fff;
+        padding: 0rem 2rem;
     }
 
-    .Quote {
-        font-size: 1rem;
-
+    .top{
+        margin-bottom: 0rem;
+        padding: 1rem 0rem;
     }
 
-    .relations {
-        font-size: 1rem;
-    }
-
-    .contact {
-        font-size: .7rem;
-    }
-
-    .Lname,
-    .name {
-        font-size: 1.2rem;
-    }
-}*/
+}
 </style> 

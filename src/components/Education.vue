@@ -12,7 +12,7 @@
                 <div class="tim">
                     <div class="conts" v-for="item in education" :key="item">
                         <div class="firstt">
-                            <div class="date">
+                            <div class="date one">
                                 <div class="content-d">
                                     <h3>{{ item.year4 }} </h3>
                                     <p>{{ item.time4 }}</p>
@@ -21,7 +21,7 @@
                                     <p>--</p>
                                 </div>
                             </div>
-                            <div class="cont left o">
+                            <div class="cont left o one-o">
                                 <div class="content">
                                     <h6 style="margin-bottom: 2rem;">{{ item.name4 }}</h6>
                                     <div class="dv"></div>
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
 
-                            <div class="date">
+                            <div class="date two">
                                 <div class="content-d">
                                     <h3>{{ item.year3 }}</h3>
                                     <p>{{ item.time3 }}</p>
@@ -38,7 +38,7 @@
                                     <p>--</p>
                                 </div>
                             </div>
-                            <div class="cont right">
+                            <div class="cont right two-o">
                                 <div class="content">
                                     <h6>{{ item.name3 }}</h6>
                                     <div class="dv"></div>
@@ -48,7 +48,7 @@
 
                         </div>
                         <div class="secondd">
-                            <div class="date">
+                            <div class="date three">
                                 <div class="content-d">
                                     <h3>{{ item.year2 }}</h3>
                                     <p>{{ item.time2 }}</p>
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
 
-                            <div class="cont left">
+                            <div class="cont left three-o">
                                 <div class="content">
                                     <h6>{{ item.name2 }}</h6>
                                     <div class="dv"></div>
@@ -66,7 +66,7 @@
                                 </div>
                             </div>
 
-                            <div class="date">
+                            <div class="date four">
                                 <div class="content-d">
                                     <h3>{{ item.year1 }}</h3>
                                     <p>{{ item.time1 }}</p>
@@ -75,7 +75,7 @@
                                     <p>--</p>
                                 </div>
                             </div>
-                            <div class="cont right">
+                            <div class="cont right four-o">
                                 <div class="content">
                                     <h6>{{ item.name1 }}</h6>
                                     <div class="dv" style="margin-top: 1rem;"></div>
@@ -160,7 +160,7 @@ export default {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 h1 {
@@ -169,16 +169,35 @@ h1 {
     color: black;
     border: 1px solid aqua;
     width: 10rem;
+    height: 3rem;
     text-align: center;
     background-color: aqua;
     padding: .5rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
+    animation: head 3s forwards;
 }
 
-h2 {
+@keyframes head {
+    0% {
+        opacity: 0;
+    }
+}
+
+.top h2 {
     color: #fff;
     font-size: 1.5rem;
     margin-top: 1rem;
+    height: 3rem;
+    overflow: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+    animation: label 3s forwards;
+}
+
+@keyframes label {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
 }
 
 .edu {
@@ -186,17 +205,20 @@ h2 {
     padding-right: 11.1rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 35rem;
+    margin-bottom: 2rem ;
     display: flex;
+    height: 160vh;
     justify-content: space-between;
     margin-top: 4rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 
 .education {
-    height: 100vh;
+    /* height: 100vh; */
+    padding: 1rem 2rem;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 .experience {
@@ -227,12 +249,13 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: label 3s ease;
 }
 
 .conts {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 110%;
     position: relative;
 }
 
@@ -246,7 +269,7 @@ h2 {
 
 .cont {
     background-color: inherit;
-    width: 15rem;
+    width: 18rem;
     height: 13rem;
     padding: 1.5rem;
     text-align: center;
@@ -287,7 +310,7 @@ p {
     right: 17rem;
     border: medium solid white;
     border-width: 1rem 0rem 1rem 1rem;
-    top: 15.8rem;
+    top: 18rem;
     border-color: transparent transparent transparent aqua;
     ;
 }
@@ -335,6 +358,92 @@ p {
     background-color: aqua;
 }
 
+/** --------ANIMATION--------- */
+
+.one {
+    animation: one 3s ease;
+}
+@keyframes one {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.one-o{
+    animation: one-o 3s ease;
+}
+@keyframes one-o {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.two {
+    animation: two 5s ease;
+}
+@keyframes two {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.two-o{
+    animation: two-o 5s ease;
+}
+@keyframes two-o {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.three {
+    animation: three 7s ease;
+}
+
+@keyframes three {
+    0% {
+        transform: translateX(-300%);
+        opacity: 0;
+    }
+}
+
+.three-o{
+    animation: three-o 7s ease;
+}
+
+@keyframes three-o {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.four {
+    animation: four 9s ease;
+}
+
+@keyframes four {
+    0% {
+        transform: translateX(-300%);
+        opacity: 0;
+    }
+}
+
+.four-o{
+    animation: four-o 9s ease;
+}
+@keyframes four-o {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
 /* 
 EXPERIENCE 
 */
@@ -349,6 +458,13 @@ EXPERIENCE
     margin-right: auto;
     box-shadow: 0 8px 32px 0 black;
     width: 25rem;
+    animation: exp 3s ease;
+}
+@keyframes exp {
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
 }
 
 .card-title-ex {
@@ -501,7 +617,7 @@ EXPERIENCE
 @media (width > 800px) {
     .edu {
         margin: 0;
-        margin-bottom: 36rem;
+        margin-bottom: 3rem;
         padding: 0rem 1rem;
         display: flex;
         justify-content: space-between;
@@ -539,12 +655,22 @@ EXPERIENCE
 
     .cont {
         margin-left: 13rem;
-        width: 13rem;
+        width: 18rem;
+    }
+
+    .dv{
+        margin: 1rem 0rem;
+
+    }
+
+    .content p{
+        display: flex;
+        justify-content: center;
     }
 
     .card {
         width: 20rem;
-        margin-top: 0;
+        margin-top: 5;
     }
 
     .div {
@@ -557,8 +683,8 @@ EXPERIENCE
     .right::before {
         left: -3rem;
     }
+
     .left::before {
         left: -3rem;
-        /* top: 21rem; */
     }
 }</style>

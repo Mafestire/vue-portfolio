@@ -14,7 +14,7 @@
         <div class="cardz">
 
             <div class="cards" v-for="item in projects" :key="items">
-                <div class="card" style="width: 20rem;">
+                <div class="card" >
                     <div class="card-body">
                         <img :src="item.image">
 
@@ -166,6 +166,7 @@ h2 {
     border: 1px solid black;
     padding: 2rem 1rem;
     height: 20rem;
+    width: 22rem;
     animation: in 1.5s ease-in;
     box-shadow: 0 8px 32px 0 black;
 }
@@ -230,23 +231,38 @@ a:hover {
 }
 
 
-/* @media (max-width: 768px) {
-    .pros {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+@media (max-width: 800px) {
+    .cardz {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        width: 18rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .description h5 {
-        font-size: 18px;
+    .all {
+        padding: 3rem 2rem;
+        text-align: center;
+        height: 100%;
+        margin-bottom: 5rem;
+        font-family: 'Nunito Sans', sans-serif;
     }
 
-    .description h6 {
-        font-size: 15px;
+    .card {
+        background-color: #171717;
+        color: white;
+        border: 1px solid black;
+        padding: 2rem 1rem;
+        margin: 0;
+        height: 20rem;
+        width: 18rem;
+        animation: in 1.5s ease-in;
+        box-shadow: 0 8px 32px 0 black;
     }
 }
 
-@media (width < 576px) {
+/*@media (width < 576px) {
     .links {
         display: flex;
         flex-direction: column;
