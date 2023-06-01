@@ -82,7 +82,7 @@ h2 {
     border: 2px solid aqua;
     width: 12rem;
     padding: .5rem .5rem;
-    margin-left: -40rem;
+    margin-left: -32rem;
 }
 
 .dot {

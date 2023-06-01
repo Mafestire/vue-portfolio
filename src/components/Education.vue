@@ -107,7 +107,7 @@
                         <p class="when">Learning Journey | April 2023 - Currently</p>
                         <div class="div"></div>
 
-                        <h6 class="card-subtitle mb-2 text-body-secondary">DESCRIPTION</h6>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Working on client based web development projects in a team of brilliant designers and developers and enrolled on a learning journey to upskilling</h6>
                         <P class="details">
 
                         </P>
@@ -175,6 +175,10 @@ h1 {
     padding: .5rem;
     font-family: 'Nunito Sans', sans-serif;
     animation: head 3s forwards;
+}
+
+h6{
+    margin-top: 1rem;
 }
 
 @keyframes head {
@@ -270,7 +274,7 @@ h1 {
 .cont {
     background-color: inherit;
     width: 18rem;
-    height: 13rem;
+    height: 10rem;
     padding: 1.5rem;
     text-align: center;
     margin-top: -4.5rem;
@@ -625,10 +629,11 @@ EXPERIENCE
         display: flex;
         justify-content: space-between;
         width: 100%;
+        height: 175vh;
 
     }
     .education{
-        height: 155vh;
+        height: 175vh;
 
     }
 
@@ -664,6 +669,7 @@ EXPERIENCE
     .cont {
         margin-left: 13rem;
         width: 18rem;
+        height: 15rem;
     }
 
     .dv{
@@ -677,7 +683,7 @@ EXPERIENCE
     }
 
     .card {
-        width: 20rem;
+        width: 30rem;
         margin-top: 5;
     }
 
