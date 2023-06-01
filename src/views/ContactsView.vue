@@ -232,7 +232,7 @@ span {
 @media (width < 800px) {
 
     .head {
-        margin-top: 0rem;
+        margin-top: 2.5rem;
         height: 15rem;
     }
 
@@ -245,20 +245,21 @@ span {
     .more {
         padding: 0;
         margin: 0;
+        width: 18rem;
     }
 
     .one {
         padding: 0;
-        margin-left: -4rem;
+        margin-left: rem;
     }
 
     .two {
-        margin-left: 4rem;
+        margin-left: 1.8rem;
         width: 20rem;
     }
 
     .info {
-        width: 15rem;
+        width: 20rem;
         font-size: 1rem;
         text-align: center;
         margin-left: auto;

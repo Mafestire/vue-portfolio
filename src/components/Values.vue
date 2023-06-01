@@ -12,10 +12,10 @@
 
             <div class="more">
                 <ul class="list-group one list-group-vertical">
-                    <li class="list-group-item a" data="1">01</li>
-                    <li class="list-group-item a" data="2">02</li>
-                    <li class="list-group-item a" data="3">03</li>
-                    <li class="list-group-item a" data="4">04</li>
+                    <li class="list-group-item  first a" data="1">01</li>
+                    <li class="list-group-item second a" data="2">02</li>
+                    <li class="list-group-item third a" data="3">03</li>
+                    <li class="list-group-item forth a" data="4">04</li>
                     <!-- <li class="list-group-item a" data="5">05</li> -->
                 </ul>
                 <ul class="list-group two list-group-vertical-sm w-50">
@@ -116,6 +116,8 @@ h2 {
     background-color: #171717;
     color: #fff;
     border: none;
+    text-decoration: none;
+
 }
 
 .a {
@@ -183,6 +185,7 @@ h2 {
         width: 21rem;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20rem;
         font-family: 'Nunito Sans', sans-serif;}
     
 
@@ -202,7 +205,7 @@ h2 {
     }
 
     .a {
-        font-size: 4rem;
+        font-size: 3rem;
         color: aqua !important;
         font-weight: 700;
     }
@@ -214,7 +217,24 @@ h2 {
     }
 
     .list-group .c {
-        width: 15rem;
+        width: 17rem;
+    }
+
+    .first{
+        margin-top: rem;
+    }
+
+    .second {
+        margin-top: 1rem;
+    }
+    .third{
+        margin-top: 2rem;
+    }
+    .forth{
+        margin-top: 2rem;
+    }
+    .i{
+        width: 5rem;
     }
 }
 </style>

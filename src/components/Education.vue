@@ -214,7 +214,7 @@ h1 {
 }
 
 .education {
-    /* height: 100vh; */
+    height: 100vh;
     padding: 1rem 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -526,13 +526,13 @@ EXPERIENCE
         margin-bottom: 5rem;
         padding: 0rem 1rem;
         display: flex;
+        height: 150%;
         flex-direction: column;
         align-items: center;
-        font-family: 'Playfair Display', serif;
     }
 
     .education {
-        height: 100%;
+        height: 120%;
         margin-bottom: 5rem;
         padding: 0rem 1rem;
     }
@@ -542,12 +542,15 @@ EXPERIENCE
         text-align: center;
         margin-top: 0rem;
         color: white;
+        width: 12rem;
     }
 
     .firstt {
         display: flex;
         flex-direction: column;
     }
+
+    
 
     .date {
         margin-top: 2rem;
@@ -622,6 +625,11 @@ EXPERIENCE
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+    }
+    .education{
+        height: 155vh;
+
     }
 
     .date {

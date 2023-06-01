@@ -37,9 +37,10 @@
         </div>
       </div>
     </div>
+    <Values />
+
   </div>
 
-  <Values />
 </template>
 
 <script>
@@ -183,6 +184,7 @@ export default {
 }
 
 @media (width < 500px) {
+  
   .details h2 {
     font-size: 1rem;
     width: 10rem;
@@ -200,20 +202,24 @@ export default {
 
   .about {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-around;
     margin-top: 4rem;
+    height: 30rem;
   }
 
   .details,
   #info {
     width: 15rem;
+    height: 30rem;
   }
 
   .about img {
-    width: 13rem;
+    width: 11rem;
     height: 18rem;
     margin-left: auto;
     margin-right: auto;
+    transform: translateY(30%);
   }
 
   .details p,
@@ -230,7 +236,8 @@ export default {
   }
 
   .more{
-    margin-left: -8rem;
+    margin-left: 0rem;
+    width: 20rem;
   }
 }
 </style>

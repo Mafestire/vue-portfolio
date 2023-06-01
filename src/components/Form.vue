@@ -130,7 +130,7 @@ button {
     }
 
     input {
-        width: 20rem;
+        width: 15rem;
     }
 }
 

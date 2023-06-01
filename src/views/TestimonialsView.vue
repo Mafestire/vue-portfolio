@@ -14,7 +14,7 @@
             <div class="topz">
                 <div class="cards" v-for="item in testimonials" :key="items">
 
-                    <div class="card mb-3" style="max-width: 42rem; border: 2px solid black; ">
+                    <div class="card mb-3" style="max-width: 42rem; ">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img :src="item.image">
@@ -99,8 +99,9 @@ export default {
     font-weight: 600;
     animation: cont 2s ease-in;
 }
+
 @keyframes cont {
-    0%{
+    0% {
         opacity: 0;
     }
 }
@@ -120,8 +121,9 @@ export default {
     font-family: 'Nunito Sans', sans-serif;
     animation: conts 3s ease-in;
 }
+
 @keyframes conts {
-    0%{
+    0% {
         opacity: 0;
     }
 }
@@ -168,15 +170,16 @@ img {
 
 .card {
     background-color: #171717;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     color: #fff;
     border: none;
     font-family: 'Nunito Sans', sans-serif;
     width: 45rem;
     animation: cards .5s ease-in;
 }
+
 @keyframes cards {
-    0%{
+    0% {
         transform: rotateX(180%'angle');
     }
 }
@@ -194,7 +197,7 @@ img {
     font-size: 1.2rem;
 }
 
-    /*
+/*
         media query
     */
 
@@ -207,11 +210,18 @@ img {
     }
 
     .card {
-        width: 20rem;
+        width: 18rem;
+        border: none;
+    }
+
+    img {
+        width: 17.5rem;
+        height: 18.5rem;
+        border-radius: 1%;
     }
 
     .card-body {
-        width: 20rem;
+        width: 17.5rem;
         padding: 0rem;
     }
 
@@ -226,10 +236,9 @@ img {
         padding: 0rem 2rem;
     }
 
-    .top{
+    .top {
         margin-bottom: 0rem;
         padding: 1rem 0rem;
     }
 
-}
-</style> 
+}</style> 
