@@ -8,8 +8,8 @@
   <div class="abt">
     <div class="about">
       <img src="https://i.postimg.cc/7ZW6dJLY/C11-Sibabalwe-Mafestire-2-1-removebg-preview.png" alt="">
-      <div class="details">
-        <h2>Hello, I am</h2>
+      <div class="details" >
+        <h2 >Hello, I am</h2>
         <h2 style="color: aqua;">Sibabalwe Mafestire</h2>
         <h2 style="font-size: 1.3rem; font-weight: 5rem;">Web Developer</h2>
         <p id="info">
@@ -79,11 +79,13 @@ export default {
   box-shadow: 0 8px 32px 0 black;
   margin-bottom: 3rem;
   margin-top: 2rem;
+  overflow: hidden;
 }
 
 .about img {
   height: 30rem;
   margin: 0rem 4rem;
+  animation: image 2s ease-in;
 }
 
 .details {
@@ -121,6 +123,17 @@ export default {
   color: white;
   font-family: 'Nunito Sans', sans-serif;
 }
+
+        /**  --- animation --- */
+  
+@keyframes image {
+  0%{
+    /* transform: rotate(-65deg); */
+    transform: translateY(110%);
+  }
+}
+
+        /** --- responsiveness --- */
 
 @media (width < 800px) {
   .details h2 {

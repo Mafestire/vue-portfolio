@@ -23,7 +23,7 @@
                             </div>
                             <div class="cont left o one-o">
                                 <div class="content">
-                                    <h6 style="margin-bottom: 2rem;">{{ item.name4 }}</h6>
+                                    <h6 style="margin-bottom: 0rem;">{{ item.name4 }}</h6>
                                     <div class="dv"></div>
                                     <p>{{ item.activity4 }}</p>
                                 </div>
@@ -94,7 +94,9 @@
                     <h2>My Work Experience</h2>
                 </div>
 
-                <div class="card">
+                <div class="card" v-motion
+                :initial="{ opacity: 0, y: 100 }"
+                :visible="{ opacity: 1, y: 0 }">
                     <div class="card-body">
                         <div class="card-title-ex">
                             <div class="dot"></div>
@@ -213,13 +215,13 @@ h6{
     display: flex;
     height: 160vh;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: 0rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 
 .education {
     height: 100vh;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -233,7 +235,7 @@ h6{
 .tim {
     position: relative;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 70%;
     padding-top: .5rem;
     margin-left: auto;
     margin-right: auto;
@@ -243,7 +245,7 @@ h6{
     content: '';
     position: absolute;
     width: 1vh;
-    height: 130vh;
+    height: 0vh;
     background-color: aqua;
     top: 1%;
     bottom: 0;
@@ -274,10 +276,10 @@ h6{
 .cont {
     background-color: inherit;
     width: 18rem;
-    height: 10rem;
+    height: 8rem;
     padding: 1.5rem;
     text-align: center;
-    margin-top: -4.5rem;
+    margin-top: -5rem;
     color: white;
     /* font-size: 20px; */
     box-shadow: 0 8px 32px 0 black;
@@ -311,10 +313,10 @@ p {
     position: absolute;
     width: 0;
     z-index: 1;
-    right: 17rem;
+    right: 1rem;
     border: medium solid white;
     border-width: 1rem 0rem 1rem 1rem;
-    top: 18rem;
+    top: 20rem;
     border-color: transparent transparent transparent aqua;
     ;
 }
@@ -325,7 +327,7 @@ p {
     position: absolute;
     width: 0;
     z-index: 1;
-    top: -13.6rem;
+    top: -10rem;
     left: -3rem;
     border: medium solid black;
     border-width: 1rem 1rem 1rem 0rem;
@@ -634,7 +636,6 @@ EXPERIENCE
     }
     .education{
         height: 175vh;
-
     }
 
     .date {
@@ -653,10 +654,15 @@ EXPERIENCE
         display: flex;
         flex-direction: column;
         width: 10rem;
+        margin-bottom: -1.3rem;
+    }
+
+    .o{
+        margin-bottom: -1.3rem;
     }
 
     .tim::after {
-        height: 140vh;
+        height: 120vh;
         margin-left: 8rem;
     }
 
@@ -669,7 +675,7 @@ EXPERIENCE
     .cont {
         margin-left: 13rem;
         width: 18rem;
-        height: 15rem;
+        height: 13rem;
     }
 
     .dv{
