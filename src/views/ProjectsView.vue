@@ -64,14 +64,14 @@ export default {
                 {
                     name: 'Calculator',
                     brief: 'Standard to simplify your calculations',
-                    image: 'https://i.postimg.cc/rshyZMxr/calculator.png',
+                    image: 'https://i.postimg.cc/BnNM0GKR/Screenshot-2023-07-17-085609.png',
                     git: 'https://github.com/Mafestire/Calculator.git',
                     netlify: 'https://sibabalwe-calculator.netlify.app'
                 },
                 {
                     name: 'BMI Calculator',
                     brief: 'Calculate your Body Mass Index',
-                    image: 'https://i.postimg.cc/VvGWkP99/Screenshot-2023-01-10-110752.png',
+                    image: 'https://i.postimg.cc/LsFZZ1Sf/Screenshot-2023-07-31-110504.png',
                     git: 'https://github.com/Mafestire/BIM-Calculator.git',
                     netlify: 'https://sibabalwe-bmi-calculator.netlify.app'
                 },
@@ -165,10 +165,14 @@ h2 {
     color: white;
     border: 1px solid black;
     padding: 2rem 1rem;
-    height: 20rem;
+    height: 25rem;
     width: 22rem;
     animation: in 1.5s ease-in;
     box-shadow: 0 8px 32px 0 black;
+}
+
+.card-body{
+    margin-top: -.5rem;
 }
 
 .card-title {
@@ -204,8 +208,8 @@ h2 {
 }
 
 img {
-    width: 6rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 .links {
