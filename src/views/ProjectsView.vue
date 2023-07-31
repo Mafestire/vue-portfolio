@@ -77,7 +77,7 @@ export default {
                 },
                 {
                     name: 'Temperature Convertor',
-                    brief: 'Be sure of your temperatures',
+                    brief: 'Accurate temperatures',
                     image: 'https://i.postimg.cc/QMMmy8hY/Screenshot-2023-07-31-122337.png',
                     git: 'https://sibabalwe-temperiture-converter.netlify.app',
                     netlify: 'https://seababags.netlify.app'
