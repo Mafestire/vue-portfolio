@@ -77,10 +77,10 @@ export default {
                 },
                 {
                     name: 'Temperature Convertor',
-                    brief: 'Accurate temperatures',
+                    brief: 'Be sure of your temperatures',
                     image: 'https://i.postimg.cc/QMMmy8hY/Screenshot-2023-07-31-122337.png',
-                    git: 'https://sibabalwe-temperiture-converter.netlify.app',
-                    netlify: 'https://seababags.netlify.app'
+                    git: 'https://github.com/Mafestire/Point-of-Sale-system.git',
+                    netlify: 'https://sibabalwe-temperiture-converter.netlify.app'
                 },
                 {
                     name: 'Point of Sale',
