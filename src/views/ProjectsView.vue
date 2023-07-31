@@ -97,11 +97,11 @@ export default {
                     netlify: 'https://cell-repair.netlify.app'
                 },
                 {
-                    name: 'Personal Portfolio',
-                    brief: 'Online Portfolio',
-                    image: 'https://i.postimg.cc/7YqMPcth/project-2-shop.png',
-                    git: 'https://github.com/Mafestire/Portfolio-.git',
-                    netlify: 'https://sibabalwe-portfolio.netlify.app'
+                    name: 'Tech News',
+                    brief: 'Get your latest Tech News',
+                    image: 'https://i.postimg.cc/bYSD5N3s/Screenshot-2023-07-31-140740.png',
+                    git: 'https://github.com/Mafestire/Tech-News.git',
+                    netlify: 'https://technews-d5a7b.web.app/#/'
                 },
             ],
 
