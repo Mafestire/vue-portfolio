@@ -78,8 +78,8 @@ export default {
                 {
                     name: 'Temperature Convertor',
                     brief: 'Be sure of your temperatures',
-                    image: 'https://i.postimg.cc/8PrbS5Xw/Screenshot-20221205-100323.png',
-                    git: 'https://github.com/Mafestire/Point-of-Sale-system.git',
+                    image: 'https://i.postimg.cc/QMMmy8hY/Screenshot-2023-07-31-122337.png',
+                    git: 'https://sibabalwe-temperiture-converter.netlify.app',
                     netlify: 'https://seababags.netlify.app'
                 },
                 {
@@ -210,6 +210,7 @@ h2 {
 img {
     width: 10rem;
     height: 10rem;
+    margin-bottom: 1rem;
 }
 
 .links {
