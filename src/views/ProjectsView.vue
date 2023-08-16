@@ -90,11 +90,11 @@ export default {
                     netlify: 'https://seababags.netlify.app'
                 },
                 {
-                    name: 'Repair store',
-                    brief: 'Cellphone Repair store',
-                    image: 'https://i.postimg.cc/zBPpHky6/project-1-cell.png',
-                    git: 'https://github.com/Mafestire/cellphone-repair-store.git',
-                    netlify: 'https://cell-repair.netlify.app'
+                    name: 'Online Portfolio',
+                    brief: 'Personalized Portfolio',
+                    image: 'https://i.postimg.cc/sgDYh8zK/Screenshot-2023-08-16-123137.png',
+                    git: 'https://github.com/Mafestire/vue-portfolio.git',
+                    netlify: 'https://portfolio-d4110.web.app/#/'
                 },
                 {
                     name: 'Tech News',
