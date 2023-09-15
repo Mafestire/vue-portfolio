@@ -325,6 +325,10 @@ h2 {
         width: 100%;
     }
 
+    .y{
+        margin-top: 1rem;
+    }
+
     .one {
         width: 18%;
         margin-left: -6rem;

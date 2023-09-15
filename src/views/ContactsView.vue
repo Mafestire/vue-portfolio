@@ -20,7 +20,7 @@
                 <ul class="list-group two list-group-vertical-sm">
                     <li class="list-group-item m sixth">Mfuleni, Cape Town</li>
                     <li class="list-group-item m seventh">062 4244 310 | 065 9425 403</li>
-                    <li class="list-group-item m eighth "><a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;"> https://www.linkedin.com/in/sibabalwe-mafestire-804364147</a></li>
+                    <li class="list-group-item m eighth "><a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;"> Sibabalwe Mafestire</a></li>
                     <li class="list-group-item m nineth">seabaraven@gmail.com</li>
                     <li class="list-group-item m tenth">Mafestire</li>
                 </ul>
@@ -242,7 +242,6 @@ span {
 
     .cont {
         display: flex;
-        /* flex-direction: column; */
         padding: 1rem 0rem;
     }
 
@@ -283,4 +282,14 @@ span {
     .two li {
         margin-left: -1rem;
     }
-}</style>
+}
+
+@media (width < 500px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0rem;
+    }
+}
+
+</style>

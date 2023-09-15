@@ -27,11 +27,11 @@
             <li class="list-group-item p n">Linkedin</li>
             <li class="list-group-item p ">Email</li>
           </ul>
-          <ul class="list-group list-group-vertical-sm w-100">
+          <ul class="list-group sec list-group-vertical-sm w-100">
             <li class="list-group-item">2000 / 05 / 30</li>
             <li class="list-group-item">Mfuleni, Cape Town</li>
             <li class="list-group-item num">062 4244 310 | 065 9425 403</li>
-            <li class="list-group-item num"> <a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;"> https://www.linkedin.com/in/sibabalwe-mafestire-804364147</a> </li>
+            <li class="list-group-item num"> <a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;">Sibabalwe Mafestire</a> </li>
             <li class="list-group-item">seabaraven@gmail.com</li>
           </ul>
         </div>
@@ -126,6 +126,7 @@ export default {
   background-color: #171717;
   border: none;
   color: white;
+  padding-left: 0;
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -223,6 +224,13 @@ width: 100%;  }
     margin-top: 0rem;
   }
 
+  .L{
+    width: 80%;
+padding-right: 0;
+  }
+
+
+
   .about {
     display: flex;
     flex-direction: column;
@@ -251,13 +259,8 @@ width: 100%;  }
     margin-top: 0rem;
   }
 
-  .n{
-    margin-bottom: 1.5rem;
-  }
 
-  .more{
-    margin-left: 0rem;
-    width: 90%;
-  }
+
+  
 }
 </style>
