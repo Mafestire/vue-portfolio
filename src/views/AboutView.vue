@@ -92,6 +92,8 @@ export default {
   width: 39rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   color: white;
   font-family: 'Playfair Display', serif;
 }
