@@ -1,5 +1,5 @@
 <template>
-    <Res />
+    <!-- <Res /> -->
 
 
     <div class="do">
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import Res from '@/components/Res.vue'
+// import Res from '@/components/Res.vue'
 export default {
     data() {
         return {
@@ -67,7 +67,7 @@ export default {
             ]
         };
     },
-    components: { Res }
+    // components: { Res }
 }
 </script>
 
@@ -78,18 +78,17 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 
 h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: black;
-    border: 1px solid aqua;
-    width: 10rem;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #fff;
+    border-bottom: 1px solid aqua;
+    width: 7rem;
     text-align: center;
-    background-color: aqua;
     padding: .5rem;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -102,10 +101,9 @@ h2 {
 .cards {
     display: flex;
     justify-content: space-between;
-    padding-left: 11.1rem;
-    padding-right: 11.1rem;
-    margin-top: 5rem;
-    margin-bottom: 8rem;
+    padding: 0 11.1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 .card {
@@ -113,7 +111,7 @@ h2 {
     color: white;
     border: 1px solid black;
     padding: 2rem 1rem;
-    width: 18rem;
+    width: 20rem;
 }
 
 .card-title {
@@ -129,7 +127,7 @@ h2 {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-@media (width < 800px) {
+@media (width < 766px) {
     .top {
         display: flex;
         flex-direction: column;
@@ -144,8 +142,8 @@ h2 {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5rem;
-        margin-bottom: 8rem;
+        margin-top: 3rem;
+        margin-bottom: 0rem;
         padding-left: 0rem;
     padding-right: 0rem;
     width: 100%;
@@ -157,20 +155,20 @@ h2 {
         border: 1px solid black;
         padding: 2rem 1rem;
         width: 16rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem !important;
     }
 }
 
-@media (width > 800px) {
+@media (width < 1010px) {
     .cards {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
         margin-top: 3rem;
         margin-bottom: 5rem;
-        padding: 0;
+        padding: 0 3rem;
     }
 
     .card {
@@ -178,9 +176,27 @@ h2 {
         color: white;
         border: 1px solid black;
         padding: 2rem 1rem;
-        width: 10rem;
+        width: 12rem;
         margin-left: 0rem;
         margin-bottom: 0rem;
     }
+}
+@media (width > 1010px) {
+    .cards {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 11.1rem;
+    padding-right: 11.1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+    .card {
+    background-color: #171717;
+    color: white;
+    border: 1px solid black;
+    padding: 2rem 1rem;
+    width: 20rem;
+}
 }
 </style>

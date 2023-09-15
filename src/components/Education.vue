@@ -5,84 +5,62 @@
             <div class="education" v-for="item in education" :key="item">
                 <!-- Education -->
                 <div class="top">
-                    <h1 style="width: 12rem;">{{ item.label }}</h1>
-                    <h2>My Education History</h2>
+                    <h1>{{ item.label }}</h1>
+                    <!-- <h2>My Education History</h2> -->
                 </div>
 
-                <div class="tim">
-                    <div class="conts" v-for="item in education" :key="item">
-                        <div class="firstt">
-                            <div class="date one">
-                                <div class="content-d">
-                                    <h3>{{ item.year4 }} </h3>
-                                    <p>{{ item.time4 }}</p>
-                                </div>
-                                <div class="line">
-                                    <p>--</p>
-                                </div>
-                            </div>
-                            <div class="cont left o one-o">
-                                <div class="content">
-                                    <h6 style="margin-bottom: 0rem;">{{ item.name4 }}</h6>
-                                    <div class="dv"></div>
-                                    <p>{{ item.activity4 }}</p>
-                                </div>
-                            </div>
+                <div class="conts" v-for="item in education" :key="item">
+                    <div class="cont left o one-o">
 
-                            <div class="date two">
-                                <div class="content-d">
-                                    <h3>{{ item.year3 }}</h3>
-                                    <p>{{ item.time3 }}</p>
-                                </div>
-                                <div class="line">
-                                    <p>--</p>
-                                </div>
+                        <div class="content">
+                            <h6>{{ item.name4 }}</h6>
+                            <div class="content-d m">
+                                <h3>{{ item.year4 }} </h3>
+                                <p class="yr">{{ item.time4 }}</p>
                             </div>
-                            <div class="cont right two-o">
-                                <div class="content">
-                                    <h6>{{ item.name3 }}</h6>
-                                    <div class="dv"></div>
-                                    <p>{{ item.activity2 }}</p>
-                                </div>
-                            </div>
-
+                            <div class="dv"></div>
+                            <p>{{ item.activity4 }}</p>
                         </div>
-                        <div class="secondd">
-                            <div class="date three">
-                                <div class="content-d">
-                                    <h3>{{ item.year2 }}</h3>
-                                    <p>{{ item.time2 }}</p>
-                                </div>
-                                <div class="line">
-                                    <p>--</p>
-                                </div>
-                            </div>
+                    </div>
 
-                            <div class="cont left three-o">
-                                <div class="content">
-                                    <h6>{{ item.name2 }}</h6>
-                                    <div class="dv"></div>
-                                    <p>{{ item.activity3 }}</p>
-                                </div>
-                            </div>
+                    <div class="cont right two-o">
 
-                            <div class="date four">
-                                <div class="content-d">
-                                    <h3>{{ item.year1 }}</h3>
-                                    <p>{{ item.time1 }}</p>
-                                </div>
-                                <div class="line">
-                                    <p>--</p>
-                                </div>
+                        <div class="content">
+                            <h6>{{ item.name3 }}</h6>
+                            <div class="content-d">
+                                <h3>{{ item.year3 }}</h3>
+                                <p class="yr">{{ item.time3 }}</p>
                             </div>
-                            <div class="cont right four-o">
-                                <div class="content">
-                                    <h6>{{ item.name1 }}</h6>
-                                    <div class="dv" style="margin-top: 1rem;"></div>
-                                    <!-- <p>Activities:</p> -->
-                                    <p>{{ item.activity1 }}</p>
-                                </div>
+                            <div class="dv"></div>
+                            <p>{{ item.activity2 }}</p>
+                        </div>
+                    </div>
+
+                    <div class="cont left three-o">
+
+                        <div class="content">
+                            <h6>{{ item.name2 }}</h6>
+                            <div class="content-d m">
+                                <h3>{{ item.year2 }}</h3>
+                                <p class="yr">{{ item.time2 }}</p>
                             </div>
+                            <div class="dv"></div>
+                            <p>{{ item.activity3 }}</p>
+                        </div>
+                    </div>
+
+                    <div class="cont right four-o">
+
+                        <div class="content">
+                            <h6>{{ item.name1 }}</h6>
+                            <div class="content-d m">
+                                <h3>{{ item.year1 }}</h3>
+                                <p class="yr">{{ item.time1 }}</p>
+                            </div>
+                            <div class="dv" ></div>
+                            <!-- <p>Activities:</p> -->
+
+                            <p>{{ item.activity1 }}</p>
                         </div>
                     </div>
                 </div>
@@ -90,13 +68,11 @@
 
             <div class="experience">
                 <div class="top">
-                    <h1 style="width: 12rem;">Experience</h1>
-                    <h2>My Work Experience</h2>
+                    <h1>Experience</h1>
+                    <!-- <h2>My Work Experience</h2> -->
                 </div>
 
-                <div class="card" v-motion
-                :initial="{ opacity: 0, y: 100 }"
-                :visible="{ opacity: 1, y: 0 }">
+                <div class="card" v-motion :initial="{ opacity: 0, y: 100 }" :visible="{ opacity: 1, y: 0 }">
                     <div class="card-body">
                         <div class="card-title-ex">
                             <div class="dot"></div>
@@ -109,7 +85,9 @@
                         <p class="when">Learning Journey | April 2023 - Currently</p>
                         <div class="div"></div>
 
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Working on client based web development projects in a team of brilliant designers and developers and enrolled on a learning journey to upskilling</h6>
+                        <h6 class="card-subtitle txt mb-2 text-body-secondary">Working on client based web development projects
+                            in a team of brilliant designers and developers and enrolled on a learning journey to upskilling
+                        </h6>
                         <P class="details">
 
                         </P>
@@ -132,10 +110,10 @@ export default {
                     year3: "2019",
                     year4: "2022",
                     time1: "Passed Matric",
-                    time2: "Volunteerd 2018-2022",
-                    time3: "Volunteerd 2019-2022",
+                    time2: "2018-2022",
+                    time3: "2019-2022",
                     time4: "Currently",
-                    name1: "Mfuleni Secondary School",
+                    name1: "Mfuleni S.S",
                     name2: "Mange Day Care",
                     name3: "African Climate Alliance",
                     name4: "Life Choices Academy",
@@ -161,25 +139,21 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: black;
-    border: 1px solid aqua;
-    width: 10rem;
-    height: 3rem;
+    font-size: 3rem;
+    color: #fff;
+    border-bottom: 1px solid aqua;
     text-align: center;
-    background-color: aqua;
     padding: .5rem;
     font-family: 'Nunito Sans', sans-serif;
     animation: head 3s forwards;
 }
 
-h6{
+h6 {
     margin-top: 1rem;
 }
 
@@ -193,7 +167,7 @@ h6{
     color: #fff;
     font-size: 1.5rem;
     margin-top: 1rem;
-    height: 3rem;
+    height: 2rem;
     overflow: hidden;
     font-family: 'Nunito Sans', sans-serif;
     animation: label 3s forwards;
@@ -207,66 +181,51 @@ h6{
 }
 
 .edu {
-    padding-left: 11.1rem;
-    padding-right: 11.1rem;
+    padding: 0rem 5rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2rem ;
-    display: flex;
-    height: 160vh;
-    justify-content: space-between;
+    margin-bottom: 0rem;
     margin-top: 0rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 
 .education {
-    height: 100vh;
-    padding: 0rem 2rem;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .experience {
     margin-left: auto;
     margin-right: auto;
-}
-
-.tim {
-    position: relative;
-    max-width: 100%;
-    max-height: 70%;
-    padding-top: .5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.tim::after {
-    content: '';
-    position: absolute;
-    width: 1vh;
-    height: 0vh;
-    background-color: aqua;
-    top: 1%;
-    bottom: 0;
-    margin-left: 16rem;
-    margin-right: auto;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    animation: label 3s ease;
 }
 
 .conts {
     margin-left: auto;
     margin-right: auto;
-    width: 110%;
-    position: relative;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 7rem;
+    align-items: center;
+    gap: 1;
+    justify-content: center;
 }
 
 .cont h6 {
     font-size: 1.3rem;
+    text-align: start;
 }
 
 .cont h2 {
@@ -275,175 +234,90 @@ h6{
 
 .cont {
     background-color: inherit;
-    width: 18rem;
-    height: 8rem;
+    width: 100%;
     padding: 1.5rem;
     text-align: center;
-    margin-top: -5rem;
+    margin-top: 1.5rem;
     color: white;
-    /* font-size: 20px; */
-    box-shadow: 0 8px 32px 0 black;
+    box-shadow: 0 2px 7px 0 black;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid black;
+    border-left: 4px solid aqua;
 }
 
 .dv {
     border-bottom: 1px solid #808080;
+    width: 100%;
 }
 
 h3,
 h6,
 p {
     color: white;
-    font-size: 1.3rem;
 }
 
-.left {
-    margin-left: 20rem;
-}
-
-.right {
-    margin-left: 20rem;
-}
-
-.left::before {
-    content: '';
-    height: 0;
-    position: absolute;
-    width: 0;
-    z-index: 1;
-    right: 1rem;
-    border: medium solid white;
-    border-width: 1rem 0rem 1rem 1rem;
-    top: 20rem;
-    border-color: transparent transparent transparent aqua;
-    ;
-}
-
-.right::before {
-    content: '';
-    height: 0;
-    position: absolute;
-    width: 0;
-    z-index: 1;
-    top: -10rem;
-    left: -3rem;
-    border: medium solid black;
-    border-width: 1rem 1rem 1rem 0rem;
-    border-color: transparent aqua transparent transparent;
-}
-
-.date h2,
-p {
+h3 {
     font-size: 1rem;
 }
 
-.date {
-    margin-top: 2rem;
-    width: 16rem;
+.content-d {
     display: flex;
-    justify-content: space-between;
-    padding-right: 1rem;
+    align-items: center;
+    /* margin-bottom: -1.7rem; */
 }
 
-.line p {
-    color: palevioletred;
-    font-size: 2rem;
+.yr {
+    margin-left: 1rem;
+    margin-top: .5rem;
+    color: aqua;
 }
 
-.content-d::after {
-    content: " ";
-    height: 1rem;
-    width: 1rem;
-    /* position: absolute; */
-    z-index: 1;
-    top: 2rem;
-    border-width: 1rem 1rem 1rem 0rem;
-    /* border-color: transparent transparent transparent aqua; */
-    background-color: aqua;
+.content p {
+    text-align: start;
 }
 
 /** --------ANIMATION--------- */
 
-.one {
-    animation: one 3s ease;
-}
-@keyframes one {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
-
-.one-o{
+.one-o {
     animation: one-o 3s ease;
 }
+
 @keyframes one-o {
-    0%{
+    0% {
         transform: translateX(100%);
         opacity: 0;
     }
 }
 
-.two {
-    animation: two 5s ease;
-}
-@keyframes two {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
-
-.two-o{
+.two-o {
     animation: two-o 5s ease;
 }
+
 @keyframes two-o {
-    0%{
+    0% {
         transform: translateX(100%);
         opacity: 0;
     }
 }
 
-.three {
-    animation: three 7s ease;
-}
-
-@keyframes three {
-    0% {
-        transform: translateX(-300%);
-        opacity: 0;
-    }
-}
-
-.three-o{
+.three-o {
     animation: three-o 7s ease;
 }
 
 @keyframes three-o {
-    0%{
+    0% {
         transform: translateX(100%);
         opacity: 0;
     }
 }
 
-.four {
-    animation: four 9s ease;
-}
-
-@keyframes four {
-    0% {
-        transform: translateX(-300%);
-        opacity: 0;
-    }
-}
-
-.four-o{
+.four-o {
     animation: four-o 9s ease;
 }
+
 @keyframes four-o {
-    0%{
+    0% {
         transform: translateX(100%);
         opacity: 0;
     }
@@ -462,12 +336,15 @@ EXPERIENCE
     margin-top: 7rem;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8px 32px 0 black;
-    width: 25rem;
+    box-shadow: 0 2px 7px 0 black;
+    width: 100%;
     animation: exp 3s ease;
+    display: flex;
+    align-items: center;
 }
+
 @keyframes exp {
-    0%{
+    0% {
         transform: translateY(50%);
         opacity: 0;
     }
@@ -526,70 +403,61 @@ EXPERIENCE
     media query
     */
 
-@media (width < 800px) {
+@media (width < 550px) {
+    .cont {
+        padding: 1.5rem;
+        text-align: center;
+        margin: 0rem;
+        margin-bottom: 1rem;
+        color: white;
+        width: 90% !important;
+        height: 100%;
+    }
+}
+
+@media (width < 766px) {
     .edu {
         margin: 0;
         margin-bottom: 5rem;
         padding: 0rem 1rem;
         display: flex;
-        height: 150%;
+        height: 285vh;
         flex-direction: column;
+        align-items: center;
         align-items: center;
     }
 
     .education {
-        height: 120%;
-        margin-bottom: 5rem;
-        padding: 0rem 1rem;
+        height: 270vh;
+        margin-bottom: 1rem;
+        padding: 0rem 1rem;        
+        margin-top: 5rem;
+        margin-top: -1rem;
     }
 
     .cont {
         padding: 1.5rem;
         text-align: center;
-        margin-top: 0rem;
+        margin: 0rem;
+        margin-bottom: 1rem;
         color: white;
-        width: 12rem;
+        width: 50%;
+        height: 100%;
     }
 
-    .firstt {
+    .conts{
         display: flex;
         flex-direction: column;
-    }
-
-    
-
-    .date {
-        margin-top: 2rem;
-        width: 12rem;
-        display: flex;
-        justify-content: space-between;
-        padding-right: 0rem;
-        margin-left: 5rem;
-    }
-
-    .tim::after {
-        height: 180vh;
-        margin-left: 0rem;
-    }
-
-    .left {
-        margin-left: 5rem;
-    }
-
-    .right {
-        margin-left: 5rem;
-    }
-
-    .line {
-        display: none;
+        padding: 0;
+        height: 200vh;
     }
 
     .left::before {
-        top: 21rem;
+        display: none;
     }
 
     .right::before {
-        left: -3rem;
+        display: none;
     }
 
     .experience {
@@ -599,15 +467,22 @@ EXPERIENCE
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+        padding: 0 1rem;
+        height: 90vh;
+        margin-top: 1rem;
     }
 
     .card {
-        width: 20rem;
+        width: 100%;
         margin-top: 0;
     }
 
     .top {
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .top h1{
+        font-size: 2rem;
     }
 
     .card-title-ex {
@@ -623,88 +498,305 @@ EXPERIENCE
 
 }
 
-@media (width > 800px) {
+@media (width > 767px) {
     .edu {
         margin: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
         padding: 0rem 1rem;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 175vh;
-
-    }
-    .education{
-        height: 175vh;
+        height: 210vh;
+        align-items: center;
+        align-items: center;
     }
 
-    .date {
-        margin-top: 2rem;
-        width: 7rem;
-        display: flex;
-        padding-right: 0rem;
-        margin-left: 0rem;
-    }
-
-    .line {
-        display: none;
-    }
-
-    .firstt {
-        display: flex;
-        flex-direction: column;
-        width: 10rem;
-        margin-bottom: -1.3rem;
-    }
-
-    .o{
-        margin-bottom: -1.3rem;
-    }
-
-    .tim::after {
-        height: 120vh;
-        margin-left: 8rem;
+    .education {
+        margin-bottom: 1rem;
+        padding: 0rem 1rem;
+        height: 140vh;
     }
 
     .conts {
         margin-left: auto;
         margin-right: auto;
-        position: relative;
-    }
-
-    .cont {
-        margin-left: 13rem;
-        width: 18rem;
-        height: 13rem;
-    }
-
-    .dv{
-        margin: 1rem 0rem;
-
-    }
-
-    .content p{
-        display: flex;
+        width: 100%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        margin-bottom: 4rem;
         justify-content: center;
     }
 
+    .cont {
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: white;
+        width: 80%;
+        height: 80%;
+    }
+
+    /* .m{
+        margin-top: 2rem;
+    } */
+
+    .left::before {
+        display: none;
+    }
+
+    .right::before {
+        display: none;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -5rem;
+        padding: 0 2rem;
+    }
+
     .card {
-        width: 30rem;
-        margin-top: 5;
+        width: 70%;
+        margin-top: 0;
+        padding: 2rem 2rem;
+    }
+
+    .top {
+        margin-bottom: 1rem;
+    }
+
+    .top h1{
+        font-size: 32px;
+    }
+
+    .card-title-ex {
+        margin-bottom: 1rem;
     }
 
     .div {
-        width: 16rem;
+        width: 15rem;
         border-bottom: 1px solid #808080;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .right::before {
-        left: -3rem;
+    .dv{
+        margin-bottom: .5rem;
     }
 
-    .left::before {
-        left: -3rem;
+}
+
+@media (width > 1025px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    h1 {
+        font-size: 36px !important;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    h6 {
+        margin-top: 1rem;
+    }
+
+    @keyframes head {
+        0% {
+            opacity: 0;
+        }
+    }
+
+    .top h2 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        height: 2rem;
+        overflow: hidden;
+        font-family: 'Nunito Sans', sans-serif;
+        animation: label 3s forwards;
+    }
+
+    @keyframes label {
+        0% {
+            transform: translateY(200%);
+            opacity: 0;
+        }
+    }
+
+    .edu {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        height: 140vh;
+        margin-top: 0rem;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .education {
+        width: 100%;
+        height: 65vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .experience {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        margin-top: 1rem;
+    }
+
+    .conts {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cont h6 {
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    .cont {
+        background-color: inherit;
+        width: 90%;
+        height: 38vh;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        margin-top: 1.5rem;
+        color: white;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(4px);
+        border-left: 4px solid aqua;
+    }
+
+    .dv {
+        border-bottom: 1px solid #808080;
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+
+    h3,
+    h6,
+    p {
+        color: white;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .content-d {
+        display: flex;
+        align-items: center;
+        margin-top: -.5rem;
+    }
+
+   /* .content{
+     padding: 1rem 2rem;
+   } */
+
+    .content p {
+        margin-top: .5rem;
+        text-align: start;
+        font-size: 1.3rem;
+    }
+
+    /* 
+EXPERIENCE 
+*/
+
+    .card {
+        color: white;
+        padding: 2rem 2rem;
+        margin-top: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        animation: exp 3s ease;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-subtitle{
+        font-size: 1.3rem!important;
+    }
+
+    @keyframes exp {
+        0% {
+            transform: translateY(50%);
+            opacity: 0;
+        }
+    }
+
+    .card-title-ex {
+        border: 1px solid aqua;
+        width: 11rem;
+        padding: .5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-title-exp {
+        font-size: 1rem;
+        margin: .5rem;
+    }
+
+    .dot {
+        width: .7rem;
+        height: .7rem;
+        background-color: aqua;
+        border-radius: 50%;
+        margin: .5rem;
+    }
+
+    .when {
+        font-size: 1rem;
+        color: #808080;
+    }
+
+    .company {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .company h6 {
+        font-size: 1.2rem;
+    }
+
+    .company img {
+        width: 10rem;
+        height: 3rem;
+        margin-top: -1rem;
+    }
+
+    .div {
+        width: 21rem;
+        border-bottom: 1px solid #808080;
+        margin-left: auto;
+        margin-right: auto;
     }
 }</style>
