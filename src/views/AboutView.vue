@@ -71,7 +71,7 @@ export default {
 /* body */
 .about {
   padding: 0rem 1rem;
-  height: 60vh;
+  height: 63vh !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -234,7 +234,7 @@ padding-right: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70vh;
+    height: 70vh !important;
     padding: 0 2rem;
     margin: 0;
   }
