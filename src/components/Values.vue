@@ -64,7 +64,7 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 2rem 3rem;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Nunito Sans', sans-serif;
