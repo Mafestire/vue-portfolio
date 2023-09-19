@@ -71,7 +71,7 @@ export default {
 /* body */
 .about {
   padding: 0rem 1rem;
-  height: 59vh;
+  height: 60vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,7 +134,6 @@ export default {
   
 @keyframes image {
   0%{
-    /* transform: rotate(-65deg); */
     transform: translateY(110%);
   }
 }
