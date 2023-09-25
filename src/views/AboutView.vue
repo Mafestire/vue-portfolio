@@ -245,6 +245,7 @@ padding-right: 0;
   .details {
     width: 100%;
     height: 30rem;
+    margin-top: 2rem;
   }
 
   .about img {
