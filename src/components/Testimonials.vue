@@ -221,10 +221,6 @@ img {
     margin-right: auto;
   }
 
-  .top {
-    margin-bottom: 0rem;
-    padding: 1rem 0rem;
-  }
 }
 @media (width < 800px) {
   .topz {
@@ -249,7 +245,6 @@ img {
     border-radius: 1%;
     margin-left: auto;
     margin-right: auto;
-    /* align-items: center; */
   }
 
   .row {
@@ -266,16 +261,6 @@ img {
     padding: 3rem 3rem;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .ref {
-    color: #fff;
-    padding: 0rem 2rem;
-  }
-
-  .top {
-    margin-bottom: 0rem;
-    padding: 1rem 0rem;
   }
 }
 </style>

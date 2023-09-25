@@ -6,10 +6,7 @@
   </div>
 
   <div class="all">
-    <div class="top">
-      <!-- <h1>Projects</h1> -->
-      <!-- <h2>My most recent work</h2> -->
-    </div>
+
 
     
 
@@ -26,10 +23,8 @@
             <div class="linkz">
               <a :href="item.Pantheon">Site Link</a>
             </div>
-          </div>
-        </div>
-      </div>
-
+            </div>
+    <div class="cardz">
       <div class="cards" v-for="item in projects" :key="items">
         <div class="card">
           <div class="card-body">
@@ -45,11 +40,18 @@
           </div>
         </div>
       </div>
+
+        
     </div>
   </div>
+  </div>
+            </div>
+          </div>
 
+        
   <div class="mobile">
     <div id="carouselExampleIndicators" class="carousel slide" style="display: flex; justify-content: center; ">
+    <div id="carouselExampleIndicators" class="carousel slide w-100" style="display: flex; justify-content: center; ">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -207,7 +209,7 @@
             </div>
             </div>
         </div>
-        <div class="carousel-item" >
+        <div class="carousel-item " >
           <img
             src="https://i.postimg.cc/BnNM0GKR/Screenshot-2023-07-17-085609.png"
             alt=""
@@ -264,10 +266,17 @@
               <a href="https://github.com/Mafestire/Point-of-Sale-system.git">Git</a>
               <a href="https://seababags.netlify.app">Netlify</a>
             </div>
-            </div>
         </div>      
-      </div>
-      <button
+          <div class="link">
+              <a href="https://github.com/Mafestire/Point-of-Sale-system.git">Git</a>
+              <a href="https://seababags.netlify.app">Netlify</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+  
+    </div>
+    </div>
+    <button
         class="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExampleIndicators"
@@ -285,7 +294,8 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+      </div>
+      </div>
   </div>
 
   <section id="Testimonials" ref="Testimonials" class="Testimonials">
@@ -427,13 +437,6 @@ export default {
   font-weight: 200;
 }
 
-.top {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 h1 {
   font-size: 2rem;
   font-weight: 200;
@@ -552,14 +555,6 @@ a:hover {
   color: #171717;
 }
 
-.carousel-item {
-  /* width: 120%; */
-    /* align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
 .mobile{
     visibility: hidden;
 }
@@ -577,7 +572,6 @@ a:hover {
   text-align: center;
   font-size: 1.3rem;
   text-decoration: none;
-  /* border: 1px solid aqua; */
   background-color: #171717;
 }
 .link-mobile a{
@@ -614,8 +608,6 @@ a:hover {
   align-items: center;
   width: 15rem;
 }
-
-
 
 @media (max-width: 800px) {
   .cardz {

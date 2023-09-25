@@ -109,6 +109,10 @@ export default {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.call{
+  width: 110%;
+}
+
 .abt {
   padding: 2rem 11.1rem;
 }
@@ -228,9 +232,6 @@ width: 100%;  }
 padding-right: 0;
   }
 
-.call{
-  width: 110%;
-}
 
   .about {
     display: flex;
