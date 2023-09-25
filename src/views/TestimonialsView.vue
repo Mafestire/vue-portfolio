@@ -93,7 +93,6 @@ export default {
     justify-content: space-around;
     margin-top: 2rem;
 }
-
 .head h3 {
     font-size: 3.5rem;
     font-weight: 600;
@@ -130,7 +129,7 @@ export default {
 
 h1 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 300;
     color: black;
     border: 1px solid aqua;
     width: 14rem;

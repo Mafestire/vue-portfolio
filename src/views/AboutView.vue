@@ -11,9 +11,9 @@
       <div class="details" >
         <h2 >Hello, I am</h2>
         <h2 style="color: aqua;">Sibabalwe Mafestire</h2>
-        <h2 style="font-size: 1.3rem; font-weight: 5rem;">Web Developer</h2>
+        <h2 style="font-weight: 600;">Web Developer</h2>
         <p id="info">
-          Hello, I am Sibabalwe Mafestire As a full stack developer i am passionate about unique web applications. Ever
+          As a full stack developer i am passionate about unique web applications. Ever
           since i discovered coding at Life Choices, I found a field
           that challenges me to do better and put my skills into practical use.
         </p>
@@ -21,17 +21,17 @@
 
         <div class="more">
           <ul class="list-group list-group-vertical w-25">
-            <li class="list-group-item">Age</li>
+            <li class="list-group-item">DOB</li>
             <li class="list-group-item">Address</li>
             <li class="list-group-item p ">Phone</li>
             <li class="list-group-item p n">Linkedin</li>
             <li class="list-group-item p ">Email</li>
           </ul>
-          <ul class="list-group list-group-vertical-sm w-50">
-            <li class="list-group-item">22</li>
+          <ul class="list-group sec list-group-vertical-sm w-100">
+            <li class="list-group-item">2000 / 05 / 30</li>
             <li class="list-group-item">Mfuleni, Cape Town</li>
-            <li class="list-group-item">062 4244 310 | 065 9425 403</li>
-            <li class="list-group-item">Sibabalwe Mafestire</li>
+            <li class="list-group-item num call">062 4244 310 | 065 9425 403</li>
+            <li class="list-group-item num"> <a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;">Sibabalwe Mafestire</a> </li>
             <li class="list-group-item">seabaraven@gmail.com</li>
           </ul>
         </div>
@@ -65,25 +65,25 @@ export default {
 
 .head h1 {
   font-size: 3.5rem;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 /* body */
 .about {
-  padding: 2rem 1rem;
-  height: 70vh;
+  padding: 0rem 1rem;
+  height: 63vh !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 2px solid #000;
-  box-shadow: 0 8px 32px 0 black;
+  box-shadow: 0 2px 7px 0 black;
   margin-bottom: 3rem;
   margin-top: 2rem;
   overflow: hidden;
 }
 
 .about img {
-  height: 30rem;
+  height: 100%;
   margin: 0rem 4rem;
   animation: image 2s ease-in;
 }
@@ -92,8 +92,14 @@ export default {
   width: 39rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   color: white;
   font-family: 'Playfair Display', serif;
+}
+
+.L:hover{
+  color: aqua !important;
 }
 
 .details p {
@@ -104,7 +110,6 @@ export default {
 }
 
 .abt {
-  /* height: 95vh; */
   padding: 2rem 11.1rem;
 }
 
@@ -121,6 +126,7 @@ export default {
   background-color: #171717;
   border: none;
   color: white;
+  padding-left: 0;
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -128,7 +134,6 @@ export default {
   
 @keyframes image {
   0%{
-    /* transform: rotate(-65deg); */
     transform: translateY(110%);
   }
 }
@@ -159,7 +164,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 35rem;
+    height: 39rem;
     border: none;
     box-shadow: none;
     padding: 1rem 1rem;
@@ -169,70 +174,81 @@ export default {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0rem;
-    height: 70%;
+    height: 100%;
     padding: 1rem 0rem;
   }
 
   .about img {
-    width: 9rem;
-    height: 15rem;
+    width: 30% ;
+    height: 70%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -25rem;
+    margin-top: -10rem;
   }
 
   .details p,
   h2 {
     font-size: 1rem;
-    width: 18rem;
+    width: 100%;
   }
 
   .more {
-    margin-top: 1rem;
-  }
+width: 100%;  }
 
   .p {
     margin-top: 1.5rem;
   }
+
+  .num{
+    margin-top: 1.5rem;
+  }
+
 }
 
 @media (width < 500px) {
   
-  .details h2 {
-    font-size: 1rem;
-    width: 10rem;
-    border-bottom: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0;
-    text-align: start;
+.num{
+  margin-top: 0;
+}
+
+  .head{
+    height: 10rem;
   }
 
-  .details {
-    width: 20rem;
-    margin-top: -6rem;
+  .head h1{
+    font-size: 2rem;
   }
+  .abt{
+    /* height: 100vh; */
+    margin-top: 0rem;
+  }
+
+  .L{
+    width: 80%;
+padding-right: 0;
+  }
+
+.call{
+  width: 110%;
+}
 
   .about {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-around;
-    margin-top: 4rem;
-    height: 30rem;
+    height: 70vh !important;
+    padding: 0 2rem;
+    margin: 0;
   }
 
-  .details,
-  #info {
-    width: 15rem;
+  .details {
+    width: 100%;
     height: 30rem;
   }
 
   .about img {
-    width: 11rem;
-    height: 18rem;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(30%);
+    display: none;
+    
   }
 
   .details p,
@@ -244,13 +260,8 @@ export default {
     margin-top: 0rem;
   }
 
-  .n{
-    margin-top: 1.5rem;
-  }
 
-  .more{
-    margin-left: 0rem;
-    width: 20rem;
-  }
+
+  
 }
 </style>

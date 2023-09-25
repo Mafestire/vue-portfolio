@@ -54,7 +54,7 @@ export default {
 
 <style  scoped>
 .value {
-    padding: 5rem 11.1rem;
+    padding: 0rem 11.1rem;
 }
 
 .all {
@@ -64,7 +64,7 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 2rem 3rem;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Nunito Sans', sans-serif;
@@ -80,7 +80,7 @@ h2 {
 .v {
     display: flex;
     justify-content: space-around;
-    border: 4px solid aqua;
+    border: 3px solid aqua;
     width: 12rem;
     padding: .7rem .7rem;
     margin-left: -49rem;
@@ -308,10 +308,10 @@ h2 {
         justify-content: center;
         align-items: center;
         padding: 1rem 0rem;
-        width: 21rem;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20rem;
+        margin-top: 0;
         font-family: 'Nunito Sans', sans-serif;}
     
 
@@ -322,12 +322,20 @@ h2 {
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
-        width: 21rem;
+        width: 100%;
+    }
+
+    .y{
+        margin-top: 1rem;
     }
 
     .one {
-        width: 3rem;
+        width: 18%;
         margin-left: -6rem;
+    }
+
+    .two{
+        width: 100%;overflow: visible;
     }
 
     .a {
@@ -338,12 +346,13 @@ h2 {
 
     .b {
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-bottom: -.5rem;
     }
 
+
     .list-group .c {
-        width: 17rem;
+        width: 15rem;
     }
 
     .first{
