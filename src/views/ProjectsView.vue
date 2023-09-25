@@ -24,7 +24,25 @@
               <a :href="item.Pantheon">Site Link</a>
             </div>
             </div>
-    <div class="cardz">
+        </div>
+      </div>
+
+
+      <div class="cards" v-for="item in Designs" :key="items">
+        <div class="card">
+          <div class="card-body">
+            <img :src="item.image" />
+
+            <h5 class="card-title">{{ item.name }}</h5>
+            <h6 class="card-subtitle">{{ item.tool }}</h6>
+
+            <div class="linkz">
+              <a :href="item.Pantheon">Site Link</a>
+            </div>
+            </div>
+        </div>
+      </div>
+
       <div class="cards" v-for="item in projects" :key="items">
         <div class="card">
           <div class="card-body">
@@ -44,9 +62,6 @@
         
     </div>
   </div>
-  </div>
-            </div>
-          </div>
 
         
   <div class="mobile">
@@ -209,6 +224,23 @@
             </div>
             </div>
         </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.postimg.cc/BQq8kcFj/Logo-2-removebg-preview.png"
+            alt=""
+          />
+
+          <div class="link-mobile">
+            <h5>Fitness House</h5>
+            <h6>Figma Design</h6>
+            <div class="link">
+              <a href= "https://www.figma.com/file/eiNDtRORxk07lj6o3EwHLn/Untitled?type=design&node-id=1%3A2&mode=design&t=Tuf5NKZppgsN6wu0-1">Link</a>
+            </div>
+            </div>
+        </div>
+
+
+
         <div class="carousel-item " >
           <img
             src="https://i.postimg.cc/BnNM0GKR/Screenshot-2023-07-17-085609.png"
@@ -267,14 +299,7 @@
               <a href="https://seababags.netlify.app">Netlify</a>
             </div>
         </div>      
-          <div class="link">
-              <a href="https://github.com/Mafestire/Point-of-Sale-system.git">Git</a>
-              <a href="https://seababags.netlify.app">Netlify</a>
-            </div>
         </div>
-        <div class="carousel-item">
-  
-    </div>
     </div>
     <button
         class="carousel-control-prev"
@@ -413,6 +438,20 @@ export default {
           netlify: "https://technews-d5a7b.web.app/#/",
         },
       ],
+
+      Designs:[
+        {
+          name: "Web Design",
+          tool: "Figma",
+          Link: "https://www.figma.com/file/eiNDtRORxk07lj6o3EwHLn/Untitled?type=design&node-id=1%3A2&mode=design&t=Tuf5NKZppgsN6wu0-1",
+          image: "https://i.postimg.cc/BQq8kcFj/Logo-2-removebg-preview.png"
+        },
+        // {
+        //   name: "Portfolio Design",
+        //   tool: "Figma",
+        //   Link: "https://www.figma.com/file/wtvGMGm4OBEoHonSBDYLfi/Portfolio?type=design&node-id=0%3A1&mode=design&t=UXjuOjMZrRVKPwEl-1"
+        // },
+      ]
     };
   },
 };
