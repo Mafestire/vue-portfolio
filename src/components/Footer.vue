@@ -2,11 +2,11 @@
     <div class="footer">
         <p>&copy;2023 Sibabalwe Mafestire</p>
         <ul class="foot">
-                <li><router-link to="/about">About</router-link></li>
-                <li><router-link to="/resume">Resume</router-link></li>
-                <li><router-link to="/projects">Projects</router-link></li>
-                <li><router-link to="/testimonials">Testimonials</router-link></li>
-                <li><router-link to="/contacts">Contacts</router-link></li>
+            <li><router-link to="/about">About</router-link></li>
+            <li><router-link to="/#skills">Resume</router-link></li>
+            <li><router-link to="/projects#Projects">Projects</router-link></li>
+            <li><router-link to="/projects#Testimonials">Testimonials</router-link></li>
+            <li><router-link to="/contacts">Contacts</router-link></li>
         </ul>
     </div>
 </template>
@@ -53,7 +53,7 @@ li a {
 }
 
 li a:hover {
-    font-size: 1.5rem;
+    color: aqua;
 }
 
 @media (width < 600px) {
@@ -74,8 +74,7 @@ li a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .foot {
-    }
+    .foot {}
 
 }
 

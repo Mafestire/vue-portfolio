@@ -1,7 +1,7 @@
 <template>
   <Nav />
 
-  <div class="head">
+  <div class="head" id="Projects">
     <h3>Projects</h3>
   </div>
 
@@ -37,7 +37,7 @@
             <h6 class="card-subtitle">{{ item.tool }}</h6>
 
             <div class="linkz">
-              <a :href="item.Pantheon">Site Link</a>
+              <a href= "https://www.figma.com/file/eiNDtRORxk07lj6o3EwHLn/Untitled?type=design&node-id=1%3A2&mode=design&t=Tuf5NKZppgsN6wu0-1">Link</a>
             </div>
             </div>
         </div>
@@ -127,12 +127,6 @@
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="9"
           aria-label="Slide 10"
         ></button>
@@ -148,16 +142,33 @@
           data-bs-slide-to="11"
           aria-label="Slide 12"
         ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="12"
+          aria-label="Slide 13"
+        ></button>
       </div>
       <div class="carousel-inner ">
         <div class="carousel-item active">
+          <img
+            src="https://i.postimg.cc/6pSZY8T9/Screenshot-2023-10-05-113919-removebg-preview.png"
+            alt=""
+          />
+          <div class="link-mobile">
+            <h5>4Di</h5>
+            <h6>Client Project</h6>
+              <a href="https://4dicapital.com/">Site Link</a>
+            </div>
+        </div>
+        <div class="carousel-item">
           <img
             src="https://i.postimg.cc/2St818tb/Core-Logo-White.png"
             alt=""
           />
           <div class="link-mobile">
             <h5>Core Teaching Essentials</h5>
-            <h6>Wordpress</h6>
+            <h6>Client Project</h6>
               <a href="https://www.core-education.co/">Site Link</a>
             </div>
         </div>
@@ -345,6 +356,24 @@ export default {
     return {
 
       WP: [
+      {
+          name: "4Di",
+          brief: "Wordpress Client Site",
+          image:
+            "https://i.postimg.cc/6pSZY8T9/Screenshot-2023-10-05-113919-removebg-preview.png",
+          // git: 'https://github.com/Mafestire/Tech-News.git',
+          Pantheon:
+            "https://4dicapital.com/",
+        },
+        {
+          name: "Core Teaching Essentials",
+          brief: "Wordpress Client Site",
+          image:
+            "https://i.postimg.cc/2St818tb/Core-Logo-White.png",
+          // git: 'https://github.com/Mafestire/Tech-News.git',
+          Pantheon:
+            "https://www.core-education.co/",
+        },
         {
           name: "The Art of Traveling",
           brief: "Wordpress",
@@ -369,15 +398,6 @@ export default {
           // git: 'https://github.com/Mafestire/Tech-News.git',
           Pantheon:
             "https://dev-sibabalwe-mafetsire-portfolio.pantheonsite.io/",
-        },
-        {
-          name: "Core Teaching Essentials",
-          brief: "Wordpress Client Site",
-          image:
-            "https://i.postimg.cc/2St818tb/Core-Logo-White.png",
-          // git: 'https://github.com/Mafestire/Tech-News.git',
-          Pantheon:
-            "https://www.core-education.co/",
         },
       ],
 
@@ -553,8 +573,8 @@ h2 {
 }
 
 img {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 9rem;
   margin-bottom: 1rem;
 }
 

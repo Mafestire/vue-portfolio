@@ -2,7 +2,7 @@
     <!-- navbar -->
     <div class="all">
 
-        <nav class="navbar navbar-expand-lg w-100">
+        <nav class="navbar navbar-expand-lg w-100 ">
             <div class="container-fluid" style="color: #fff;">
                 <!-- <a class="navbar-brand" href="#" style="text-decoration: none;"><router-link to="/">
                     <h2>S</h2>
@@ -24,7 +24,8 @@
                             <a class="nav-link" href="#"><router-link to="/about">About</router-link></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills"> <router-link to="#skills" @click="scrollToSection('skills')">Resume</router-link>
+                            <a class="nav-link" href="#skills"> <router-link to="#skills"
+                                    @click="scrollToSection('skills')">Resume</router-link>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -48,28 +49,49 @@
 </template>
 
 <script>
-export default{
+export default {
 
     methods: {
-    scrollToSection(anchor) {
-      const element = document.getElementById(anchor);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth'});
-      }
+        scrollToSection(anchor) {
+            const element = document.getElementById(anchor);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        },
     },
-  },
+    // new: Vue({
+    //     el: '#all',
+    //     data: {
+    //         isSticky: false
+    //     },
+    //     mounted() {
+    //         window.addEventListener('scroll', this.handleScroll);
+    //     },
+    //     methods: {
+    //         handleScroll(){
+    //             const header = document.getElementById('all');
+    //             const headerOffSet = header.offsetTop;
+
+    //             if (window.pageYOffset > headerOffSet) {
+    //                 this.isSticky = true
+    //             }else{
+    //                 this.isSticky = false
+    //             }
+    //         }
+    //     },
+    // })
 }
 
 </script>
 
 <style scoped>
+
+
 .navbar {
     display: flex;
     z-index: 1;
     justify-content: space-between;
     width: 100%;
-    /* height: 1rem; */
-    top: 1rem;
     z-index: 10;
     padding: 5rem 7rem;
     font-family: 'Nunito Sans', sans-serif;
@@ -91,8 +113,6 @@ i {
     align-items: center;
     cursor: pointer;
 }
-
-
 
 .navbar h2 a {
     text-decoration: none;
@@ -119,7 +139,11 @@ i {
     color: #ffff;
 }
 
-.navbar a:hover:active{
+.navbar a:hover{
+    color: aqua;
+}
+
+.navbar a:hover:active {
     border-bottom: 1px solid aqua;
 }
 

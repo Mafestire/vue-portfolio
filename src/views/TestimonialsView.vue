@@ -109,6 +109,7 @@ export default {
     padding: 5rem 3rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
 }
 
 .top {
