@@ -479,8 +479,8 @@ export default {
 
 <style scoped>
 .head {
-  height: 20rem;
-  background-image: url(https://i.postimg.cc/Z5WsZZHQ/1000-F-422687964-0-W77-Tl-Y5us-MM3g-SOkg-BDf-TIr-Pev-TQZb-H.jpg);
+  /* height: 20rem; */
+  /* background-image: url(https://i.postimg.cc/Z5WsZZHQ/1000-F-422687964-0-W77-Tl-Y5us-MM3g-SOkg-BDf-TIr-Pev-TQZb-H.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Nunito Sans", sans-serif;
@@ -488,7 +488,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .head h3 {
@@ -552,7 +552,7 @@ h2 {
 }
 
 .all {
-  padding: 5rem 11.1rem;
+  padding: 5rem 5rem;
   text-align: center;
   height: 100%;
   margin-bottom: -15rem;

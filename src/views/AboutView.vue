@@ -2,12 +2,13 @@
   <Nav />
 
   <div class="head">
-    <h1>About me</h1>
+    <!-- <h1>About me</h1> -->
   </div>
 
   <div class="abt">
     <div class="about">
-      <img src="https://i.postimg.cc/7ZW6dJLY/C11-Sibabalwe-Mafestire-2-1-removebg-preview.png" alt="">
+      <img src="https://i.postimg.cc/BQDYRcGf/C11-Sibabalwe-Mafestire-3-removebg-preview-1.png
+" alt="">
       <div class="details" >
         <h2 >Hello, I am</h2>
         <h2 style="color: aqua;">Sibabalwe Mafestire</h2>
@@ -53,8 +54,8 @@ export default {
 
 <style scoped>
 .head {
-  height: 20rem;
-  background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
+  /* height: 20rem; */
+  /* background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg); */
   font-family: 'Nunito Sans', sans-serif;
   color: #fff;
   display: flex;

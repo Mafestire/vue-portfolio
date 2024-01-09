@@ -2,7 +2,8 @@
     <section>
         <div class="wel">
             <div class="image">
-                <img src="https://i.postimg.cc/nrFsMdyL/C11-Sibabalwe-Mafestire-1-removebg-preview.png" alt="">
+                <img src="https://i.postimg.cc/4xgLG7J7/C11-Sibabalwe-Mafestire-1-removebg-preview.png
+" alt="">
             </div>
             <div class="greet">
                 <h1 class="hi"><span>Hello,</span> I am</h1>

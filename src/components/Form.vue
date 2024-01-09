@@ -2,7 +2,8 @@
     <div class="all">
         <div class="proj">
             <div class="image">
-                <img src="https://i.postimg.cc/7ZW6dJLY/C11-Sibabalwe-Mafestire-2-1-removebg-preview.png" alt="" srcset="">
+                <img src="https://i.postimg.cc/4xgLG7J7/C11-Sibabalwe-Mafestire-1-removebg-preview.png
+" alt="" srcset="">
             </div>
             <div class="form">
 
