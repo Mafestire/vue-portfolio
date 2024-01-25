@@ -101,6 +101,13 @@
 
           <!-- <span class="bar"><span class="wordpress"></span></span> -->
         </li>
+        <li>
+          <div class="icon">
+            <i class="fa-brands fa-salesforce" style="color: #ffff;"></i>          </div>
+          <div class="line"><div class="under"></div></div>
+          <h3>Salesforce</h3>
+          <!-- <span class="bar"><span class="wordpress"></span></span> -->
+        </li>
       </div>
     </div>
   </div>
@@ -161,7 +168,7 @@ export default {};
 
 .progress {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-content: space-between;
   background-color: #171717;
@@ -429,7 +436,7 @@ h1{
 }
 @media (width > 1010px) {
   .progress {
-    height: 25rem;
+    height: 100%;
     align-items: center;
     padding: 0 5rem;
     margin-left: auto;

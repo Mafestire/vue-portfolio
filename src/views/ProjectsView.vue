@@ -2,27 +2,29 @@
   <Nav />
 
   <div class="head" id="Projects">
-    <h3>Projects</h3>
+    <h2>Projects</h2>
   </div>
 
   <div class="all">
-
-
-    
 
     <div class="cardz">
 
       <div class="cards" v-for="item in WP" :key="items">
         <div class="card">
           <div class="card-body">
-            <img :src="item.image" />
+            <div class="image">
+              <img :src="item.image" />
+            </div>
 
-            <h5 class="card-title">{{ item.name }}</h5>
+            <div class="info">
+              <h5 class="card-title">{{ item.name }}</h5>
             <h6 class="card-subtitle">{{ item.brief }}</h6>
 
             <div class="linkz">
               <a :href="item.Pantheon">Site Link</a>
             </div>
+            </div>
+            
             </div>
         </div>
       </div>
@@ -31,14 +33,19 @@
       <div class="cards" v-for="item in Designs" :key="items">
         <div class="card">
           <div class="card-body">
-            <img :src="item.image" />
+            <div class="image">
+              <img :src="item.image" />
+            </div>
 
+            <div class="info">
             <h5 class="card-title">{{ item.name }}</h5>
             <h6 class="card-subtitle">{{ item.tool }}</h6>
 
             <div class="linkz">
               <a href= "https://www.figma.com/file/eiNDtRORxk07lj6o3EwHLn/Untitled?type=design&node-id=1%3A2&mode=design&t=Tuf5NKZppgsN6wu0-1">Link</a>
             </div>
+          </div>
+
             </div>
         </div>
       </div>
@@ -46,8 +53,11 @@
       <div class="cards" v-for="item in projects" :key="items">
         <div class="card">
           <div class="card-body">
-            <img :src="item.image" />
+            <div class="image">
+              <img :src="item.image" />
+            </div>
 
+            <div class="info">
             <h5 class="card-title">{{ item.name }}</h5>
             <h6 class="card-subtitle">{{ item.brief }}</h6>
 
@@ -55,6 +65,7 @@
               <a :href="item.git">Git</a>
               <a :href="item.netlify">Netlify</a>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -442,21 +453,21 @@ export default {
           git: "https://github.com/Mafestire/Point-of-Sale-system.git",
           netlify: "https://sibabalwe-temperiture-converter.netlify.app",
         },
-        {
-          name: "Point of Sale",
-          brief: "JavaScript",
-          image: "https://i.postimg.cc/mgYs3PN8/logo3-removebg-preview.png",
-          git: "https://github.com/Mafestire/Point-of-Sale-system.git",
-          netlify: "https://seababags.netlify.app",
-        },
-        {
-          name: "e-commerce",
-          brief: "HTML & CSS",
-          image:
-            "https://i.postimg.cc/c6ykcJtT/Screenshot-2023-08-22-110022.png",
-          git: "https://github.com/Mafestire/Tech-News.git",
-          netlify: "https://technews-d5a7b.web.app/#/",
-        },
+        // {
+        //   name: "Point of Sale",
+        //   brief: "JavaScript",
+        //   image: "https://i.postimg.cc/mgYs3PN8/logo3-removebg-preview.png",
+        //   git: "https://github.com/Mafestire/Point-of-Sale-system.git",
+        //   netlify: "https://seababags.netlify.app",
+        // },
+        // {
+        //   name: "e-commerce",
+        //   brief: "HTML & CSS",
+        //   image:
+        //     "https://i.postimg.cc/c6ykcJtT/Screenshot-2023-08-22-110022.png",
+        //   git: "https://github.com/Mafestire/Tech-News.git",
+        //   netlify: "https://technews-d5a7b.web.app/#/",
+        // },
       ],
 
       Designs:[
@@ -491,8 +502,8 @@ export default {
   margin-top: 5rem;
 }
 
-.head h3 {
-  font-size: 3.5rem;
+.head h2 {
+  /* font-size: 3.5rem; */
   font-weight: 200;
 }
 
@@ -514,9 +525,9 @@ h2 {
 
 .cardz {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -526,15 +537,23 @@ h2 {
   background-color: #171717;
   color: white;
   border: 1px solid black;
-  padding: 2rem 1rem;
-  height: 25rem;
+  padding: 1rem 0rem;
   width: 100%;
   animation: in 1.5s ease-in;
-  box-shadow: 0 2px 7px 0 black;
+  box-shadow: 0 1px 5px 0 black;
 }
 
 .card-body {
-  margin-top: -0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
 }
 
 .card-title {
@@ -542,12 +561,11 @@ h2 {
   text-align: center;
   color: aqua;
   font-size: 1.5rem;
-  height: 2rem;
 }
 
 .card-subtitle {
   text-align: center;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -581,37 +599,32 @@ img {
 .links {
   display: flex;
   justify-content: space-around;
-  margin-top: 2rem;
 }
 .linkz {
   display: flex;
   justify-content: space-around;
-  margin-top: 2rem;
 }
 
 .links a {
   color: aqua;
   width: 6rem;
-  padding: 0.3rem;
   font-size: 1.3rem;
   text-decoration: none;
-  border: 1px solid aqua;
   background-color: #171717;
 }
 .linkz a {
   color: aqua;
   width: 9rem;
-  padding: 0.3rem;
   font-size: 1.3rem;
   text-decoration: none;
-  border: 1px solid aqua;
   background-color: #171717;
 }
 
 a:hover {
-  border: 2px solid black;
+  border: none;
   background-color: aqua;
   color: #171717;
+  font-weight: 600;
 }
 
 .mobile{
@@ -704,20 +717,4 @@ a:hover {
   }
 }
 
-/*@media (width < 576px) {
-    .links {
-        display: flex;
-        flex-direction: column;
-    }
-
-    img {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    .all {
-        height: 100%;
-        margin-bottom: 5rem;
-    }
-} */
 </style>

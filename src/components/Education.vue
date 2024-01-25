@@ -87,8 +87,8 @@
             <div class="company">
               <h6>Cirrico</h6>
               <img
-                src="https://i.postimg.cc/j5kGLNV5/Logo-Life-Choices-removebg-preview.png"
-                alt=""
+                src="https://i.postimg.cc/FKs0pN2d/Cirico-logo-removebg-preview-1.png"
+                alt="" class="cirrico"
               />
             </div>
             <p class="when">
@@ -473,6 +473,11 @@ EXPERIENCE
   animation: exp 3s ease;
   display: flex;
   align-items: center;
+}
+
+.cirrico{
+  /* width: 70% !important; */
+  /* height: 50% !important; */
 }
 
 @keyframes exp {
