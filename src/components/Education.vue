@@ -8,7 +8,19 @@
         </div>
 
         <div class="conts" v-for="item in education" :key="item">
-          <div class="cont left o one-o">
+          <!-- <div class="cont left o one-o">
+            <div class="content">
+              <h6>{{ item.name5 }}</h6>
+              <div class="content-d m">
+                <h3>{{ item.year5 }}</h3>
+                <p class="yr">{{ item.time5 }}</p>
+              </div>
+              <div class="dv"></div>
+              <p>{{ item.activity5 }}</p>
+            </div>
+          </div> -->
+
+          <!-- <div class="cont left o two-o">
             <div class="content">
               <h6>{{ item.name4 }}</h6>
               <div class="content-d m">
@@ -18,9 +30,9 @@
               <div class="dv"></div>
               <p>{{ item.activity4 }}</p>
             </div>
-          </div>
+          </div> -->
 
-          <div class="cont right two-o">
+          <div class="cont right three-o">
             <div class="content">
               <h6>{{ item.name3 }}</h6>
               <div class="content-d">
@@ -32,7 +44,7 @@
             </div>
           </div>
 
-          <div class="cont left three-o">
+          <div class="cont left four-o">
             <div class="content">
               <h6>{{ item.name2 }}</h6>
               <div class="content-d m">
@@ -44,7 +56,7 @@
             </div>
           </div>
 
-          <div class="cont right four-o">
+          <div class="cont right five-o">
             <div class="content">
               <h6>{{ item.name1 }}</h6>
               <div class="content-d m">
@@ -65,6 +77,37 @@
           <h1>Experience</h1>
         </div>
 
+        <div class="cards">
+          <div class="card">
+          <div class="card-body">
+            <div class="card-title-ex">
+              <div class="dot"></div>
+              <h5 class="card-title-exp">Job Description</h5>
+            </div>
+            <div class="company">
+              <h6>Cirrico</h6>
+              <img
+                src="https://i.postimg.cc/j5kGLNV5/Logo-Life-Choices-removebg-preview.png"
+                alt=""
+              />
+            </div>
+            <p class="when">
+              <span style="color: aqua">Salesforce Associate Trainee </span> | April
+              2023/11 - 2024/01
+            </p>
+            <!-- <div class="div"></div> -->
+
+            <div class="card-subtitles txt mb-2 mt-3 text-body-secondary">
+              <p>
+                Learning and Training: Familiarizing yourself with programming
+                languages, frameworks, and tools commonly used in web
+                development, such as HTML, CSS, JavaScript, and popular
+                libraries or frameworks like Vue.js and Wordpress.
+              </p>
+            </div>
+            <P class="details"> </P>
+          </div>
+        </div>
         <div class="card">
           <div class="card-body">
             <div class="card-title-ex">
@@ -82,7 +125,7 @@
               <span style="color: aqua">Web Development Intern </span> | April
               2023 - Currently
             </p>
-            <div class="div"></div>
+            <!-- <div class="div"></div> -->
 
             <div class="card-subtitle txt mb-2 mt-3 text-body-secondary">
               <p>
@@ -159,6 +202,7 @@
             <P class="details"> </P>
           </div>
         </div>
+        </div>
       </div>
     </div>
   </div>
@@ -176,14 +220,17 @@ export default {
           year2: "2019",
           year3: "2022",
           year4: "2023",
+          year5: "2023",
           time1: "Passed Matric",
           time2: "Volunteer",
           time3: "Student",
           time4: "Web Development Intern",
+          time5: "Salesforce Associate Trainee",
           name1: "Mfuleni S.S",
           name2: "African Climate Alliance",
           name3: "Life Choices Academy",
           name4: "LC Studio",
+          name5: "Cirrico",
           activity1: "Volleyball, Student Leadership",
           activity3:
             "Assisted to spread awareness of the need to look after the environment and part-taken in environmental clean ups",
@@ -191,6 +238,8 @@ export default {
             "Studying and practising coding (JavaScript, Vue Js, Node.js, Express.js, SQL)",
           activity4:
             "Intern Web Developer - Developing client projects, working hand in hand with the Dev team using CMS Wordpress",
+          activity5:
+            "Trained and obtained a salesforce associate certification ",
           image1: "",
           image2: "",
           image3: "",
@@ -270,6 +319,7 @@ h6 {
   margin-right: auto;
   margin-bottom: 0rem;
   margin-top: 0rem;
+  /* padding: 3rem 2rem; */
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -300,7 +350,7 @@ h6 {
   width: 100%;
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 0 7rem;
   align-items: center;
   gap: 1;
@@ -321,7 +371,7 @@ h6 {
   width: 100%;
   padding: 1.5rem;
   text-align: center;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   color: white;
   box-shadow: 0 2px 7px 0 black;
   backdrop-filter: blur(8px);
@@ -446,7 +496,7 @@ EXPERIENCE
 }
 
 .card-subtitle {
-  max-height: 250px;
+  max-height: 150px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -590,7 +640,7 @@ EXPERIENCE
     margin: 0;
     margin-bottom: 5rem;
     padding: 0rem 1rem;
-    height: 230vh;
+    /* height: 230vh; */
     align-items: center;
     align-items: center;
   }
@@ -598,7 +648,7 @@ EXPERIENCE
   .education {
     margin-bottom: 1rem;
     padding: 0rem 1rem;
-    height: 140vh;
+    height: 100%;
   }
 
   .conts {
@@ -718,15 +768,17 @@ EXPERIENCE
   .edu {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3rem;
-    height: 160vh;
+    margin-bottom: 4rem !important;
+    padding: 0rem 2rem !important;
+    /* height: 160vh; */
     margin-top: 0rem;
     font-family: "Nunito Sans", sans-serif;
   }
 
   .education {
+    margin-top: 0rem !important;
     width: 100%;
-    height: 65vh;
+    height: 100% !important;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -740,11 +792,12 @@ EXPERIENCE
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    margin-top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
 
   .conts {
@@ -752,8 +805,9 @@ EXPERIENCE
     margin-right: auto;
     width: 100%;
     align-items: center;
+    margin-bottom: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .cont h6 {
@@ -810,20 +864,24 @@ EXPERIENCE
 EXPERIENCE 
 */
 
+  .cards{
+    display: flex;
+  }
   .card {
     color: white;
     padding: 2rem 2rem;
     margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 40%;
     animation: exp 3s ease;
     display: flex;
     align-items: center;
   }
 
-  .card-subtitle {
+  .card-subtitle, .card-subtitles {
     font-size: 1.1rem !important;
+    padding-top: 1rem;
   }
 
   @keyframes exp {

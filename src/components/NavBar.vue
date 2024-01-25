@@ -23,19 +23,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#"><router-link to="/about">About</router-link></a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#skills"> <router-link to="#skills"
                                     @click="scrollToSection('skills')">Resume</router-link>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link "> <router-link to="/projects">Projects</router-link>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link "> <router-link to="/projects#Testimonials">Testimonials</router-link>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link "> <router-link to="/contacts">Contacts</router-link>
                             </a>

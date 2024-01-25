@@ -83,13 +83,18 @@ input {
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;    
     width: 100%;
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    background-color: #171717;
 }
 
 button {
-    margin-top: 1rem;
-    background-color: aqua;
-    padding: .5rem 1.5rem;
-    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: aqua;
+    background-color: #171717;
+    border: none;
+    /* padding: .5rem 1.5rem; */
+    font-size: 1.5rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 

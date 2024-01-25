@@ -40,8 +40,8 @@ export default {
 
 <style scoped>
 .head {
-    height: 20rem;
-    background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
+    /* height: 20rem; */
+    /* background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg); */
     font-family: 'Nunito Sans', sans-serif;
     color: #fff;
     display: flex;
