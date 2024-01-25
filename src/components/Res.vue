@@ -412,7 +412,7 @@ h2 {
   .progress {
     height: 25rem;
     align-items: center;
-    padding: 0 5rem;
+    padding: 0 5%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
@@ -423,7 +423,7 @@ h2 {
 }
 
 h1{
-  font-size: 32px;
+  font-size: 1rem;
 }
 
 .top h2{

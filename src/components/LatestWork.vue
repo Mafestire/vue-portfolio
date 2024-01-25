@@ -19,7 +19,6 @@
                 <div class="card-body">
                     <h5 class="card-title"><i class="fa-solid fa-table-columns"></i></h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">Web Design</h6>
-                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
 
                 </div>
             </div>
@@ -28,7 +27,6 @@
                 <div class="card-body">
                     <h5 class="card-title"><i class="fa-sharp fa-solid fa-mobile"></i></h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">UI/UX Design</h6>
-                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                 </div>
             </div>
         </div>
@@ -132,8 +130,12 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         font-family: 'Nunito Sans', sans-serif;
+    }
+
+    h1{
+        font-size: 1.7rem;
     }
 
     .cards {
@@ -142,7 +144,7 @@ h2 {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 3rem;
+        margin-top: 2rem;
         margin-bottom: 0rem;
         padding-left: 0rem;
     padding-right: 0rem;
@@ -167,7 +169,7 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         margin-top: 3rem;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
         padding: 0 3rem;
     }
 
@@ -177,6 +179,7 @@ h2 {
         border: 1px solid black;
         padding: 2rem 1rem;
         width: 12rem;
+        height: 40vh;
         margin-left: 0rem;
         margin-bottom: 0rem;
     }

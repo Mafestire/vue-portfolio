@@ -8,29 +8,6 @@
         </div>
 
         <div class="conts" v-for="item in education" :key="item">
-          <!-- <div class="cont left o one-o">
-            <div class="content">
-              <h6>{{ item.name5 }}</h6>
-              <div class="content-d m">
-                <h3>{{ item.year5 }}</h3>
-                <p class="yr">{{ item.time5 }}</p>
-              </div>
-              <div class="dv"></div>
-              <p>{{ item.activity5 }}</p>
-            </div>
-          </div> -->
-
-          <!-- <div class="cont left o two-o">
-            <div class="content">
-              <h6>{{ item.name4 }}</h6>
-              <div class="content-d m">
-                <h3>{{ item.year4 }}</h3>
-                <p class="yr">{{ item.time4 }}</p>
-              </div>
-              <div class="dv"></div>
-              <p>{{ item.activity4 }}</p>
-            </div>
-          </div> -->
 
           <div class="cont right three-o">
             <div class="content">
@@ -67,6 +44,7 @@
               <!-- <p>Activities:</p> -->
 
               <p>{{ item.activity1 }}</p>
+              <p class="more">{{ item.more }}</p>
             </div>
           </div>
         </div>
@@ -232,6 +210,7 @@ export default {
           name4: "LC Studio",
           name5: "Cirrico",
           activity1: "Volleyball, Student Leadership",
+          more: "to occupy space i have added this",
           activity3:
             "Assisted to spread awareness of the need to look after the environment and part-taken in environmental clean ups",
           activity2:
@@ -378,6 +357,10 @@ h6 {
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid black;
   border-left: 4px solid aqua;
+}
+
+.more{
+  color: #171717;
 }
 
 .dv {
@@ -556,26 +539,38 @@ EXPERIENCE
     width: 90% !important;
     height: 100%;
   }
+
+  .conts{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .experience{
+    padding: 0 2% !important;
+  }
+
+  .card, .card-body{
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  
 }
 
-@media (width < 766px) {
+@media (width < 767px) {
   .edu {
     margin: 0;
     margin-bottom: 5rem;
     padding: 0rem 1rem;
     display: flex;
-    height: 330vh !important;
     flex-direction: column;
     align-items: center;
     align-items: center;
   }
 
   .education {
-    height: 270vh;
     margin-bottom: 1rem;
     padding: 0rem 1rem;
-    margin-top: 5rem;
-    margin-top: -1rem;
   }
 
   .cont {
@@ -584,15 +579,16 @@ EXPERIENCE
     margin: 0rem;
     margin-bottom: 1rem;
     color: white;
-    width: 50%;
-    height: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
   }
 
   .conts {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     padding: 0;
-    height: 200vh;
   }
 
   .left::before {
@@ -610,14 +606,14 @@ EXPERIENCE
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1rem;
-    height: 100vh;
+    padding: 0 10%;
     margin-top: 1rem;
   }
 
   .card {
-    width: 100%;
-    margin-top: 0;
+    width: 80%;
+    margin-bottom: 5%;
+    margin-top: 0%;
   }
 
   .top {
@@ -645,7 +641,6 @@ EXPERIENCE
     margin: 0;
     margin-bottom: 5rem;
     padding: 0rem 1rem;
-    /* height: 230vh; */
     align-items: center;
     align-items: center;
   }
@@ -661,8 +656,8 @@ EXPERIENCE
     margin-right: auto;
     width: 100%;
     align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     padding: 0;
     margin-bottom: 4rem;
     justify-content: center;
@@ -713,13 +708,6 @@ EXPERIENCE
 
   .card-title-ex {
     margin-bottom: 1rem;
-  }
-
-  .div {
-    width: 15rem;
-    border-bottom: 1px solid #808080;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .dv {
