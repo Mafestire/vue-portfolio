@@ -70,8 +70,8 @@
               />
             </div>
             <p class="when">
-              <span style="color: aqua">Salesforce Associate Trainee </span> | April
-              2023/11 - 2024/01
+              <span style="color: aqua">Salesforce Associate Trainee </span> | Nov 
+              18/2023 - Jan 08/2024
             </p>
             <!-- <div class="div"></div> -->
 
@@ -101,7 +101,7 @@
             </div>
             <p class="when">
               <span style="color: aqua">Web Development Intern </span> | April
-              2023 - Currently
+              11/2023 - Nov 18/2023
             </p>
             <!-- <div class="div"></div> -->
 
@@ -550,7 +550,7 @@ EXPERIENCE
   }
 
   .card, .card-body{
-    padding: 0 !important;
+    padding: .5rem !important;
     width: 100%;
   }
 
@@ -611,9 +611,13 @@ EXPERIENCE
   }
 
   .card {
-    width: 80%;
+    width: 100%;
     margin-bottom: 5%;
     margin-top: 0%;
+  }
+
+  .card-body{
+    padding: 1rem;
   }
 
   .top {
@@ -695,6 +699,7 @@ EXPERIENCE
   .card {
     width: 70%;
     margin-top: 0;
+    margin-bottom: 5%;
     padding: 2rem 2rem;
   }
 
@@ -799,22 +804,24 @@ EXPERIENCE
     width: 100%;
     align-items: center;
     margin-bottom: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex !important;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
   }
 
   .cont h6 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: start;
   }
 
   .cont {
     background-color: inherit;
     width: 90%;
-    height: 38vh;
+    height: 50vh;
     padding: 1rem 1.5rem;
     text-align: center;
     margin-top: 1.5rem;
+    margin: 1%;
     color: white;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(4px);
@@ -931,6 +938,16 @@ EXPERIENCE
     border-bottom: 1px solid #808080;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (width > 1200px) {
+  .cont h6{
+    font-size: 1.5rem;
+  }
+
+  .cont{
+    height: 35vh;
   }
 }
 </style>

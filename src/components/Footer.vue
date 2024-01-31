@@ -17,7 +17,7 @@
                 <h5>Socials</h5>
 
                 <ul class="socials">
-                    <li>LinkedIn</li>
+                    <li> LinkedIn</li>
                     <li>Git</li>
                     <li>Trail Head</li>
                     <li>Email</li>
@@ -47,7 +47,7 @@ export default {
 }
 
 .footer p {
-    font-size: 20px;
+    font-size: 1rem;
     color: aqua;
     width: 100%;
     text-align: center;
@@ -55,25 +55,24 @@ export default {
 }
 
 .foot {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     padding-bottom: 1rem;
-    padding: 0rem 30%;
     border-bottom: 1px solid black;
+        padding-top: 6%;
+        border-top: 1px solid #000;
+        display: flex;
+        justify-content: space-around;
 }
 
 .links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .links li,
 .socials li {
     list-style: none;
-    margin-right: 15px;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 li a {
@@ -99,27 +98,5 @@ h5{
     color: aqua;
     padding-left: 2rem;
     font-size: 1.5rem;
-}
-
-@media (width < 600px) {
-    .links {
-        display: none;
-    }
-
-    .footer p {
-        font-size: 1rem;
-    }
-
-    .links li a,
-    .links li {
-        list-style: none;
-        margin-right: 0px;
-        font-size: .8rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .links {}
-
 }
 </style>

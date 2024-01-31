@@ -400,11 +400,15 @@ h2 {
   }
 
   h2{
-    font-size: 1.5rem;
+    font-size: 1.2rem !important;
   }
 
   h1{
     font-size: 1rem;
+  }
+
+  .sl{
+    font-size: 1.5rem;
   }
 }
 

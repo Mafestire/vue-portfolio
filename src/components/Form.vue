@@ -102,11 +102,12 @@ button {
     media query
     */
 
-@media (width < 700px) {
+@media (width < 702px) {
     .proj {
         margin-left: auto;
         margin-right: auto;
         padding: 0rem;
+        padding-bottom: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -153,14 +154,14 @@ button {
     .proj {
         margin-left: auto;
         margin-right: auto;
-        padding: 0 2rem;
+        padding: 2% 2rem;
         display: flex;
         /* flex-direction: column; */
         justify-content: space-evenly;
         align-items: center;
         margin-bottom: 5rem;
         height: 50%;
-        width: 75%;
+        width: 80%;
     }
 
     .image img {
@@ -196,13 +197,23 @@ button {
         margin-bottom: -2rem;
     }
 }
-@media (width > 1020px) {
+
+@media (width > 1126px){
+    .proj{
+        width: 50%;
+    }
+
+    .image, .form{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* @media (width > 1020px) {
     .proj {
         margin-left: auto;
         margin-right: auto;
         padding: 0 2rem;
         display: flex;
-        /* flex-direction: column; */
         justify-content: space-evenly;
         align-items: center;
         margin-bottom: 5rem;
@@ -217,7 +228,6 @@ button {
 
     .image{
         display: flex;
-        /* justify-content: center; */
     }
 
     form,
@@ -226,12 +236,7 @@ button {
         flex-direction: column;
         align-items: center;
         margin: 0 !important;
-        /* width: 15rem; */
     }
-
-    /* .detail h1{
-    font-size: 2rem;
-} */
 
     .form{
         width: 100%;
@@ -239,10 +244,9 @@ button {
     }
 
     input {
-        /* width: 15rem; */
         margin-bottom: -2rem;
     }
-}
+} */
 
 /* @media (with > 705px) {
     form {

@@ -199,6 +199,7 @@ h2 {
     color: white;
     border: 1px solid black;
     padding: 2rem 1rem;
+    margin: 1%;
     width: 20rem;
 }
 }
