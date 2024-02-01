@@ -43,7 +43,7 @@ export default {
     align-items: center;
     font-family: 'Nunito Sans', sans-serif;
     padding-top: 1rem;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 .footer p {
@@ -58,7 +58,7 @@ export default {
     width: 100%;
     padding-bottom: 1rem;
     border-bottom: 1px solid black;
-        padding-top: 6%;
+        padding-top: 2%;
         border-top: 1px solid #000;
         display: flex;
         justify-content: space-around;

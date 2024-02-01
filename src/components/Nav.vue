@@ -1,10 +1,9 @@
 <template>
-  <div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid" style="color: #fff">
         <a class="navbar-brand" href="#" style="text-decoration: none"
           ><router-link to="/">
-            <h2 style="width: 5rem">S</h2>
+            <h2 style="width: 2rem">S</h2>
           </router-link>
         </a>
         <button
@@ -59,7 +58,6 @@
         </div>
       </div>
     </nav>
-  </div>
 </template>
 
 <script>
@@ -78,17 +76,32 @@ export default {
 <style scoped>
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around ;
   width: 100%;
-  height: 3rem;
-  top: 1rem;
+  height: 5rem;
+  /* top: 1rem; */
   z-index: 10;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   font-family: "Nunito Sans", sans-serif;
+  /* text-align: end; */
 }
 
-.navbar-nav {
-  padding-left: 35rem;
+button{
+  margin-top: -6%;
+}
+
+.container-fluid{
+  height: 5rem;
+  padding: 0 2rem;
+  /* display: flex;
+  justify-content: space-between !important; */
+}
+
+.collapse {
+  /* display: flex;
+  justify-content: end;
+  text-align: end; */
+  padding-left: 50%;
 }
 
 i {
@@ -99,11 +112,11 @@ i {
 
 .navbar h2 {
   /* margin-left: 15px; */
-  margin-top: 2rem !important;
+  margin-top: 2.5rem !important;
   color: aqua;
   font-size: 3.5rem;
   text-decoration: none;
-  margin-top: 0rem;
+  /* margin-top: 0rem; */
 }
 
 .navbar h2 a {
@@ -116,6 +129,7 @@ i {
 
 .navbar ul {
   display: flex;
+  text-align: end;
 }
 
 .navbar li {
@@ -135,21 +149,29 @@ i {
   color: aqua;
 }
 
-@media (width < 800px) {
+@media (width < 992px) {
   .navbar {
-    margin-top: -5rem;
-    padding: 0rem 1rem !important;
-    transform: translateY(50%);
-    display: flex;
-    justify-content: end;
+    /* margin-top: -5rem; */
+    /* padding: 0rem 1rem !important; */
+    /* transform: translateY(50%); */
+    display: flex !important;
+    /* justify-content: end; */
   }
 
-  .navbar-nav {
-    padding-left: 1rem !important;
+  .navbar-expand-lg{
+    padding: 0 !important;
   }
+  
+ button{
+  margin-top: 0rem !important;
+ }
 
   span {
     color: aqua;
+  }
+
+  .navbar h2{
+    margin-top: 1.5rem !important;
   }
 
   .collapse {
@@ -158,6 +180,16 @@ i {
     border: 1px solid #ffff;
     text-align: start;
     /* padding: 1rem 4rem; */
+  }
+}
+
+@media (width < 500px) {
+  .navbar h2 {
+    margin-top: 2rem !important;
+  }
+
+  button{
+    margin-top: -.5rem !important;
   }
 }
 

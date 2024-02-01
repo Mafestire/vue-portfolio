@@ -8,7 +8,7 @@
                 <h6>My Values</h6>
             </div>
 
-            <h2>My Core Values</h2>
+            <!-- <h2>My Core Values</h2> -->
 
             <div class="more">
                 <ul class="list-group one list-group-vertical">
@@ -16,9 +16,8 @@
                     <li class="list-group-item second a" data="2">02</li>
                     <li class="list-group-item third a" data="3">03</li>
                     <li class="list-group-item forth a" data="4">04</li>
-                    <!-- <li class="list-group-item a" data="5">05</li> -->
                 </ul>
-                <ul class="list-group two list-group-vertical-sm w-50">
+                <ul class="list-group two list-group-vertical-sm ">
                     <ul class="i">
                         <li class="list-group-item b s">Collaboration</li>
                         <li class="list-group-item c t">It is key to achieve the best work relations.</li>
@@ -54,7 +53,8 @@ export default {
 
 <style  scoped>
 .value {
-    padding: 0rem 11.1rem;
+    padding: 2rem 11.1rem;
+    margin-top: 2rem;
 }
 
 .all {
@@ -64,7 +64,7 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 2rem 3rem;
-    width: 90%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Nunito Sans', sans-serif;
@@ -79,11 +79,12 @@ h2 {
 
 .v {
     display: flex;
-    justify-content: space-around;
-    border: 3px solid aqua;
-    width: 12rem;
-    padding: .7rem .7rem;
-    margin-left: -49rem;
+    /* justify-content: space-around; */
+    /* border: 3px solid aqua; */
+    width: 100%;
+    /* padding: .7rem .7rem; */
+    /* transform: translateX(-150%); */
+    /* margin-left: -63rem; */
     background-color: #171717;
     animation: value 2s ease-in;
 
@@ -101,8 +102,9 @@ h2 {
 
 .v h6 {
     color: #fff;
-    font-size: 1.7rem;
-    font-family: 'Nunito Sans', sans-serif;}
+    font-size: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 .more {
     display: flex;
@@ -136,9 +138,8 @@ h2 {
 }
 
 .one {
-    width: 5rem;
+    width: 20%;
     overflow: hidden;
-    /* background-color: white; */
 }
 
 .two {
@@ -148,159 +149,193 @@ h2 {
 
 .i {
     height: 7rem;
+    padding: 0;
 }
 
-        /*--- animation ---*/ 
+/*--- animation ---*/
 
 @keyframes value {
-    0%{
+    0% {
         opacity: 0;
         transform: rotate(-45deg);
     }
 }
 
 @keyframes all {
-    0%{
+    0% {
         opacity: 0;
     }
 }
 
 @keyframes head {
-    0%{
+    0% {
         opacity: 0;
     }
 }
-.first{
+
+.first {
     animation: one 2s ease-in;
 }
 
 @keyframes one {
-    0%{
+    0% {
         transform: translateX(-100%);
     }
 }
 
-.second{
+.second {
     animation: two 3s ease-in;
 }
+
 @keyframes two {
-    0%{
+    0% {
         transform: translateX(-100%);
     }
 }
-.third{
+
+.third {
     animation: three 4s ease-in;
 }
+
 @keyframes three {
-    0%{
+    0% {
         transform: translateX(-100%);
     }
 }
-.forth{
+
+.forth {
     animation: four 5s ease-in;
 }
+
 @keyframes four {
-    0%{
+    0% {
         transform: translateX(-100%);
     }
 }
-.s{
+
+.s {
     animation: s 2s ease-in;
 }
+
 @keyframes s {
-    0%{
-        transform: translateX(100%);
-    }
-}
-.t{
-    animation: t 2.5s ease-in;
-}
-@keyframes t {
-    0%{
-        transform: translateX(100%);
-    }
-}
-.u{
-    animation: u 3s ease-in;
-}
-@keyframes u {
-    0%{
-        transform: translateX(100%);
-    }
-}
-.r{
-    animation: r 3.5s ease-in;
-}
-@keyframes r {
-    0%{
-        transform: translateX(100%);
-    }
-}
-.w{
-    animation: w 4s ease-in;
-}
-@keyframes w {
-    0%{
-        transform: translateX(100%);
-    }
-}
-.x{
-    animation: x 4.5s ease-in;
-}
-@keyframes x {
-    0%{
-        transform: translateX(100%);
-    }
-}
-.y{
-    animation: y 5s ease-in;
-}
-@keyframes y {
-    0%{
-        transform: translateX(100%);
-    }
-}
-.z{
-    animation: z 5.5s ease-in;
-}
-@keyframes z {
-    0%{
+    0% {
         transform: translateX(100%);
     }
 }
 
-        /*--- Responsiveness ---*/
-@media (width < 800px) {
+.t {
+    animation: t 2.5s ease-in;
+}
+
+@keyframes t {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+.u {
+    animation: u 3s ease-in;
+}
+
+@keyframes u {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+.r {
+    animation: r 3.5s ease-in;
+}
+
+@keyframes r {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+.w {
+    animation: w 4s ease-in;
+}
+
+@keyframes w {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+.x {
+    animation: x 4.5s ease-in;
+}
+
+@keyframes x {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+.y {
+    animation: y 5s ease-in;
+}
+
+@keyframes y {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+.z {
+    animation: z 5.5s ease-in;
+}
+
+@keyframes z {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+/*--- Responsiveness ---*/
+
+@media (width > 1100px) {
+    .all{
+        width: 70% !important;
+    }
+}
+@media (width > 900px) {
     .all {
-        border: none;
+        /* border: none; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 1rem 1rem;
-        width: 39rem;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        font-family: 'Nunito Sans', sans-serif;}
-    
+        font-family: 'Nunito Sans', sans-serif;
+    }
 
-    .value {
+    .v{
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    /* .value {
         padding: 1rem 1rem;
+    } */
+
+    /*   */
+
+    .one {
+        /* width: 7rem; */
     }
 
-    .v {
-        display: flex;
-        justify-content: space-around;
-        border: 2px solid aqua;
-        width: 12rem;
-        padding: .5rem .5rem;
-        margin-bottom: 3rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
-@media (width < 500px) {
+@media (width < 900px) {
+
+    .value{
+        padding: 0 5%;
+    }
     .all {
         border: none;
         display: flex;
@@ -312,8 +347,9 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
-        font-family: 'Nunito Sans', sans-serif;}
-    
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
 
     .more {
         display: flex;
@@ -325,17 +361,32 @@ h2 {
         width: 100%;
     }
 
-    .y{
+    h2 {
+        display: none;
+    }
+
+    .v {
+        margin: 0rem;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .v h6 {
+        font-size: 1.5rem;
+    }
+
+    .y {
         margin-top: 1rem;
     }
 
     .one {
         width: 18%;
-        margin-left: -6rem;
+        display: none;
     }
 
-    .two{
-        width: 100%;overflow: visible;
+    .two {
+        width: 100%;
+        overflow: visible;
     }
 
     .a {
@@ -352,24 +403,26 @@ h2 {
 
 
     .list-group .c {
-        width: 15rem;
+        width: 20rem;
     }
 
-    .first{
+    .first {
         margin-top: rem;
     }
 
     .second {
         margin-top: 1rem;
     }
-    .third{
+
+    .third {
         margin-top: 2rem;
     }
-    .forth{
+
+    .forth {
         margin-top: 2rem;
     }
-    .i{
+
+    .i {
         width: 5rem;
     }
-}
-</style>
+}</style>

@@ -1,9 +1,9 @@
 <template>
   <Nav />
 
-  <div class="head">
-    <!-- <h1>About me</h1> -->
-  </div>
+  <!-- <div class="head">
+    <h1>About me</h1>
+  </div> -->
 
   <div class="abt">
     <div class="about">
@@ -31,7 +31,7 @@
           <ul class="list-group sec list-group-vertical-sm w-100">
             <li class="list-group-item">2000 / 05 / 30</li>
             <li class="list-group-item">Mfuleni, Cape Town</li>
-            <li class="list-group-item num call">062 4244 310 | 065 9425 403</li>
+            <li class="list-group-item num call">062 4244 310</li>
             <li class="list-group-item num"> <a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;">Sibabalwe Mafestire</a> </li>
             <li class="list-group-item">seabaraven@gmail.com</li>
           </ul>
@@ -53,44 +53,44 @@ export default {
 </script>
 
 <style scoped>
-.head {
-  /* height: 20rem; */
-  /* background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg); */
+/* .head {
+  height: 20rem;
+  background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
   font-family: 'Nunito Sans', sans-serif;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 2rem;
-}
+} */
 
-.head h1 {
+/* .head h1 {
   font-size: 3.5rem;
   font-weight: 200;
-}
+} */
 
 /* body */
 .about {
   padding: 0rem 1rem;
-  height: 63vh !important;
+  /* height: 63vh !important; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #000;
-  box-shadow: 0 2px 7px 0 black;
+  /* border: 2px solid #000; */
+  /* box-shadow: 0 2px 7px 0 black; */
   margin-bottom: 3rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   overflow: hidden;
 }
 
 .about img {
-  height: 100%;
-  margin: 0rem 4rem;
+  width: 25%;
+  margin: 0rem 0rem;
   animation: image 2s ease-in;
 }
 
 .details {
-  width: 39rem;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
@@ -116,6 +116,8 @@ export default {
 
 .abt {
   padding: 2rem 11.1rem;
+  margin-bottomm: 5rem;
+  
 }
 
 .details h2 {
@@ -145,7 +147,7 @@ export default {
 
         /** --- responsiveness --- */
 
-@media (width < 800px) {
+@media (width > 900px) {
   .details h2 {
     font-size: 1.5rem;
     border-bottom: none;
@@ -154,8 +156,8 @@ export default {
   }
 
   .details {
-    width: 20rem;
-    margin-top: -6rem;
+    /* width: 20rem; */
+    /* margin-top: -6rem; */
   }
 
   .details #info {
@@ -169,7 +171,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 39rem;
+    /* height: 39rem; */
     border: none;
     box-shadow: none;
     padding: 1rem 1rem;
@@ -178,17 +180,18 @@ export default {
   .abt {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0rem;
-    height: 100%;
+    /* margin-bottom: 0rem; */
+    /* height: 100%; */
     padding: 1rem 0rem;
   }
 
   .about img {
-    width: 30% ;
-    height: 70%;
+    /* width: 30% ; */
+    /* height: 70%; */
+    text-align: end;
     margin-left: auto;
-    margin-right: auto;
-    margin-top: -10rem;
+    margin-right: 0;
+    /* margin-top: -10rem; */
   }
 
   .details p,
@@ -200,58 +203,57 @@ export default {
   .more {
 width: 100%;  }
 
-  .p {
+  /* .p {
     margin-top: 1.5rem;
-  }
+  } */
 
-  .num{
+  /* .num{
     margin-top: 1.5rem;
-  }
+  } */
 
 }
 
-@media (width < 500px) {
+@media (width < 900px) {
   
 .num{
   margin-top: 0;
 }
 
-  .head{
+  /* .head{
     height: 10rem;
   }
 
   .head h1{
     font-size: 2rem;
-  }
+  } */
   .abt{
-    /* height: 100vh; */
     margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0rem;
   }
 
   .L{
     width: 80%;
 padding-right: 0;
+color: aqua !important;
   }
-
 
   .about {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 70vh !important;
-    padding: 0 2rem;
-    margin: 0;
+    justify-content: center;
+    padding: 0% 8%;
+    /* margin-top: 15%; */
   }
 
   .details {
     width: 100%;
-    height: 30rem;
     margin-top: 2rem;
   }
 
   .about img {
     display: none;
-    
   }
 
   .details p,
@@ -263,7 +265,9 @@ padding-right: 0;
     margin-top: 0rem;
   }
 
-
+.sec{
+  padding-left: 3%;
+}
 
   
 }
