@@ -17,10 +17,10 @@
                 <h5>Socials</h5>
 
                 <ul class="socials">
-                    <li> LinkedIn</li>
-                    <li>Git</li>
-                    <li>Trail Head</li>
-                    <li>Email</li>
+                    <li><a href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147">LinkedIn</a></li>
+                    <li><a href="https://github.com/Mafestire">Git</a></li>
+                    <li><a href="https://www.salesforce.com/trailblazer/profile/sibabalwemafestire">Trail Head</a></li>
+                    <li><a href="mailto: seabaraven@gmail.com">email</a></li>
                 </ul>
             </div>
 
@@ -51,17 +51,17 @@ export default {
     color: aqua;
     width: 100%;
     text-align: center;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 
 .foot {
     width: 100%;
     padding-bottom: 1rem;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
         padding-top: 2%;
         border-top: 1px solid #000;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
 }
 
 .links {

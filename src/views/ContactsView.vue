@@ -1,9 +1,9 @@
 <template>
     <Nav />
 
-    <div class="head">
+    <!-- <div class="head">
             <h3>Lets Talk</h3>
-    </div>
+    </div> -->
 
     <div class="cont">
         <div class="info">
@@ -19,10 +19,10 @@
                 </ul>
                 <ul class="list-group two list-group-vertical-sm">
                     <li class="list-group-item m sixth">Mfuleni, Cape Town</li>
-                    <li class="list-group-item m seventh">062 4244 310 | 065 9425 403</li>
+                    <li class="list-group-item m seventh"><a class="L" href="tel:+27 62 4244 310">062 4244 310</a></li>
                     <li class="list-group-item m eighth "><a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;"> Sibabalwe Mafestire</a></li>
-                    <li class="list-group-item m nineth">seabaraven@gmail.com</li>
-                    <li class="list-group-item m tenth">Mafestire</li>
+                    <li class="list-group-item m nineth"><a class="L" href="mailto: seabaraven@gmail.com">seabaraven@gmail.com</a></li>
+                    <li class="list-group-item m tenth"><a class="L" href="https://github.com/Mafestire">Mafestire</a></li>
                 </ul>
             </div>
         </div>
@@ -52,6 +52,10 @@ export default {
     margin-top: 2rem;
 }
 
+.L{
+    color: #fff;
+    text-decoration: none;
+}
 .L:hover{
     color: aqua !important;
 }
@@ -95,6 +99,7 @@ span {
     padding: 5rem 11.1rem;
     font-family: 'Nunito Sans', sans-serif;
 }
+
 
 .more {
     display: flex;

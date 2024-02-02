@@ -724,6 +724,11 @@ a:hover {
     visibility: visible;
     margin-bottom: 5rem;
   }
+
+  .head h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
 }
 
 </style>

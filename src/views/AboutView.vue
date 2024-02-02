@@ -27,13 +27,21 @@
             <li class="list-group-item p ">Phone</li>
             <li class="list-group-item p n">Linkedin</li>
             <li class="list-group-item p ">Email</li>
+            <li class="list-group-item p ">CV</li>
+            <li class="list-group-item p ">Full Stack </li>
+            <li class="list-group-item p ">SEO </li>
+            <li class="list-group-item p ">Salesforce </li>
           </ul>
           <ul class="list-group sec list-group-vertical-sm w-100">
             <li class="list-group-item">2000 / 05 / 30</li>
             <li class="list-group-item">Mfuleni, Cape Town</li>
-            <li class="list-group-item num call">062 4244 310</li>
+            <li class="list-group-item num call"><a class="L" href="tel:+27624244310" style="color: #fff; text-decoration: none;">062 4244 310</a></li>
             <li class="list-group-item num"> <a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;">Sibabalwe Mafestire</a> </li>
-            <li class="list-group-item">seabaraven@gmail.com</li>
+            <li class="list-group-item"><a class="L" href="mailto: seabaraven@gmail.com" style="color: #fff; text-decoration: none;">seabaraven@gail.com</a></li>
+            <li class="list-group-item"><a class="L" href="https://i.postimg.cc/J72spk9c/Black-White-Minimalist-CV-Resume-7.png" style="color: #fff; text-decoration: none;">View CV</a></li>
+            <li class="list-group-item"><a class="L" href="https://i.postimg.cc/d1J5NXZX/Full-Stack-Certificate.png" style="color: #fff; text-decoration: none;">View Certificate</a></li>
+            <li class="list-group-item"><a class="L" href="https://i.postimg.cc/KjRrdyG9/SEO-certificate.png" style="color: #fff; text-decoration: none;">View Certificate</a></li>
+            <li class="list-group-item"><a class="L" href="https://i.postimg.cc/mrpjLSdp/Cert3850456-Associate20231124.png" style="color: #fff; text-decoration: none;">View Associate Certificate</a></li>
           </ul>
         </div>
       </div>
