@@ -174,7 +174,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="https://i.postimg.cc/2St818tb/Core-Logo-White.png"
+            src="https://i.postimg.cc/Wz352bQ0/Core-Logo-White-177x65.png"
             alt=""
           />
           <div class="link-mobile">
@@ -185,7 +185,7 @@
         </div>
         <div class="carousel-item" >
           <img
-            src="https://i.postimg.cc/gJYr7y86/Screenshot-2023-08-22-103447.png"
+            src="https://i.postimg.cc/TwLjpQV1/Screenshot-2024-02-01-155921.png"
             alt=""
           />
           <div class="link-mobile">
@@ -196,7 +196,7 @@
         </div>
         <div class="carousel-item" >
           <img
-            src="https://i.postimg.cc/0NhcdQw3/Screenshot-2023-08-22-103109.png"
+            src="https://i.postimg.cc/657wjZ9K/Screenshot-2024-02-01-154550-removebg-preview.png"
             alt=""
           />
           <div class="link-mobile">
@@ -207,7 +207,7 @@
         </div>
         <div class="carousel-item" >
           <img
-            src="https://i.postimg.cc/nzYDh1Dm/Screenshot-2023-08-16-150249.png"
+            src="https://i.postimg.cc/5tXt8r6B/cropped-logo-black-60opac-header-transparent-67x66-removebg-preview.png"
             alt=""
           />
           <div class="link-mobile">
@@ -218,7 +218,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="https://i.postimg.cc/sgDYh8zK/Screenshot-2023-08-16-123137.png"
+            src="https://i.postimg.cc/6QBCftCk/Screenshot-2024-02-01-160352.png"
             alt=""
           />
 
@@ -233,7 +233,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="https://i.postimg.cc/bYSD5N3s/Screenshot-2023-07-31-140740.png"
+            src="https://i.postimg.cc/dtzb1SGk/Screenshot-2024-02-01-160836.png"
             alt=""
           />
 
@@ -265,7 +265,7 @@
 
         <div class="carousel-item " >
           <img
-            src="https://i.postimg.cc/BnNM0GKR/Screenshot-2023-07-17-085609.png"
+            src="https://i.postimg.cc/8PM7s9xx/Screenshot-2024-02-01-161605.png"
             alt=""
           />
           <div class="link-mobile">
@@ -279,7 +279,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="https://i.postimg.cc/LsFZZ1Sf/Screenshot-2023-07-31-110504.png"
+            src="https://i.postimg.cc/wBcPvqk3/Screenshot-2024-02-01-162221.png"
             alt=""
           />
 
@@ -294,7 +294,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="https://i.postimg.cc/QMMmy8hY/Screenshot-2023-07-31-122337.png"
+            src="https://i.postimg.cc/k5f0sMRz/Screenshot-2024-02-01-162609.png"
             alt=""
           />
 
@@ -307,7 +307,7 @@
             </div>
             </div>
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <img
             src="https://i.postimg.cc/mgYs3PN8/logo3-removebg-preview.png"
             alt=""
@@ -321,7 +321,7 @@
               <a href="https://seababags.netlify.app">Netlify</a>
             </div>
         </div>      
-        </div>
+        </div> -->
     </div>
     <button
         class="carousel-control-prev"
@@ -380,7 +380,7 @@ export default {
           name: "Core Teaching Essentials",
           brief: "Wordpress Client Site",
           image:
-            "https://i.postimg.cc/2St818tb/Core-Logo-White.png",
+            "https://i.postimg.cc/Wz352bQ0/Core-Logo-White-177x65.png",
           // git: 'https://github.com/Mafestire/Tech-News.git',
           Pantheon:
             "https://www.core-education.co/",
@@ -389,7 +389,7 @@ export default {
           name: "The Art of Traveling",
           brief: "Wordpress",
           image:
-            "https://i.postimg.cc/nzYDh1Dm/Screenshot-2023-08-16-150249.png",
+            "https://i.postimg.cc/5tXt8r6B/cropped-logo-black-60opac-header-transparent-67x66-removebg-preview.png",
           // git: 'https://github.com/Mafestire/Tech-News.git',
           Pantheon: "https://dev-the-art-of-traveling.pantheonsite.io/",
         },
@@ -397,7 +397,7 @@ export default {
           name: "Raven's Bags Blog",
           brief: "Wordpress",
           image:
-            "https://i.postimg.cc/0NhcdQw3/Screenshot-2023-08-22-103109.png",
+            "https://i.postimg.cc/657wjZ9K/Screenshot-2024-02-01-154550-removebg-preview.png",
           // git: 'https://github.com/Mafestire/Tech-News.git',
           Pantheon: "https://dev-raven-bags.pantheonsite.io/",
         },
@@ -405,7 +405,7 @@ export default {
           name: "WP Portfolio",
           brief: "Wordpress",
           image:
-            "https://i.postimg.cc/gJYr7y86/Screenshot-2023-08-22-103447.png",
+            "https://i.postimg.cc/TwLjpQV1/Screenshot-2024-02-01-155921.png",
           // git: 'https://github.com/Mafestire/Tech-News.git',
           Pantheon:
             "https://dev-sibabalwe-mafetsire-portfolio.pantheonsite.io/",
@@ -417,7 +417,7 @@ export default {
           name: "Online Portfolio",
           brief: "Vue js",
           image:
-            "https://i.postimg.cc/sgDYh8zK/Screenshot-2023-08-16-123137.png",
+            "https://i.postimg.cc/6QBCftCk/Screenshot-2024-02-01-160352.png",
           git: "https://github.com/Mafestire/vue-portfolio.git",
           netlify: "https://portfolio-d4110.web.app/#/",
         },
@@ -425,7 +425,7 @@ export default {
           name: "Tech News",
           brief: "Vue js, Express.js, Node js",
           image:
-            "https://i.postimg.cc/bYSD5N3s/Screenshot-2023-07-31-140740.png",
+            "https://i.postimg.cc/dtzb1SGk/Screenshot-2024-02-01-160836.png",
           git: "https://github.com/Mafestire/Tech-News.git",
           netlify: "https://technews-d5a7b.web.app/#/",
         },
@@ -433,7 +433,7 @@ export default {
           name: "Calculator",
           brief: "JavaScript",
           image:
-            "https://i.postimg.cc/BnNM0GKR/Screenshot-2023-07-17-085609.png",
+            "https://i.postimg.cc/8PM7s9xx/Screenshot-2024-02-01-161605.png",
           git: "https://github.com/Mafestire/Calculator.git",
           netlify: "https://sibabalwe-calculator.netlify.app",
         },
@@ -441,7 +441,7 @@ export default {
           name: "BMI Calculator",
           brief: "JavaScript",
           image:
-            "https://i.postimg.cc/LsFZZ1Sf/Screenshot-2023-07-31-110504.png",
+            "https://i.postimg.cc/wBcPvqk3/Screenshot-2024-02-01-162221.png",
           git: "https://github.com/Mafestire/BIM-Calculator.git",
           netlify: "https://sibabalwe-bmi-calculator.netlify.app",
         },
@@ -449,7 +449,7 @@ export default {
           name: "Temperature Convertor",
           brief: "JavaScript",
           image:
-            "https://i.postimg.cc/QMMmy8hY/Screenshot-2023-07-31-122337.png",
+            "https://i.postimg.cc/k5f0sMRz/Screenshot-2024-02-01-162609.png",
           git: "https://github.com/Mafestire/Point-of-Sale-system.git",
           netlify: "https://sibabalwe-temperiture-converter.netlify.app",
         },
@@ -499,11 +499,11 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 .head h2 {
-  /* font-size: 3.5rem; */
+  font-size: 3rem;
   font-weight: 200;
 }
 
@@ -553,7 +553,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
 }
 
 .card-title {
@@ -570,7 +570,7 @@ h2 {
 }
 
 .all {
-  padding: 5rem 5rem;
+  padding: 2rem 4rem;
   text-align: center;
   height: 100%;
   margin-bottom: -15rem;
@@ -591,8 +591,8 @@ h2 {
 }
 
 img {
-  width: 15rem;
-  height: 9rem;
+  width: 10rem;
+  height: 6rem;
   margin-bottom: 1rem;
 }
 
@@ -681,7 +681,16 @@ a:hover {
   width: 15rem;
 }
 
-@media (max-width: 800px) {
+/* @media (width < 1200px) {
+
+  .cardz{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+} */
+
+@media (max-width: 993px) {
   .cardz {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

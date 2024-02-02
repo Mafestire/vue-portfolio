@@ -32,7 +32,7 @@ export default {
 }
 
 form {
-    width: 25rem;
+    width: 100%;
     height: 35rem;
     text-align: center;
     align-items: center;
@@ -41,7 +41,6 @@ form {
     border: none;
     padding: 10px;
     color: #fff;
-    margin-right: 5rem;
     overflow: hidden;
 }
 
@@ -57,21 +56,19 @@ label {
     background-color: aqua;
     align-items: start;
     display: flex;
-    /* margin-left: -14rem; */
 }
 
 .hd {
     padding-bottom: 2rem;
     height: 3rem;
     overflow: hidden;
-
 }
 
 input,
 textarea {
     font-size: 18px;
     padding-top: .5rem;
-    width: 30rem;
+    width: 100%;
     background-color: #171717;
     color: #fff;
     border: none;
@@ -180,21 +177,26 @@ button{
 @media (width < 800px) {
 
     form {
-        margin-left: auto;
-        margin-right: auto;
-        width: 20rem;
+        /* margin-left: auto;
+        margin-right: auto; */
+        width: 100%;
     }
 
     input,
     textarea {
         font-size: 18px;
         padding-top: .5rem;
-        width: 15rem;
+        width: 100%;
         background-color: #171717;
         color: #fff;
         border: none;
         border-bottom: 2px solid #000;
-        text-align: center;
+        text-align: start;
+    }
+
+    label, .hd h2, .hd {
+        text-align: start !important;
+        width: 100%;
     }
 
     button {
@@ -205,4 +207,20 @@ button{
         height: 1px;
     }
 }
+
+@media (width < 1203px) {
+    form{
+        width: 100%;
+    }
+}
+/* @media (width < 1020px) {
+    form{
+        width: 100%;
+    }
+}
+@media (width < 1203px) {
+    form{
+        width: 70%;
+    }
+} */
 </style>

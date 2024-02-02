@@ -26,7 +26,9 @@
                 </ul>
             </div>
         </div>
-        <Contacts />
+        <div class="contact-form">
+            <Contacts />
+        </div>
     </div>
 </template>
 
@@ -89,7 +91,7 @@ span {
 
 .cont {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5rem 11.1rem;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -108,8 +110,8 @@ span {
     font-size: 1.2rem;
 }
 
-.info {
-    width: 32rem;
+.info, .contact-form {
+    width: 100%;
     color: #fff;
     overflow: hidden;
 }
@@ -233,7 +235,7 @@ span {
     }
 
 
-@media (width < 800px) {
+/* @media (width < 800px) {
 
     .head {
         margin-top: 2.5rem;
@@ -282,13 +284,21 @@ span {
     .two li {
         margin-left: -1rem;
     }
-}
+} */
 
-@media (width < 500px) {
+@media (width < 800px) {
     .cont {
         display: flex;
         flex-direction: column;
-        padding: 1rem 0rem;
+        padding: 1rem 10%;
+        /* text-align: center; */
+        justify-content: center !important;
+    }
+} 
+
+@media (width < 1203px) {
+    .cont{
+        padding: 1rem 10%;
     }
 }
 

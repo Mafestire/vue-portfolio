@@ -42,12 +42,12 @@ export default {
         return {
             testimonials: [
                 {
-                    name: 'Ryan ',
-                    Surname: 'Thomas',
-                    relations: 'Lecture',
-                    Quote: '"Sibabalwe is an individual who strives to get the job done and getting it done correctly and is always willing to assist her colleagues. She has a great sense of humor and a bubbly personality.""',
-                    contact: ' : ryant@lifechoices.co.za',
-                    image: 'https://i.postimg.cc/90FJxcY4/ryan-removebg-preview.png'
+                    name: 'Darron ',
+                    Surname: 'Gelderbloem',
+                    relations: 'Manager',
+                    Quote: "I've had the pleasure of working with Siba for 4 months, across two client projects. Getting to know her and watch her throughout her internship was a learning experience for me to. Siba is diligent and focused, creative and thoughtful. A real asset to the team.",
+                    contact: ' :  justplaindarron@gmail.com',
+                    image: 'https://i.postimg.cc/TP7KdFQz/Darron-removebg-preview.png'
                 },
                 {
                     name: 'Kelebogile',
@@ -55,7 +55,7 @@ export default {
                     relations: 'Colleague',
                     Quote: '"Sibabalwe is a humble and loving person who is always keen on helping others and she is a hard worker."',
                     contact: ' : nobomvukelebogile497@gmail.com',
-                    image: 'https://i.postimg.cc/j5RX5R98/Lebo-removebg-preview.png'
+                    image: 'https://i.postimg.cc/q7Mtd4cc/C11-Kelebogile-Nobomvu-2-removebg-preview.png'
                 },
                 {
                     name: 'Deno',
@@ -63,7 +63,7 @@ export default {
                     relations: 'Colleague',
                     Quote: '"Sibabalwe always engulfs you in her rays of happiness. Not just a magnet of unparalleled jubilation thought, she is also a genius with a burning passion to learn. A light in the struggles of coding"',
                     contact: ' : denorauten@gmail.com',
-                    image: 'https://i.postimg.cc/Qt6pd1ct/deno-removebg-preview.png'
+                    image: 'https://i.postimg.cc/1tb46FkM/Deno-removebg-preview.png'
                 },
                 {
                     name: 'Buhle',
@@ -71,7 +71,7 @@ export default {
                     relations: 'Colleague',
                     Quote: '"Sibabalwe is a great team player and always helps other colleagues. Her developer skills are exceptional and necessary for any workplace."',
                     contact: ' : buhle3857@gmail.com',
-                    image: 'https://i.postimg.cc/m2Ky9YJ1/Buhle-1-removebg-preview.png'
+                    image: 'https://i.postimg.cc/wv1772G7/C11-Buhle-Qampi-2-removebg-preview.png'
                 }
 
             ]
@@ -106,7 +106,7 @@ export default {
   padding: 0rem 3rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5rem;
+  /* margin-bottom: 0rem; */
 }
 
 h1 {
@@ -228,6 +228,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     margin-left: auto;
     margin-right: auto;
+    gap: 1 !important;
   }
 
   .head h3{
@@ -251,9 +252,10 @@ img {
     display: flex;
     flex-direction: column;
   }
+  
 
   .card-body {
-    width: 17.5rem;
+    /* width: 17.5rem; */
     padding: 0rem;
   }
 

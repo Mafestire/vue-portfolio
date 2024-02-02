@@ -74,7 +74,7 @@ form,
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 25%;
+    /* margin-right: 25%; */
 }
 
 input {
