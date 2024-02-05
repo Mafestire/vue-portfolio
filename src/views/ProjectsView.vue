@@ -385,6 +385,16 @@ h6 {
   overflow-y: hidden !important;
   }
 
+  .btn{
+    font-size: 1rem;
+  }
+
+  .buttons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
    .all {
      padding: 0rem 2rem;
    /* text-align: center;
