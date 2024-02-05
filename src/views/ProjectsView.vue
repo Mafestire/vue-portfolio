@@ -19,49 +19,6 @@
 
     <div class="cardz">
 
-      <!-- Wordpress -->
-      <!-- <div class="cards" v-for="item in WP" :key="items">
-        <div class="card">
-          <div class="card-body">
-            <div class="image">
-              <img :src="item.image" />
-            </div>
-
-            <div class="info">
-              <h5 class="card-title">{{ item.name }}</h5>
-            <h6 class="card-subtitle">{{ item.brief }}</h6>
-
-            <div class="linkz">
-              <a :href="item.Pantheon">Site Link</a>
-            </div>
-            </div>
-            
-            </div>
-        </div>
-      </div> -->
-
-      <!-- Designs -->
-      <!-- <div class="cards" v-for="item in Designs" :key="items">
-        <div class="card">
-          <div class="card-body">
-            <div class="image">
-              <img :src="item.image" />
-            </div>
-
-            <div class="info">
-            <h5 class="card-title">{{ item.name }}</h5>
-            <h6 class="card-subtitle">{{ item.tool }}</h6>
-
-            <div class="linkz">
-              <a href= "https://www.figma.com/file/eiNDtRORxk07lj6o3EwHLn/Untitled?type=design&node-id=1%3A2&mode=design&t=Tuf5NKZppgsN6wu0-1">Link</a>
-            </div>
-          </div>
-
-            </div>
-        </div>
-      </div> -->
-
-      <!-- JavaScript -->
       <div class="cards" v-for="project in filteredProjects" :key="project.id">
         <div class="card">
           <div class="card-body">
@@ -72,7 +29,7 @@
             <div class="info">
               <h5 class="card-title">{{ project.name }}</h5>
               <h6 class="card-subtitle">{{ project.brief }}</h6>
-              <h6 class="card-subtitle">{{ project.language }}</h6>
+              <h6 class="card-subtitle lang">{{ project.language }}</h6>
 
               <div class="links">
                 <a :href="project.code">Code</a>
@@ -82,171 +39,8 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
-
-
-  <!-- <div class="mobile">
-    <div id="carouselExampleIndicators" class="carousel slide" style="display: flex; justify-content: center; ">
-      <div id="carouselExampleIndicators" class="carousel slide w-100" style="display: flex; justify-content: center; ">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-            aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-            aria-label="Slide 7"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-            aria-label="Slide 8"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
-            aria-label="Slide 9"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
-            aria-label="Slide 10"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
-            aria-label="Slide 11"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
-            aria-label="Slide 12"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
-            aria-label="Slide 13"></button>
-        </div>
-        <div class="carousel-inner ">
-          <div class="carousel-item active">
-            <img src="https://i.postimg.cc/6pSZY8T9/Screenshot-2023-10-05-113919-removebg-preview.png" alt="" />
-            <div class="link-mobile">
-              <h5>4Di</h5>
-              <h6>Client Project</h6>
-              <a href="https://4dicapital.com/">Site Link</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.postimg.cc/Wz352bQ0/Core-Logo-White-177x65.png" alt="" />
-            <div class="link-mobile">
-              <h5>Core Teaching Essentials</h5>
-              <h6>Client Project</h6>
-              <a href="https://www.core-education.co/">Site Link</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.postimg.cc/TwLjpQV1/Screenshot-2024-02-01-155921.png" alt="" />
-            <div class="link-mobile">
-              <h5>Wordpress Portfolio</h5>
-              <h6>Wordpress</h6>
-              <a href="https://dev-sibabalwe-mafetsire-portfolio.pantheonsite.io/">Site Link</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.postimg.cc/657wjZ9K/Screenshot-2024-02-01-154550-removebg-preview.png" alt="" />
-            <div class="link-mobile">
-              <h5>Blog</h5>
-              <h6>Wordpress</h6>
-              <a href="https://dev-raven-bags.pantheonsite.io/">Site Link</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://i.postimg.cc/5tXt8r6B/cropped-logo-black-60opac-header-transparent-67x66-removebg-preview.png"
-              alt="" />
-            <div class="link-mobile">
-              <h5>The Art of Traveling</h5>
-              <h6>Wordpress</h6>
-              <a href="https://dev-the-art-of-traveling.pantheonsite.io/">Site Link</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.postimg.cc/6QBCftCk/Screenshot-2024-02-01-160352.png" alt="" />
-
-            <div class="link-mobile">
-              <h5>Online Portfolio</h5>
-              <h6>Vue</h6>
-              <div class="link">
-                <a href="https://github.com/Mafestire/vue-portfolio.git">Git</a>
-                <a href="https://portfolio-d4110.web.app/#/">Netlify</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.postimg.cc/dtzb1SGk/Screenshot-2024-02-01-160836.png" alt="" />
-
-            <div class="link-mobile">
-              <h5>Tech News</h5>
-              <h6>Vue</h6>
-              <div class="link">
-                <a href="https://github.com/Mafestire/Tech-News.git">Git</a>
-                <a href="https://technews-d5a7b.web.app/#/">Netlify</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.postimg.cc/BQq8kcFj/Logo-2-removebg-preview.png" alt="" />
-
-            <div class="link-mobile">
-              <h5>Fitness House</h5>
-              <h6>Figma Design</h6>
-              <div class="link">
-                <a
-                  href="https://www.figma.com/file/eiNDtRORxk07lj6o3EwHLn/Untitled?type=design&node-id=1%3A2&mode=design&t=Tuf5NKZppgsN6wu0-1">Link</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <img src="https://i.postimg.cc/8PM7s9xx/Screenshot-2024-02-01-161605.png" alt="" />
-            <div class="link-mobile">
-              <h5>Calculator</h5>
-              <h6>JavaScript</h6>
-              <div class="link">
-                <a href="https://github.com/Mafestire/Calculator.git">Git</a>
-                <a href="http://sibabalwe-calculator.netlify.app">Netlify</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.postimg.cc/wBcPvqk3/Screenshot-2024-02-01-162221.png" alt="" />
-
-            <div class="link-mobile">
-              <h5>BMI Calculator</h5>
-              <h6>JavaScript</h6>
-              <div class="link">
-                <a href="https://github.com/Mafestire/BIM-Calculator.git">Git</a>
-                <a href="https://sibabalwe-bmi-calculator.netlify.app">Netlify</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.postimg.cc/k5f0sMRz/Screenshot-2024-02-01-162609.png" alt="" />
-
-            <div class="link-mobile">
-              <h5>Temperature Convertor</h5>
-              <h6>JavaScript</h6>
-              <div class="link">
-                <a href="https://github.com/Mafestire/Point-of-Sale-system.git">Git</a>
-                <a href="https://sibabalwe-temperiture-converter.netlify.app">Netlify</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </div> -->
 
   <section id="Testimonials" ref="Testimonials" class="Testimonials">
     <Testimonials />
@@ -267,52 +61,6 @@ export default {
 
   data() {
     return {
-
-      // WP: [
-      // {
-      //     name: "4Di",
-      //     id: '1',
-      //     brief: "Wordpress Client Site",
-      //     image:
-      //       "https://i.postimg.cc/6pSZY8T9/Screenshot-2023-10-05-113919-removebg-preview.png",
-      //     Pantheon:
-      //       "https://4dicapital.com/",
-      //   },
-      //   {
-      //     name: "Core Teaching Essentials",
-      //     id: '2',
-      //     brief: "Wordpress Client Site",
-      //     image:
-      //       "https://i.postimg.cc/Wz352bQ0/Core-Logo-White-177x65.png",
-      //     Pantheon:
-      //       "https://www.core-education.co/",
-      //   },
-      //   {
-      //     name: "The Art of Traveling",
-      //     id: '3',
-      //     brief: "Wordpress",
-      //     image:
-      //       "https://i.postimg.cc/5tXt8r6B/cropped-logo-black-60opac-header-transparent-67x66-removebg-preview.png",
-      //     Pantheon: "https://dev-the-art-of-traveling.pantheonsite.io/",
-      //   },
-      //   {
-      //     name: "Raven's Bags Blog",
-      //     id: '4',
-      //     brief: "Wordpress",
-      //     image:
-      //       "https://i.postimg.cc/657wjZ9K/Screenshot-2024-02-01-154550-removebg-preview.png",
-      //     Pantheon: "https://dev-raven-bags.pantheonsite.io/",
-      //   },
-      //   {
-      //     name: "WP Portfolio",
-      //     brief: "Wordpress",
-      //     id: '5',
-      //     image:
-      //       "https://i.postimg.cc/TwLjpQV1/Screenshot-2024-02-01-155921.png",
-      //     Pantheon:
-      //       "https://dev-sibabalwe-mafetsire-portfolio.pantheonsite.io/",
-      //   },
-      // ],
 
       projects: [
         {
@@ -447,21 +195,6 @@ export default {
         //   netlify: "https://technews-d5a7b.web.app/#/",
         // },
       ],
-
-      Designs: [
-        // {
-        //   name: "Web Design",
-        //   id: '11',
-        //   tool: "Figma",
-        //   Link: "https://www.figma.com/file/eiNDtRORxk07lj6o3EwHLn/Untitled?type=design&node-id=1%3A2&mode=design&t=Tuf5NKZppgsN6wu0-1",
-        //   image: "https://i.postimg.cc/BQq8kcFj/Logo-2-removebg-preview.png"
-        // },
-        // {
-        //   name: "Portfolio Design",
-        //   tool: "Figma",
-        //   Link: "https://www.figma.com/file/wtvGMGm4OBEoHonSBDYLfi/Portfolio?type=design&node-id=0%3A1&mode=design&t=UXjuOjMZrRVKPwEl-1"
-        // },
-      ],
       selectedFilter: "all",
     };
   },
@@ -484,8 +217,6 @@ export default {
 
 <style scoped>
 .head {
-  /* height: 20rem; */
-  /* background-image: url(https://i.postimg.cc/Z5WsZZHQ/1000-F-422687964-0-W77-Tl-Y5us-MM3g-SOkg-BDf-TIr-Pev-TQZb-H.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Nunito Sans", sans-serif;
@@ -566,7 +297,6 @@ button:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding-left: 2rem; */
 }
 
 .card-title {
@@ -584,11 +314,15 @@ button:hover{
 .all {
   text-align: center;
   height: 100%;
-  margin-bottom: -15rem;
+  margin-bottom: 5%;
   font-family: "Nunito Sans", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.lang{
+  display: none;
 }
 
 @keyframes in {
@@ -612,11 +346,6 @@ img {
   justify-content: space-around;
 }
 
-/* .linkz {
-  display: flex;
-  justify-content: space-around;
-} */
-
 .links a {
   color: aqua;
   width: 6rem;
@@ -625,14 +354,6 @@ img {
   background-color: #171717;
 }
 
-/* .linkz a {
-  color: aqua;
-  width: 9rem;
-  font-size: 1.3rem;
-  text-decoration: none;
-  background-color: #171717;
-} */
-
 a:hover {
   border: none;
   background-color: aqua;
@@ -640,40 +361,6 @@ a:hover {
   font-weight: 600;
 }
 
-/* .mobile {
-  visibility: hidden;
-} */
-
-/* .link {
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-} */
-
-/* .link a {
-  color: aqua;
-  width: 100%;
-  padding: 0.3rem;
-  text-align: center;
-  font-size: 1.3rem;
-  text-decoration: none;
-  background-color: #171717;
-} */
-
-/* .link-mobile a {
-  color: aqua;
-  width: 100%;
-  padding: 0.3rem;
-  text-align: center;
-  font-size: 1.3rem;
-  text-decoration: none;
-} */
-
-/* .link-mobile {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-} */
 
 h5 {
   color: #fff;
@@ -686,31 +373,10 @@ h6 {
   color: #fff;
 }
 
-/* .carousel-inner {
-  padding-bottom: 3rem !important;
-  padding-top: 3rem;
-  width: fit-content;
-} */
-
-/* .carousel-item img {
-  align-items: center;
-  width: 15rem;
-} */
-
-/* @media (width < 1200px) {
-
-  .cardz{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-  
-} */
 
 @media (max-width: 993px) {
   .cardz {
     display: flex !important;
-    /* visibility: visible; */
-    /* grid-template-columns: repeat(2, 1fr); */
     margin: 3rem 0;
     margin-left: auto;
     margin-right: auto;
