@@ -22,7 +22,6 @@
 
         <div class="more">
           <ul class="list-group list-group-vertical w-25">
-            <li class="list-group-item">DOB</li>
             <li class="list-group-item">Address</li>
             <li class="list-group-item p ">Phone</li>
             <li class="list-group-item p n">Linkedin</li>
@@ -33,7 +32,6 @@
             <li class="list-group-item p ">Salesforce </li>
           </ul>
           <ul class="list-group sec list-group-vertical-sm w-100">
-            <li class="list-group-item">2000 / 05 / 30</li>
             <li class="list-group-item">Mfuleni, Cape Town</li>
             <li class="list-group-item num call"><a class="L" href="tel:+27624244310" style="color: #fff; text-decoration: none;">062 4244 310</a></li>
             <li class="list-group-item num"> <a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;">Sibabalwe Mafestire</a> </li>
