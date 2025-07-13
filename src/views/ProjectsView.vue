@@ -32,8 +32,8 @@
               <h6 class="card-subtitle lang">{{ project.language }}</h6>
 
               <div class="links">
-                <a :href="project.code">Code</a>
-                <a :href="project.live">Live</a>
+                <a :href="project.code" target="_blank" rel="noopener noreferrer">Code</a>
+                <a :href="project.live" target="_blank" rel="noopener noreferrer">Live</a>
               </div>
             </div>
           </div>

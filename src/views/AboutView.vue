@@ -1,47 +1,89 @@
 <template>
   <Nav />
 
-  <!-- <div class="head">
-    <h1>About me</h1>
-  </div> -->
-
   <div class="abt">
     <div class="about">
       <img src="https://i.postimg.cc/BQDYRcGf/C11-Sibabalwe-Mafestire-3-removebg-preview-1.png
 " alt="">
-      <div class="details" >
-        <h2 >Hello, I am</h2>
-        <h2 style="color: aqua;">Sibabalwe Mafestire</h2>
-        <h2 style="font-weight: 600;">Web Developer</h2>
+      <div class="details">
+        <h2>Hello, I am <span style="color: aqua;">Sibabalwe Mafestire</span></h2>
+        <h2 style="font-weight: 600;">Web Developer & Certified Salesforce Professional</h2>
         <p id="info">
-          As a full stack developer i am passionate about unique web applications. Ever
-          since i discovered coding at Life Choices, I found a field
-          that challenges me to do better and put my skills into practical use.
+          I’m a passionate and multi-skilled Full Stack Developer and Certified Salesforce Professional, driven by a
+          love for problem-solving and creating powerful digital solutions. My journey began at Life Choices, where I
+          discovered my passion for coding and quickly realized that tech was my true calling. Since then, I’ve
+          developed both the technical skills and professional mindset to thrive in fast-paced environments.
+          I specialize in web development and have expanded my
+          expertise into the Salesforce ecosystem, where I’ve earned multiple certifications and gained hands-on
+          experience in customizing orgs, building Lightning Apps, automating business processes, and managing data
+          securely.
         </p>
+        <p>I thrive on creating meaningful user experiences - whether through seamless web applications or powerful
+          Salesforce solutions that drive business efficiency. Every line of code I write and every solution I build is
+          fueled by my belief in lifelong learning, impact, and excellence.</p>
 
+        <div class="two">
+          <div>
+            <div class="info1">
+              <ul class="list-group list-group-vertical ">
+                <li class="list-group-item">Address</li>
+                <li class="list-group-item p ">Phone</li>
+                <li class="list-group-item p n">Linkedin</li>
+                <li class="list-group-item p ">Email</li>
+                <li class="list-group-item p ">CV</li>
+                <li class="list-group-item p ">Full Stack </li>
+              </ul>
+            </div>
 
-        <div class="more">
-          <ul class="list-group list-group-vertical w-25">
-            <li class="list-group-item">Address</li>
-            <li class="list-group-item p ">Phone</li>
-            <li class="list-group-item p n">Linkedin</li>
-            <li class="list-group-item p ">Email</li>
-            <li class="list-group-item p ">CV</li>
-            <li class="list-group-item p ">Full Stack </li>
-            <li class="list-group-item p ">SEO </li>
-            <li class="list-group-item p ">Salesforce </li>
-          </ul>
-          <ul class="list-group sec list-group-vertical-sm w-100">
-            <li class="list-group-item">Mfuleni, Cape Town</li>
-            <li class="list-group-item num call"><a class="L" href="tel:+27624244310" style="color: #fff; text-decoration: none;">062 4244 310</a></li>
-            <li class="list-group-item num"> <a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;">Sibabalwe Mafestire</a> </li>
-            <li class="list-group-item"><a class="L" href="mailto: seabaraven@gmail.com" style="color: #fff; text-decoration: none;">seabaraven@gail.com</a></li>
-            <li class="list-group-item"><a class="L" href="https://i.postimg.cc/J72spk9c/Black-White-Minimalist-CV-Resume-7.png" style="color: #fff; text-decoration: none;">View CV</a></li>
-            <li class="list-group-item"><a class="L" href="https://i.postimg.cc/d1J5NXZX/Full-Stack-Certificate.png" style="color: #fff; text-decoration: none;">View Certificate</a></li>
-            <li class="list-group-item"><a class="L" href="https://i.postimg.cc/KjRrdyG9/SEO-certificate.png" style="color: #fff; text-decoration: none;">View Certificate</a></li>
-            <li class="list-group-item"><a class="L" href="https://i.postimg.cc/mrpjLSdp/Cert3850456-Associate20231124.png" style="color: #fff; text-decoration: none;">View Associate Certificate</a></li>
-          </ul>
+            <div class="info2">
+              <ul class="list-group list-group-vertical">
+                <li class="list-group-item p ">SEO </li>
+                <li class="list-group-item p ">Salesforce Associate</li>
+                <li class="list-group-item p ">Salesforce Administrator</li>
+                <li class="list-group-item p ">Platform App Builder </li>
+
+              </ul>
+            </div>
+
+           
+            </div>
+
+            <div>
+ <div class="info3">
+              <ul class="list-group sec list-group-vertical-sm">
+                <l class="list-group-item">Cape Town</l>
+                <l class="list-group-item num call"><a class="L" href="tel:+27624244310"
+                    style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer">062 4244 310</a></l>
+                <l class="list-group-item num"> <a class="L"
+                    href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147"
+                    style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer">Sibabalwe Mafestire</a> </l>
+                <l class="list-group-item"><a class="L" href="mailto: seabaraven@gmail.com"
+                    style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer">seabaraven@gail.com</a></l>
+                <l class="list-group-item"><a class="L"
+                    href="https://i.postimg.cc/J72spk9c/Black-White-Minimalist-CV-Resume-7.png"
+                    style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer">View CV</a></l>
+                <l class="list-group-item"><a class="L" href="https://i.postimg.cc/d1J5NXZX/Full-Stack-Certificate.png"
+                    style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer">View Certificate</a></l>
+              </ul>
+            </div>
+
+            <div class="info4">
+              <ul class="list-group sec list-group-vertical-sm">
+                <li class="list-group-item"><a class="L" href="https://i.postimg.cc/KjRrdyG9/SEO-certificate.png"
+                    style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer">View Certificate</a></li>
+                <li class="list-group-item"><a class="L"
+                    href="https://i.postimg.cc/mrpjLSdp/Cert3850456-Associate20231124.png"
+                    style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer">View Certificate</a></li>
+                    <li class="list-group-item"><a class="L"
+                    href="https://i.postimg.cc/Hj1H69Fp/Cert4661502-Administrator-20240709.png"
+                    style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer">View Certificate</a></li>
+                    <li class="list-group-item"><a class="L"
+                    href="https://i.postimg.cc/sgZ7Qj47/Cert6199047-Platform-App-Builder-20250522.png"
+                    style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer">View Certificate</a></li>
+              </ul>
+            </div>
         </div>
+</div>
       </div>
     </div>
     <Values />
@@ -59,39 +101,18 @@ export default {
 </script>
 
 <style scoped>
-/* .head {
-  height: 20rem;
-  background-image: url(https://i.postimg.cc/7LgghXBr/bb.jpg);
-  font-family: 'Nunito Sans', sans-serif;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 2rem;
-} */
 
-/* .head h1 {
-  font-size: 3.5rem;
-  font-weight: 200;
-} */
-
-/* body */
 .about {
   padding: 0rem 1rem;
-  /* height: 63vh !important; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* border: 2px solid #000; */
-  /* box-shadow: 0 2px 7px 0 black; */
+  align-items: flex-start;
   margin-bottom: 3rem;
-  /* margin-top: 2rem; */
   overflow: hidden;
 }
 
 .about img {
-  width: 25%;
-  margin: 0rem 0rem;
+  width: 30%;
   animation: image 2s ease-in;
 }
 
@@ -105,8 +126,20 @@ export default {
   font-family: 'Playfair Display', serif;
 }
 
-.L:hover{
-  color: aqua !important;
+.two {
+  margin-top: 2%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.list-group-item p {
+  width: 100%;
+  margin-right: 5%;
+}
+
+.L:hover {
+  color: white !important;
 }
 
 .details p {
@@ -116,14 +149,16 @@ export default {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.call{
+.list-group-item {}
+
+.call {
   width: 110%;
 }
 
 .abt {
   padding: 2rem 11.1rem;
   margin-bottomm: 5rem;
-  
+
 }
 
 .details h2 {
@@ -131,27 +166,30 @@ export default {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.more {
-  display: flex;
-}
 
-.list-group li {
+.list-group li,
+l {
   background-color: #171717;
   border: none;
   color: white;
-  padding-left: 0;
+  padding: 0;
   font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.1rem;
 }
 
-        /**  --- animation --- */
-  
+.L{
+      color: aqua !important;
+}
+
+/**  --- animation --- */
+
 @keyframes image {
-  0%{
+  0% {
     transform: translateY(110%);
   }
 }
 
-        /** --- responsiveness --- */
+/** --- responsiveness --- */
 
 @media (width > 900px) {
   .details h2 {
@@ -161,88 +199,37 @@ export default {
     margin-right: auto;
   }
 
-  .details {
-    /* width: 20rem; */
-    /* margin-top: -6rem; */
-  }
-
-  .details #info {
-    margin: 0;
-  }
-
-  .about {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    /* height: 39rem; */
-    border: none;
-    box-shadow: none;
-    padding: 1rem 1rem;
-  }
 
   .abt {
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: 0rem; */
-    /* height: 100%; */
     padding: 1rem 0rem;
   }
 
   .about img {
-    /* width: 30% ; */
-    /* height: 70%; */
     text-align: end;
     margin-left: auto;
-    margin-right: 0;
-    /* margin-top: -10rem; */
   }
-
-  .details p,
-  h2 {
-    font-size: 1rem;
-    width: 100%;
-  }
-
-  .more {
-width: 100%;  }
-
-  /* .p {
-    margin-top: 1.5rem;
-  } */
-
-  /* .num{
-    margin-top: 1.5rem;
-  } */
 
 }
 
 @media (width < 900px) {
-  
-.num{
-  margin-top: 0;
-}
 
-  /* .head{
-    height: 10rem;
+  .num {
+    margin-top: 0;
   }
 
-  .head h1{
-    font-size: 2rem;
-  } */
-  .abt{
+  .abt {
     margin-top: 0rem;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 0rem;
   }
 
-  .L{
+  .L {
     width: 80%;
-padding-right: 0;
-color: aqua !important;
+    padding-right: 0;
+    color: aqua !important;
   }
 
   .about {
@@ -271,10 +258,10 @@ color: aqua !important;
     margin-top: 0rem;
   }
 
-.sec{
-  padding-left: 3%;
-}
+  .sec {
+    padding-left: 3%;
+  }
 
-  
+
 }
 </style>

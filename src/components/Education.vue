@@ -63,6 +63,60 @@
               <h5 class="card-title-exp">Job Description</h5>
             </div>
             <div class="company">
+              <h6>Life Choices Academy</h6>
+              <img
+                src="https://i.postimg.cc/j5kGLNV5/Logo-Life-Choices-removebg-preview.png"
+                alt=""
+              />
+            </div>
+            <p class="when">
+              <span style="color: aqua">Salesforce Technical Lead</span> | May
+              2024 - Current
+            </p>
+            <!-- <div class="div"></div> -->
+
+            <div class="card-subtitle txt mb-2 mt-3 text-body-secondary">
+              <p>
+                Core Functions: Mentoring, training and supporting a cohort of interns acquiring Salesforce Skills, Certifications and Job readiness.
+              </p>
+
+                <l>
+                <ul>Facilitate daily training sessions and guided study periods (simulated work environment).
+                  </ul>
+                  <ul>Mentor interns Salesforce Administrator and Platform App Builder certifications.
+                 </ul>
+                 <ul>Introduced Salesforce Agentforce Specialist learning this round.
+                  </ul>
+                  <ul>Promote self-directed learning while offering live support and clarification sessions.
+                  </ul>
+                  <ul>Develop and distribute study guides and relevant learning resources.
+                  </ul>
+                  <ul>  Conduct marking of assessments and provide feedback and results to interns.
+                  </ul>
+                  <ul>Design and assign realistic Salesforce projects aligned with business case scenarios (e.g., CRM solutions).
+                    </ul>
+                    <ul>Oversee execution and guide interns in applying Salesforce tools/features in projects.
+                    </ul>
+                    <ul>Grade submitted projects and provide developmental feedback.
+                    </ul>
+                    <ul>Assist the organization’s leadership with internal Salesforce org management.
+                    </ul>
+                    <ul>Support in system updates,and technical troubleshooting in the org when requested.
+                      </ul>
+                      <ul>Act as an internal Salesforce consultant for organizational use when requested.
+                        </ul>
+                 </l>
+            </div>
+            <P class="details"> </P>
+          </div>
+        </div>
+          <div class="card">
+          <div class="card-body">
+            <div class="card-title-ex">
+              <div class="dot"></div>
+              <h5 class="card-title-exp">Job Description</h5>
+            </div>
+            <div class="company">
               <h6>Cirrico</h6>
               <img
                 src="https://i.postimg.cc/FKs0pN2d/Cirico-logo-removebg-preview-1.png"
@@ -70,17 +124,14 @@
               />
             </div>
             <p class="when">
-              <span style="color: aqua">Salesforce Associate Trainee </span> | Nov 
-              18/2023 - Jan 08/2024
+              <span style="color: aqua">Salesforce Associate</span> | Nov 
+              2023 - Jan 2024
             </p>
             <!-- <div class="div"></div> -->
 
             <div class="card-subtitles txt mb-2 mt-3 text-body-secondary">
               <p>
-                Learning and Training: Familiarizing yourself with programming
-                languages, frameworks, and tools commonly used in web
-                development, such as HTML, CSS, JavaScript, and popular
-                libraries or frameworks like Vue.js and Wordpress.
+                Learning and Training: Understanding Salesforce as a CRM, understanding the fundamentals of Salesforce and acquiring the Salesforce Associate Certification.
               </p>
             </div>
             <P class="details"> </P>
@@ -100,14 +151,14 @@
               />
             </div>
             <p class="when">
-              <span style="color: aqua">Web Development Intern </span> | April
-              11/2023 - Nov 18/2023
+              <span style="color: aqua">Web Dev Intern </span> | April
+            2023 - Nov 2023
             </p>
             <!-- <div class="div"></div> -->
 
             <div class="card-subtitle txt mb-2 mt-3 text-body-secondary">
               <p>
-                Learning and Training: Familiarizing yourself with programming
+                Learning and Training: Familiarizing myself with programming
                 languages, frameworks, and tools commonly used in web
                 development, such as HTML, CSS, JavaScript, and popular
                 libraries or frameworks like Vue.js and Wordpress.
@@ -317,10 +368,12 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  display: flex;
+ 
+
+ /* display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: center;*/
 }
 
 .conts {
@@ -443,6 +496,12 @@ h3 {
 EXPERIENCE 
 */
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);  
+    gap: 1;
+  }
+
 .card {
   background-color: #171717;
   color: white;
@@ -452,7 +511,7 @@ EXPERIENCE
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 2px 7px 0 black;
-  width: 100%;
+  width: 90%;
   animation: exp 3s ease;
   display: flex;
   align-items: center;
@@ -513,9 +572,9 @@ EXPERIENCE
 }
 
 .company img {
-  width: 10rem;
+  width: 9rem;
   height: 3rem;
-  margin-top: -1rem;
+  margin-top: -.1rem;
 }
 
 .div {
@@ -545,13 +604,23 @@ EXPERIENCE
     flex-direction: column !important;
   }
 
+  .company{
+    display: flex;
+    flex-direction: column;
+  }
+
   .experience{
     padding: 0 2% !important;
   }
 
   .card, .card-body{
     padding: .5rem !important;
-    width: 100%;
+    width: 90%;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
   }
 
   
@@ -610,8 +679,13 @@ EXPERIENCE
     margin-top: 1rem;
   }
 
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+
   .card {
-    width: 100%;
+    /*width: 100%;*/
     margin-bottom: 5%;
     margin-top: 0%;
   }
@@ -697,7 +771,7 @@ EXPERIENCE
   }
 
   .card {
-    width: 70%;
+    /*width: 100%;*/
     margin-top: 0;
     margin-bottom: 5%;
     padding: 2rem 2rem;
@@ -865,17 +939,16 @@ EXPERIENCE
 */
 
   .cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+  gap: 1;
   }
+
   .card {
     color: white;
     padding: 2rem 2rem;
     margin-top: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
     animation: exp 3s ease;
-    display: flex;
     align-items: center;
   }
 
@@ -928,9 +1001,9 @@ EXPERIENCE
   }
 
   .company img {
-    width: 10rem;
+    width: 9rem;
     height: 3rem;
-    margin-top: -1rem;
+    margin-top: -.1rem;
   }
 
   .div {

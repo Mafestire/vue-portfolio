@@ -18,7 +18,7 @@
                     <li class="list-group-item fifth"><span>G</span>itHub</li>
                 </ul>
                 <ul class="list-group two list-group-vertical-sm">
-                    <li class="list-group-item m sixth">Mfuleni, Cape Town</li>
+                    <li class="list-group-item m sixth">Cape Town</li>
                     <li class="list-group-item m seventh"><a class="L" href="tel:+27 62 4244 310">062 4244 310</a></li>
                     <li class="list-group-item m eighth "><a class="L" href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" style="color: #fff; text-decoration: none;"> Sibabalwe Mafestire</a></li>
                     <li class="list-group-item m nineth"><a class="L" href="mailto: seabaraven@gmail.com">seabaraven@gmail.com</a></li>

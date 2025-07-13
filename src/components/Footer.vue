@@ -3,7 +3,7 @@
         <p>&copy;2023 Sibabalwe Mafestire</p>
 
         <div class="foot">
-            <div class="quick">
+<!--             <div class="quick">
                 <h5>Quick links</h5>
                 <ul class="links">
                     <li><router-link to="/about">About</router-link></li>
@@ -11,16 +11,16 @@
                     <li><router-link to="/projects#Projects">Projects</router-link></li>
                     <li><router-link to="/projects#Testimonials">Testimonials</router-link></li>
                 </ul>
-            </div>
+            </div> -->
 
             <div class="connect">
                 <h5>Socials</h5>
 
                 <ul class="socials">
-                    <li><a href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/sibabalwe-mafestire-804364147" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     <li><a href="https://github.com/Mafestire">Git</a></li>
-                    <li><a href="https://www.salesforce.com/trailblazer/profile/sibabalwemafestire">Trail Head</a></li>
-                    <li><a href="mailto: seabaraven@gmail.com">email</a></li>
+                    <li><a href="https://www.salesforce.com/trailblazer/profile/sibabalwemafestire" target="_blank" rel="noopener noreferrer">Trail Head</a></li>
+                    <li><a href="mailto: seabaraven@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
                 </ul>
             </div>
 
@@ -57,16 +57,17 @@ export default {
 .foot {
     width: 100%;
     padding-bottom: 1rem;
-    /* border-bottom: 1px solid black; */
         padding-top: 2%;
         border-top: 1px solid #000;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
 }
 
 .links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .links li,
@@ -91,7 +92,7 @@ li a:hover {
     color: #fff;
     font-size: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 h5{

@@ -86,6 +86,7 @@ input {
     border: none !important;
     border-bottom: 1px solid black !important;
     background-color: #171717;
+    color: #fff;
 }
 
 button {
@@ -96,6 +97,11 @@ button {
     /* padding: .5rem 1.5rem; */
     font-size: 1.5rem;
     font-family: 'Nunito Sans', sans-serif;
+}
+
+button:hover {
+    background-color: aqua;
+    color: #171717;
 }
 
 /**
